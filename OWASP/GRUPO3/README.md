@@ -1,5 +1,7 @@
 # Trabajo del Grupo 3
 
+![Diagrama DevSecOps](owasp TOP 10.png)
+
 ## Tema: OWASP Top 10 – Principales Riesgos de Seguridad en Aplicaciones Web
 
 ### Desarrollo del Tema
