@@ -47,6 +47,11 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 - Concientizar a los desarrolladores y fomentar buenas prácticas de codificación segura.
 
 ---
+[Documentación oficial de owasp](https://owasp.org/www-project-devsecops-guideline/)
+
+> "La seguridad no es un producto, es un proceso." - Bruce Schneier
+
+[Ver video sobre owasp](https://www.youtube.com/watch?v=vf9Waxh3I04)
 
 ### Integrantes del Grupo
 
@@ -55,6 +60,7 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 - Jhonatan  
 - Luis Alejandro  
 - Marlon Artunduaga
+
 
 ![Diagrama DevSecOps](owaspTOP10.png)
 
