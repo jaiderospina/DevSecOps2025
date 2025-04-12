@@ -53,6 +53,8 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 
 [Ver video sobre owasp](https://www.youtube.com/watch?v=vf9Waxh3I04)
 
+----
+
 ### Integrantes del Grupo
 
 - Sara Sofía  
@@ -61,6 +63,6 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 - Luis Alejandro  
 - Marlon Artunduaga
 
-
+----
 ![Diagrama DevSecOps](owaspTOP10.png)
 
