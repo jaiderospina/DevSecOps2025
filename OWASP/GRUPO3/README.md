@@ -55,5 +55,5 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 - Marlon Artunduaga
 
 
-![Diagrama DevSecOps](comparacion-owasp-10.png)
+![Diagrama DevSecOps](owasp TOP 10.png)
 
