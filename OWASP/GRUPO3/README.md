@@ -33,3 +33,5 @@ DevSecOps es la evolución del enfoque DevOps que incorpora la seguridad como un
 - Luis Alejandro Ricardo
 - Marlon Artunduaga
 
+![Diagrama DevSecOps](diagrama-devsecops.png.png)
+
