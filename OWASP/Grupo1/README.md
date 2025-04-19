@@ -34,6 +34,8 @@ A continuación, se presenta un resumen de los riesgos identificados en la versi
 
 Hace referencia un sistema que controla el acceso a la información o a la funcionalidad. Los controles de acceso que no funcionan permiten a los atacantes saltarse la autorización y realizar tareas como si fueran usuarios privilegiados, como los administradores. Por ejemplo, una aplicación web podría permitir que un usuario cambiara la cuenta con la que ha iniciado sesión con solo cambiar parte de una url, sin ninguna otra verificación.
 
+![Image](https://github.com/user-attachments/assets/1410c612-cbd8-4fda-ae44-b4064d3c8c8c)
+
 ##### **Ejemplo:**
 
 - Un usuario modifica la URL de `verPerfil.jsp?id=123` a `verPerfil.jsp?id=456` y logra ver el perfil de otro usuario sin que la aplicación verifique si tiene permiso para hacerlo. O un usuario normal accede a una página de administración (`/admin`) simplemente conociendo la URL.
