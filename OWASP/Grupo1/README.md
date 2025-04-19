@@ -27,17 +27,9 @@ A continuación, se presenta un resumen de los riesgos identificados en la versi
 
 ## OWASP Top 10 - Lista 2021
 
-- **A01:** Broken Access Control (Pérdida de Control de Acceso)
-- **A02:** Cryptographic Failures (Fallos Criptográficos)
-- **A03:** Injection (Inyección)
-- **A04:** Insecure Design (Diseño Inseguro)
-- **A05:** Security Misconfiguration (Configuración de Seguridad Incorrecta)
-- **A06:** Vulnerable and Outdated Components (Componentes Vulnerables y Desactualizados)
-- **A07:** Identification and Authentication Failures (Fallos de Identificación y Autenticación)
-- **A08:** Software and Data Integrity Failures (Fallos de Integridad de Software y Datos)
-- **A09:** Security Logging and Monitoring Failures (Fallos de Registro y Monitoreo de Seguridad)
-- **A10:** Server-Side Request Forgery (SSRF) (Falsificación de Solicitudes del Lado del Servidor)
 ![Image](https://github.com/user-attachments/assets/9be0c6e5-3fb8-4f80-8fae-3b46ea73608b)
+
+
 #### 1. **A01:2021 - Pérdida de Control de Acceso**
 
 Hace referencia un sistema que controla el acceso a la información o a la funcionalidad. Los controles de acceso que no funcionan permiten a los atacantes saltarse la autorización y realizar tareas como si fueran usuarios privilegiados, como los administradores. Por ejemplo, una aplicación web podría permitir que un usuario cambiara la cuenta con la que ha iniciado sesión con solo cambiar parte de una url, sin ninguna otra verificación.
