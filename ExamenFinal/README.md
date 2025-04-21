@@ -117,6 +117,6 @@ Como se explico en clase adoptar las prçticas adoptadas en los anteriores labor
 
 ### PROYECTOS GUÍA
 
--https://github.com/SabyasachiRana/WebMap
--https://securedrop.org/ 
+- https://github.com/SabyasachiRana/WebMap
+- https://securedrop.org/ 
 
