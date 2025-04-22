@@ -70,7 +70,7 @@ Falta de validación de integridad del software o datos, como actualizaciones no
 #### 9. **Security Logging and Monitoring Failures:**
 Ausencia de registros de seguridad y alertas, lo que retrasa la detección de ataques.
 
-#### 10. **Server-Side Request Forgery (SSRF):**
+#### 10. **Server-Side Request Forgery (SSRF):1**
 Vulnerabilidades que permiten a un atacante hacer que el servidor realice solicitudes no autorizadas.
 
 ![Diagrama DevSecOps](owaspTOP10.png)
