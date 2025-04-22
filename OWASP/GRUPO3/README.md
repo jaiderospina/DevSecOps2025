@@ -4,14 +4,14 @@
 
 ## Tema: OWASP Top 10 – Principales Riesgos de Seguridad en Aplicaciones Web
 
-### Desarrollo del Tema
+### - Desarrollo del Tema
 
 El **OWASP Top 10** es una lista reconocida a nivel mundial que identifica los 10 principales riesgos de seguridad en aplicaciones web. Es mantenida por la comunidad de OWASP (Open Worldwide Application Security Project) y sirve como referencia para desarrolladores, analistas y equipos de seguridad.
 
 Nació como un proyecto colaborativo para compartir buenas prácticas en desarrollo seguro.
 
 ---
-### Historia de OWASP
+### - Historia de OWASP
 
 Fundada en 2001 con el objetivo de mejorar la seguridad del software.
 
@@ -41,7 +41,7 @@ Hojas de trucos , Guía de pruebas , entre otros.
 Se actualiza el Top 10 en 2017 y luego en 2021 , reflejando las nuevas tendencias en amenazas como APIs inseguras o fallos en la arquitectura.
 
 ---
-A continuación, se presenta un resumen de los riesgos identificados en la versión más reciente (OWASP Top 10 - 2021):
+- A continuación, se presenta un resumen de los riesgos identificados en la versión más reciente (OWASP Top 10 - 2021):
 
 #### 1. **Broken Access Control:**
 Fallas que permiten a los usuarios actuar fuera de sus permisos, como acceder a datos o funciones restringidas.
