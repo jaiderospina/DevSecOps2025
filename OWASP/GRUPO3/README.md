@@ -41,32 +41,64 @@ Hojas de trucos , Guía de pruebas , entre otros.
 Se actualiza el Top 10 en 2017 y luego en 2021 , reflejando las nuevas tendencias en amenazas como APIs inseguras o fallos en la arquitectura.
 
 ---
-- A continuación, se presenta un resumen de los riesgos identificados en la versión más reciente (OWASP Top 10 - 2021):
-
-#### 1. **Broken Access Control:**
+### - A continuación, se presenta un resumen de los riesgos identificados en la versión más reciente (OWASP Top 10 - 2021):
+---
+### 1. **Broken Access Control:**
 Fallas que permiten a los usuarios actuar fuera de sus permisos, como acceder a datos o funciones restringidas.
 
+#### **Descripción :** 
+Ocurre cuando los usuarios pueden actuar fuera de sus permisos previstos.
+#### **Causas :**
+Falta de validación en el servidor, controles de acceso mal configurados.
+#### **Impacto :**
+Acceso no autorizado a datos o funciones administrativas.
+
+### **Métodos de explotación :**
+Modificación de la URL (por ejemplo, cambiar el ID en una ruta).
+Uso de herramientas como Burp Suite para manipular aplicaciones.
+
+### **Mitigación :** 
+- Aplicar control de acceso en el servidor.
+- Seguir el principio de menor privilegio.
+- Validación y autorización robusta en cada solicitud.
+---
 #### 2. **Cryptographic Failures:**
 Problemas relacionados con la protección de datos, como el uso de algoritmos débiles o mala gestión de claves.
 
+#### **Descripción :**
+Uso incorrecto o débil de criptografía.
+#### **Causas :**
+Algoritmos inseguros, falta de cifrado de datos sensibles.
+#### **Impacto :**
+Pérdida de confidencialidad e integridad.
+
+### **Métodos de explotación :**
+Ataques de fuerza bruta sobre hashes débiles.
+Robo de datos debido a falta de cifrado en tránsito (por ejemplo, uso de HTTP en vez de HTTPS).
+
+### **Mitigación :**
+- Usar HTTPS.
+- Evitar algoritmos como MD5 o SHA1.
+- Cifrar todos los datos sensibles en tránsito y en reposo.
+---
 #### 3. **Injection:**
 Ataques como SQL Injection que permiten ejecutar comandos maliciosos a través de entradas no validadas.
-
+---
 #### 4. **Insecure Design:**
 Diseños de sistemas que no consideran la seguridad desde el inicio del desarrollo.
-
+---
 #### 5. **Security Misconfiguration:**
 Configuraciones inseguras en servidores, frameworks o software que abren puertas a atacantes.
-
+---
 #### 6. **Vulnerable and Outdated Components:**
 Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.
-
+---
 #### 7. **Identification and Authentication Failures:**
 Errores en la autenticación de usuarios que pueden permitir suplantación de identidad.
-
+---
 #### 8. **Software and Data Integrity Failures:**
 Falta de validación de integridad del software o datos, como actualizaciones no verificadas.
-
+---
 #### 9. **Security Logging and Monitoring Failures:**
 (Fallas de registro y monitoreo de seguridad), 
 Las fallas de registro y monitoreo de seguridad son vulnerabilidades que pueden ocurrir cuando un sistema o aplicación no registra o monitorea correctamente los eventos de seguridad. Esto puede permitir que atacantes obtengan acceso no autorizado a sistemas y datos sin ser detectados. 
@@ -78,7 +110,7 @@ Las fallas de registro y monitoreo de seguridad son vulnerabilidades que pueden 
 - Registrar todos los eventos de aplicacion
 - Proteger los eventos logs contra posibles atacantes
 - Establecer alertas para todo tipo de evento dentro de app.
-
+---
 #### 10. **Server-Side Request Forgery (SSRF):**
 (Falsificación de solicitud del lado del servidor), 
 En un ataque de Falsificación de Solicitudes del Lado del Servidor (SSRF), el atacante puede proporcionar o manipular una URL para que el código ejecutado en el servidor lea y envíe datos a una ubicación elegida por el atacante. Esta vulnerabilidad puede resultar en el robo o pérdida de datos e información sensible, ya que el atacante puede conectarse a servicios internos de la organización y a sistemas externos no deseados.
