@@ -71,7 +71,7 @@ Falta de validación de integridad del software o datos, como actualizaciones no
 (Fallas de registro y monitoreo de seguridad), 
 Las fallas de registro y monitoreo de seguridad son vulnerabilidades que pueden ocurrir cuando un sistema o aplicación no registra o monitorea correctamente los eventos de seguridad. Esto puede permitir que atacantes obtengan acceso no autorizado a sistemas y datos sin ser detectados. 
 
-![Monitoreo](https://qawerk.es/wp-content/uploads/2024/10/cover_es.webp)
+![Monitoreo](Screenshot_3.png)
 
 ##### **Mitigación**
 
