@@ -3,7 +3,7 @@
 
 
 ## Tema: OWASP Top 10 – Principales Riesgos de Seguridad en Aplicaciones Web
-
+![Diagrama DevSecOps](https://images.vnetwork.vn/resize?width=1920&compression=5&quality=75&url=https%3A%2F%2Fstatic.vncdn.vn%2Fvnetwork.vn%2Fpub%2Fwebsites%2Fuploads%2F3%2Fowasp-va-cach-ngan-chan-top-10-lo-hong-bao-mat-owasp-moi-nhat.jpg)
 ### - Desarrollo del Tema
 
 El **OWASP Top 10** es una lista reconocida a nivel mundial que identifica los 10 principales riesgos de seguridad en aplicaciones web. Es mantenida por la comunidad de OWASP (Open Worldwide Application Security Project) y sirve como referencia para desarrolladores, analistas y equipos de seguridad.
@@ -68,12 +68,29 @@ Errores en la autenticación de usuarios que pueden permitir suplantación de id
 Falta de validación de integridad del software o datos, como actualizaciones no verificadas.
 
 #### 9. **Security Logging and Monitoring Failures:**
-Ausencia de registros de seguridad y alertas, lo que retrasa la detección de ataques.
+(Fallas de registro y monitoreo de seguridad), 
+Las fallas de registro y monitoreo de seguridad son vulnerabilidades que pueden ocurrir cuando un sistema o aplicación no registra o monitorea correctamente los eventos de seguridad. Esto puede permitir que atacantes obtengan acceso no autorizado a sistemas y datos sin ser detectados. 
 
-#### 10. **Server-Side Request Forgery (SSRF):1**
-Vulnerabilidades que permiten a un atacante hacer que el servidor realice solicitudes no autorizadas.
+![Monitoreo](https://qawerk.es/wp-content/uploads/2024/10/cover_es.webp)
 
-![Diagrama DevSecOps](owaspTOP10.png)
+##### **Mitigación**
+
+- Registrar todos los eventos de aplicacion
+- Proteger los eventos logs contra posibles atacantes
+- Establecer alertas para todo tipo de evento dentro de app.
+
+#### 10. **Server-Side Request Forgery (SSRF):**
+(Falsificación de solicitud del lado del servidor), 
+En un ataque de Falsificación de Solicitudes del Lado del Servidor (SSRF), el atacante puede proporcionar o manipular una URL para que el código ejecutado en el servidor lea y envíe datos a una ubicación elegida por el atacante. Esta vulnerabilidad puede resultar en el robo o pérdida de datos e información sensible, ya que el atacante puede conectarse a servicios internos de la organización y a sistemas externos no deseados.
+
+![Monitoreo](https://blog.hackmetrix.com/wp-content/uploads/2021/06/hackmetrix_que_es_ssrf_server_side_request_forgery.png)
+
+##### **Mitigación**
+- Establecer una URL fija
+- Incluir en una lista blanca el nombre, las direcciones IP o los nombres DNS
+- Implementar reglas de Firewall que eviten el tráfico no deseado entre servidores
+
+
 ---
 
 #### ¿Por qué es importante?
@@ -102,6 +119,6 @@ Vulnerabilidades que permiten a un atacante hacer que el servidor realice solici
 
 - Sara Sofía  
 - Juan Camilo  
-- Jhonatan  
+- Yonatan Castellanos  
 - Luis Alejandro  
 - Marlon Artunduaga
