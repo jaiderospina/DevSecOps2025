@@ -21,7 +21,6 @@ centrarnos en la causa raíz en lugar del síntoma.
 
 ![Cambios_OWASP](./images/Cambios_OWASP.png)
 
-
 ### A01:2021 – Pérdida de Control de Acceso
 
 **Descripción:**  
@@ -45,6 +44,8 @@ Un atacante cambia su ID de usuario en una URL (`/user/12345`) a otro (`/user/67
 - Auditorías frecuentes de reglas de acceso.
 
 ### A02:2021 – Fallas Criptográficas
+
+![Cambios_OWASP](./images/A03.png)
 
 **Descripción:**  
 
@@ -133,6 +134,8 @@ Para evitar la inyección es necesario mantener los datos separados de los coman
 - Utilice LIMIT y otros controles SQL dentro de las consultas para evitar la divulgación masiva de registros en caso de inyección SQL.
 
 ### A04:2021 – Diseño Inseguro
+
+![Cambios_OWASP](./images/A04.png)
 
 **Descripción:**  
 
