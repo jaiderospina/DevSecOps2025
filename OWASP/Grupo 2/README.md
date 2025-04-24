@@ -15,8 +15,10 @@ El OWASP Top 10 es un proyecto que identifica las diez vulnerabilidades de segur
 </div>
 
 ### ¿Qué ha cambiado en el Top 10 para 2021?
-Hay tres categorías nuevas, cuatro categorías con cambios de nombre y alcance, y cierta consolidación en el Top 10 para 2021. Hemos cambiado los nombres cuando fue necesario para centrarnos en la causa raíz en lugar del síntoma.
-![Cambios_OWASP](/images/Cambios_OWASP.png)
+Hay tres categorías nuevas, cuatro categorías con cambios de nombre y alcance, y cierta consolidación en el Top 10 para 2021. Hemos cambiado los nombres cuando fue necesario para 
+centrarnos en la causa raíz en lugar del síntoma.
+
+![Cambios_OWASP](./images/Cambios_OWASP.png)
 
 
 ### A01:2021 – Pérdida de Control de Acceso
