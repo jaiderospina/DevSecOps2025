@@ -45,7 +45,6 @@ Un atacante cambia su ID de usuario en una URL (`/user/12345`) a otro (`/user/67
 
 ### A02:2021 – Fallas Criptográficas
 
-![Cambios_OWASP](./images/A03.png)
 
 **Descripción:**  
 
@@ -67,6 +66,8 @@ Una app almacena contraseñas en texto plano, permitiendo que un atacante que ac
 - Hash de contraseñas con bcrypt, scrypt, o Argon2.
 
 ### A03:2021 – Inyección de Código
+
+![Cambios_OWASP](./images/A03.png)
 
 **Descripción:**  
 
