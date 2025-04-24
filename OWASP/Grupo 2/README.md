@@ -216,14 +216,80 @@ No proteger adecuadamente los flujos críticos, permitiendo que un atacante enti
 
 
 
-### A09:2021 – Fallas de Registro y Monitoreo de Seguridad
+### A09:2021 – Fallas de Registro y Monitoreo de Segurida
 
+**Descripción:**  
 
+Se refieren a la incapacidad de una aplicación para registrar, detectar y responder adecuadamente a eventos de seguridad. Esto incluye desde intentos de acceso no autorizados hasta errores críticos que podrían indicar un ataque en curso.
+
+Cuando no se registran estos eventos o no se monitorean activamente, se pierde visibilidad sobre lo que ocurre dentro del sistema, lo que permite que los atacantes operen sin ser detectados durante largos períodos.
+
+Este riesgo incluye fallos como:
+
+- No registrar eventos importantes como inicios de sesión, accesos denegados, errores del servidor o cambios de configuración.
+
+- No generar alertas cuando ocurren eventos sospechosos o críticos.
+
+- No conservar registros de manera segura o por el tiempo necesario.
+
+- No contar con un plan de respuesta ante incidentes detectados por logs o alertas.
+
+  **Ejemplos:**
+
+  **Escenario n.° 1:** Un atacante accede a una URL restringida (por ejemplo, /admin/panel) sin autenticarse. El sistema responde con un 
+  error 403 (prohibido), pero no registra el intento de acceso no autorizado.
+
+  **Riesgo:** Sin este registro, los intentos de reconocimiento o acceso indebido pasan desapercibidos. Esto puede ser parte de una etapa 
+  temprana de un ataque más grande, como el reconocimiento previo a la explotación.
+
+  **Accion recomendada:** Registrar todos los accesos denegados y generar alertas si se detectan múltiples intentos desde la misma IP o 
+  usuario.
+
+  **Escenario n.° 2:** La aplicación intenta guardar un nuevo usuario en la base de datos, pero ocurre un error (por ejemplo, duplicado 
+  enun campo único). El sistema muestra un mensaje genérico al usuario, pero no registra el error.
+
+  **Riesgo:** Este tipo de errores puede indicar una mala validación del lado del servidor o incluso un intento de inyección. No tener 
+  visibilidad de los errores limita la capacidad de respuesta y la mejora continua del sistema.
+
+  **Accion recomendada:** Registrar todos los errores del sistema con suficiente contexto (usuario, IP, timestamp, módulo afectado) y 
+  monitorear patrones de fallos frecuentes.
+
+  
 
 ### A10:2021 – Falsificación de Solicitud del Lado del Servidor (SSRF)
 
+**Descripción:**  
 
+Esta ocurre cuando una aplicación web permite que un atacante envíe solicitudes arbitrarias desde el servidor hacia recursos internos o externos, explotando funcionalidades como carga de imágenes, validación de URLs, llamadas HTTP a servicios internos, etc.
 
+Este riesgo incluye fallos como:
+
+- Acceder a metadatos del servidor en la nube (por ejemplo, `http://169.254.169.254` en AWS).
+  
+- Enumerar servicios internos y escanear puertos.
+  
+- Acceder a bases de datos internas o APIs privadas.
+  
+- Escalar privilegios o pivotar hacia otros sistemas.
+
+  
+
+  **Ejemplos:**
+
+  **Escenario n.° 1:** La aplicación permite al usuario subir una imagen desde una URL. El atacante ingresa como URL:  
+  `http://169.254.169.254/latest/meta-data/`  (servidor de metadatos en Amazon EC2).
+
+  **Riesgo:** Se exfiltran claves, tokens o configuraciones sensibles del entorno cloud.
+
+  **Accion recomendada:** Validar las URLs contra una lista blanca de dominios externos seguro y bloquear el acceso a IPs internas
+
+  **Escenario n.° 2:** Un formulario permite probar conexiones a una URL ingresada por el usuario. El atacante envía múltiples 
+  solicitudes hacia IPs internas (`192.168.x.x`, `127.0.0.1`) y registra las respuestas..
+
+  **Riesgo:** Permite descubrir qué servicios internos están activos, facilitando ataques posteriores.
+
+  **Accion recomendada:** Se pueden Implementar firewalls a nivel de aplicación y utilizar DNS en lugar de IPs directas
+  
 ## Referencias Bibliográficas
 
 - OWASP Foundation. (2021). *OWASP Top 10: The Ten Most Critical Web Application Security Risks*. https://owasp.org/Top10/
@@ -231,6 +297,8 @@ No proteger adecuadamente los flujos críticos, permitiendo que un atacante enti
 - PortSwigger Web Security Academy. (s.f.). *Web Security Learning Resources*. https://portswigger.net/web-security
 - OWASP Foundation. (2023). *OWASP Application Security Verification Standard (ASVS)*. https://owasp.org/www-project-application-security-verification-standard/
 - OWASP Foundation. (s.f.). *OWASP Secure Coding Practices - Quick Reference Guide*. https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/
+- OWASP Top 10 – A09:2021 – Security Logging and Monitoring Failures, https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/
+- OWASP Top 10 – A10:2021 – Server-Side Request Forgery (SSRF), https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
 ## Integrantes
 
