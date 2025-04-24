@@ -15,6 +15,7 @@ El OWASP Top 10 es un proyecto que identifica las diez vulnerabilidades de segur
 </div>
 
 ### ¿Qué ha cambiado en el Top 10 para 2021?
+
 Hay tres categorías nuevas, cuatro categorías con cambios de nombre y alcance, y cierta consolidación en el Top 10 para 2021. Hemos cambiado los nombres cuando fue necesario para 
 centrarnos en la causa raíz en lugar del síntoma.
 
@@ -24,17 +25,21 @@ centrarnos en la causa raíz en lugar del síntoma.
 ### A01:2021 – Pérdida de Control de Acceso
 
 **Descripción:**  
+
 Se produce cuando los usuarios pueden realizar acciones fuera de sus permisos intencionados. Suele deberse a falta de validaciones del lado del servidor.
 
 **Métodos de explotación:**
+
 - Forzar URLs (path traversal).
 - Cambiar parámetros de usuario (por ejemplo, IDs).
 - Uso de herramientas como Burp Suite para modificar solicitudes HTTP.
 
 **Ejemplo:**  
+
 Un atacante cambia su ID de usuario en una URL (`/user/12345`) a otro (`/user/67890`) y accede a la información de otra persona.
 
 **Prevención y mitigación:**
+
 - Implementar controles de acceso del lado del servidor.
 - Aplicar el principio de mínimos privilegios.
 - Auditorías frecuentes de reglas de acceso.
@@ -42,16 +47,20 @@ Un atacante cambia su ID de usuario en una URL (`/user/12345`) a otro (`/user/67
 ### A02:2021 – Fallas Criptográficas
 
 **Descripción:**  
+
 Exposición de datos sensibles debido a cifrado incorrecto o inexistente.
 
 **Métodos de explotación:**
+
 - Interceptar datos con sniffers (como Wireshark).
 - Explotar almacenamiento sin cifrar.
 
 **Ejemplo:**  
+
 Una app almacena contraseñas en texto plano, permitiendo que un atacante que accede a la DB vea todas las credenciales.
 
 **Prevención y mitigación:**
+
 - Usar HTTPS con TLS moderno (TLS 1.2+).
 - Cifrar datos en reposo y en tránsito.
 - Hash de contraseñas con bcrypt, scrypt, o Argon2.
@@ -59,6 +68,7 @@ Una app almacena contraseñas en texto plano, permitiendo que un atacante que ac
 ### A03:2021 – Inyección de Código
 
 **Descripción:**  
+
 Una aplicación es vulnerable a ataques cuando:
 
 -   Los datos proporcionados por el usuario no son validados, filtrados ni desinfectados por la aplicación.
@@ -124,7 +134,67 @@ Para evitar la inyección es necesario mantener los datos separados de los coman
 
 ### A04:2021 – Diseño Inseguro
 
+**Descripción:**  
 
+El diseño inseguro es una categoría amplia que representa diferentes debilidades, expresadas como un diseño de control ineficaz o ausente. Este diseño no es la fuente de las demás 10 categorías de riesgo principales. Existe una diferencia entre el diseño inseguro y la implementación insegura. Distinguimos entre fallas de diseño y defectos de implementación por una razón: tienen diferentes causas y soluciones. Un diseño seguro puede presentar defectos de implementación que generen vulnerabilidades susceptibles de ser explotadas. Un diseño inseguro no se puede solucionar con una implementación perfecta, ya que, por definición, nunca se crearon los controles de seguridad necesarios para defenderse de ataques específicos. Uno de los factores que contribuye al diseño inseguro es la falta de un perfil de riesgos empresariales inherente al software o sistema en desarrollo y, por lo tanto, la imposibilidad de determinar el nivel de seguridad requerido.
+
+**Métodos de explotación:**
+
+1. **Ausencia de controles de autorización**
+Si no se diseña un control adecuado de qué usuarios pueden hacer qué acciones, se pueden realizar operaciones críticas sin permiso.
+**Impacto:** Acceso indebido a funcionalidades, escalación de privilegios, eliminación o modificación de datos.
+
+2. **Flujos inseguros o mal definidos**
+Diseños que no contemplan los diferentes escenarios de uso o malicia pueden permitir eludir pasos críticos de seguridad.
+**Impacto:** Suplantación de identidad, acceso a cuentas ajenas.
+
+3. **No separación de funciones (SoD – Segregation of Duties)**
+Una única cuenta o rol puede realizar todas las operaciones sin límites, lo cual va contra principios de control interno.
+**Impacto:** Fraudes internos, movimientos no autorizados.
+
+4. **Configuraciones por defecto inseguras**
+Diseños que no obligan a cambiar contraseñas por defecto o no exigen configuraciones seguras iniciales.
+**Impacto:** Acceso completo no autorizado desde el primer momento.
+
+5. **No considerar amenazas específicas en el diseño**
+No tener en cuenta posibles vectores como ataques de fuerza bruta, carga masiva de archivos o denegación de servicio.
+**Impacto:** Ataques automatizados, abuso de recursos.
+
+6. **Falta de cifrado en diseño**
+Diseñar procesos que no contemplan la protección de datos en tránsito o en reposo.
+**Impacto:** Exposición de credenciales, robo de datos sensibles.
+
+7. **Diseño que expone lógica de negocio**
+No proteger adecuadamente los flujos críticos, permitiendo que un atacante entienda y manipule la lógica.
+**Impacto:** Alteración de precios, manipulación de inventarios, fraudes.
+
+**Ejemplo:**  
+
+**Escenario n.° 1:** Un flujo de trabajo de recuperación de credenciales podría incluir preguntas y respuestas, lo cual está prohibido por NIST 800-63b, OWASP ASVS y OWASP Top 10. No se puede confiar en las preguntas y respuestas como prueba de identidad, ya que más de una persona puede conocerlas, por lo que están prohibidas. Este tipo de código debería eliminarse y reemplazarse por un diseño más seguro.
+
+**Escenario n.° 2:** Una cadena de cines ofrece descuentos por reserva de grupo y tiene un máximo de quince asistentes antes de exigir un depósito. Los atacantes podrían modelar este flujo y probar si pueden reservar seiscientas butacas y todos los cines a la vez con unas pocas solicitudes, lo que provocaría una pérdida masiva de ingresos.
+
+**Escenario n.° 3:** El sitio web de comercio electrónico de una cadena minorista no cuenta con protección contra bots administrados por revendedores que compran tarjetas de video de alta gama para revenderlas en sitios web de subastas. Esto genera una mala publicidad para los fabricantes de tarjetas de video y los propietarios de las cadenas minoristas, además de generar una persistente hostilidad con los aficionados que no pueden obtener estas tarjetas a ningún precio. Un diseño antibots cuidadoso y reglas de lógica de dominio, como las compras realizadas a los pocos segundos de estar disponibles, podrían identificar compras no auténticas y rechazar dichas transacciones.
+
+**Prevención y mitigación:**
+
+- Establecer y utilizar un ciclo de vida de desarrollo seguro con profesionales de AppSec para ayudar a evaluar y diseñar controles relacionados con la seguridad y la privacidad.
+
+- Establecer y utilizar una biblioteca de patrones de diseño seguros o componentes de carreteras pavimentadas listos para usar
+
+- Utilice el modelado de amenazas para la autenticación crítica, el control de acceso, la lógica empresarial y los flujos de claves.
+
+- Integrar lenguaje y controles de seguridad en las historias de usuario
+
+- Integre comprobaciones de plausibilidad en cada nivel de su aplicación (desde el frontend hasta el backend)
+
+- Redacte pruebas unitarias y de integración para validar que todos los flujos críticos sean resistentes al modelo de amenazas. Recopile casos de uso y casos de uso indebido para cada nivel de su aplicación.
+
+- Segregar capas de niveles en las capas del sistema y de la red según las necesidades de exposición y protección
+
+- Segregar a los inquilinos de forma sólida mediante diseño en todos los niveles
+
+- Limitar el consumo de recursos por usuario o servicio
 
 ### A05:2021 – Configuración de Seguridad Incorrecta
 
