@@ -13,7 +13,10 @@ Nació como un proyecto colaborativo para compartir buenas prácticas en desarro
 ---
 ### - Historia de OWASP
 
-Fundada en 2001 con el objetivo de mejorar la seguridad del software.
+OWASP fue fundada en 2001 por Mark Curphey y desde entonces se ha convertido en una de las principales referencias en seguridad de aplicaciones. Con el tiempo, ha crecido hasta incluir una comunidad activa de voluntarios y expertos en seguridad en todo el mundo.
+
+**Comportamiento ético**
+Las actividades, programas y eventos de la Fundación se ajustan a diversas políticas establecidas en nuestras Políticas y Procedimientos y el Código de Conducta . Además, esperamos que nuestros miembros de la Junta Directiva, líderes, personal y voluntarios sean un ejemplo de integridad, honestidad y paciencia al apoyar a nuestras comunidades.
 
 ### **Línea del tiempo de OWASP:**
 
@@ -28,6 +31,7 @@ Creación de capítulos locales en distintas ciudades y países.
 Se realizaron los primeros OWASP AppSec Conferences.
 Se lanzan herramientas como WebGoat , una aplicación vulnerable intencionadamente para fines de enseñanza.
 Se convirtió en un estándar de facto en la industria para comprender y mitigar los riesgos críticos.
+OWASP se constituye como fundación sin fines de lucro.
 
 **2010-2013 – Consolidación como referencia en la industria:**
 OWASP Top 10 se actualiza regularmente (2010 y 2013).
@@ -39,6 +43,12 @@ OWASP ZAP (herramienta de análisis dinámico de seguridad).
 ASVS (Estándar de verificación de seguridad de aplicaciones).
 Hojas de trucos , Guía de pruebas , entre otros.
 Se actualiza el Top 10 en 2017 y luego en 2021 , reflejando las nuevas tendencias en amenazas como APIs inseguras o fallos en la arquitectura.
+
+**Años posteriores**
+OWASP ha ido expandiendo sus proyectos y recursos, incluyendo el OWASP ASVS (Estándar de Verificación de Seguridad de Aplicaciones), el OWASP Mobile Top 10, y el OWASP API Security Top 10
+
+**Actualmente**
+OWASP es una comunidad global de expertos y profesionales que trabajan para mejorar la seguridad del software
 
 ---
 ### - A continuación, se presenta un resumen de los riesgos identificados en la versión más reciente (OWASP Top 10 - 2021):
