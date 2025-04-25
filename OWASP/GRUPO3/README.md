@@ -157,9 +157,9 @@ Estas fallas pueden provocar:
 - 
 ### 🖼️ Ejemplo gráfico
 
-![authentication-failure-example](https://raw.githubusercontent.com/tuusuario/tu-repo/main/assets/authentication-failure.png)
+![Monitoreo](https://media.licdn.com/dms/image/v2/D4E12AQFarhlofTupBw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700471014980?e=2147483647&v=beta&t=drYkwicEpBMmCX9VU-gPiG_GqNTcn47lfntbLYr5Srs)
 
-> *Imagen: Representación de una autenticación fallida y sus consecuencias.*
+> *Imagen: Representación de una autenticación.*
 
 ---
 ## 🧩 8. Software and Data Integrity Failures
