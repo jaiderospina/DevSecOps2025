@@ -60,6 +60,26 @@ La categoría Errores de configuración de seguridad incluye el ataque XML Exter
 *El XML, o lenguaje de marcado extensible, es un lenguaje de marcado destinado a ser inteligible tanto por humanos como por máquinas. Debido a su complejidad y vulnerabilidades de seguridad, se está dejando de utilizar en muchas aplicaciones web.
 
 ## 6. Componentes vulnerables y obsoletos
-Muchos desarrolladores web modernos utilizan componentes como bibliotecas y marcos en sus aplicaciones web. Estos componentes son piezas de software que ayudan a los desarrolladores a evitar el trabajo redundante y a ofrecer la funcionalidad necesaria; un ejemplo común son los marcos frontales como React y las bibliotecas más pequeñas que se utilizan para añadir iconos compartidos o pruebas a/b. Algunos atacantes buscan vulnerabilidades en estos componentes que luego pueden utilizar para orquestar ataques. Algunos de los componentes más famosos se utilizan en cientos de miles de sitios web; un atacante que encuentre un agujero de seguridad en uno de estos componentes podría dejar cientos de miles de sitios vulnerables.
+Muchos desarrolladores web modernos utilizan componentes como bibliotecas y marcos en sus aplicaciones web, estos componentes son piezas de software que ayudan a los desarrolladores a evitar el trabajo redundante y a ofrecer la funcionalidad necesaria un ejemplo común son los marcos frontales como React y las bibliotecas más pequeñas que se utilizan para añadir iconos compartidos o pruebas a/b.
+Algunos atacantes buscan vulnerabilidades en estos componentes que luego pueden utilizar para orquestar ataques, Algunos de los componentes más famosos se utilizan en cientos de miles de sitios web; un atacante que encuentre un agujero de seguridad en uno de estos componentes podría dejar cientos de miles de sitios vulnerables.
 
 Los desarrolladores de contenidos a menudo ofrecen revisiones de seguridad y actualizaciones para incluir vulnerabilidades conocidas, pero los desarrolladores de aplicaciones web no siempre tienen las versiones más recientes o parcheadas de los componentes que se ejecutan en sus aplicaciones. Con el fin de minimizar los riesgos de ejecutar componentes con vulnerabilidades conocidas, los desarrolladores deberían eliminar los componentes no utilizados de sus proyectos, así como asegurar que están recibiendo componentes actualizados de una fuente de confianza.
+
+## 7. Fallos de identificación y autenticación
+Las vulnerabilidades en los sistemas de autenticación (login) pueden dar a los atacantes acceso a las cuentas de los usuarios e incluso la capacidad de poner en riesgo todo un sistema mediante el uso de una cuenta de administrador. 
+
+Algunas estrategias para mitigar las vulnerabilidades de autenticación son pedir la autenticación en dos fases (2FA), así como limitar o retrasar los intentos repetidos de inicio de sesión mediante el uso de la limitación de velocidad, controladores de dominio
+
+## 8. Fallos de integridad de software y datos
+Hoy en día, muchas aplicaciones dependen de complementos de terceros y otras fuentes externas para su funcionamiento, y no siempre se aseguran de que las actualizaciones y los datos de esas fuentes no hayan sido manipulados y se originen en una ubicación esperada. Por ejemplo, una aplicación que acepta automáticamente actualizaciones de una fuente externa podría ser vulnerable a que un atacante cargara sus propias actualizaciones maliciosas, que luego se distribuirían a todas las instalaciones de esa aplicación. Esta categoría también incluye las vulnerabilidades de deserialización no seguras: estos ataques son el resultado de la deserialización de datos de fuentes no fiables, y pueden tener graves consecuencias, como ataques DDoS y ataques de ejecución remota de código.
+
+Para ayudar a garantizar que no se ha violado la integridad de los datos y las actualizaciones, los desarrolladores de aplicaciones deben utilizar firmas digitales para verificar las actualizaciones, comprobar sus cadenas de suministro de software y asegurarse de que las canalizaciones de integración continua/implementación continua (CI/CD) tengan un control de acceso sólido y estén configuradas correctamente.
+
+## 9. Fallos de registro y supervisión de seguridad
+Muchas aplicaciones web no toman suficientes medidas para detectar las fugas de datos, se suele tardar unos 200 días de media en detectar una fuga después de que esta se haya producido, Esto da a los atacantes mucho tiempo para causar daños antes de que haya una respuesta.
+OWASP recomienda que los desarrolladores web implementen planes de registro y supervisión, así como de respuesta a incidentes, para asegurarse de que están al tanto de los ataques a sus aplicaciones.
+
+## 10. Falsificación de solicitudes del lado del servidor
+La falsificación de solicitud del lado del servidor (SSRF) es un ataque en el que alguien envía una solicitud de URL a un servidor que hace que el servidor obtenga un recurso inesperado, incluso si ese recurso está protegido de otra manera. Un atacante podría, por ejemplo, enviar una solicitud para www.example.com/super-secret-data/, aunque en teoría los usuarios de la web no pueden navegar a esa ubicación y obtener acceso a datos supersecretos de la respuesta del servidor.
+
+Hay una serie de posibles mitigaciones para los ataques SSRF, y una de las más importantes es validar todas las URL procedentes de los clientes, Las URL no válidas no deberían dar lugar a una respuesta directa y sin procesar del servidor.
