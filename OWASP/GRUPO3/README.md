@@ -93,8 +93,50 @@ Configuraciones inseguras en servidores, frameworks o software que abren puertas
 #### 6. **Vulnerable and Outdated Components:**
 Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.
 ---
-#### 7. **Identification and Authentication Failures:**
-Errores en la autenticación de usuarios que pueden permitir suplantación de identidad.
+## 🛡️ 7. Identification and Authentication Failures
+
+> **Descripción**  
+Este tipo de vulnerabilidad ocurre cuando los mecanismos de autenticación o identificación de los usuarios no están correctamente implementados. Puede permitir que atacantes suplanten la identidad de otros usuarios o accedan a cuentas sin autorización.
+
+### 🔍 ¿Qué son las fallas de identificación y autenticación?
+
+Se presentan cuando:
+
+- Se usan contraseñas débiles o por defecto.
+- No hay control de bloqueo después de múltiples intentos fallidos.
+- Las sesiones no se invalidan correctamente tras el cierre de sesión.
+- No se implementa autenticación multifactor (MFA) en sistemas sensibles.
+- Se permite el acceso a recursos sin verificar correctamente la identidad.
+
+### 🎯 Riesgos
+
+Estas fallas pueden provocar:
+
+- Acceso no autorizado a cuentas.
+- Robo de información sensible.
+- Toma de control de sesiones activas.
+- Ataques de fuerza bruta exitosos.
+
+### 💡 Buenas prácticas para mitigarlas
+
+- Implementar autenticación multifactor (MFA).
+- Requerir contraseñas fuertes y únicas.
+- Limitar intentos de inicio de sesión (protección contra fuerza bruta).
+- Invalidar sesiones de forma segura al cerrar sesión.
+- Usar bibliotecas de autenticación probadas y actualizadas.
+
+### 🖼️ Ejemplo gráfico
+
+![authentication-failure-example](https://raw.githubusercontent.com/tuusuario/tu-repo/main/assets/authentication-failure.png)
+
+> *Imagen: Representación de una autenticación fallida y sus consecuencias.*
+
+---
+
+### 📚 Recursos adicionales
+
+- [OWASP - Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
+- [Guía de seguridad para autenticación de usuarios](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 ---
 #### 8. **Software and Data Integrity Failures:**
 Falta de validación de integridad del software o datos, como actualizaciones no verificadas.
