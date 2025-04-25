@@ -104,7 +104,9 @@ Para mitigar los riesgos del uso de componentes vulnerables y obsoletos, es fund
 Además, es fundamental utilizar únicamente componentes que reciban mantenimiento activo de sus desarrolladores. Esto garantiza que cualquier vulnerabilidad recién descubierta se solucione con prontitud.
 ![image](https://github.com/user-attachments/assets/d92f62f9-4803-4972-8ff4-e584b3e6c42b)
 
+
 Además, si estos componentes ya no reciben soporte de sus desarrolladores, podrían no recibir actualizaciones de seguridad ni parches para las vulnerabilidades recién descubiertas, lo que los deja expuestos a la explotación durante un período prolongado.
+
 ---
 #### 7. **Identification and Authentication Failures:**
 Errores en la autenticación de usuarios que pueden permitir suplantación de identidad.
