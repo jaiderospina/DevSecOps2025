@@ -16,6 +16,8 @@ Hay tres nuevas categorías, cuatro categorías con cambios de nombre y alcance,
 - A08:2021 - Fallas en el Software y en la Integridad de los Datos
 - A09:2021 - Fallas en el Registro y Monitoreo
 - A10:2021 - Falsificación de Solicitudes del Lado del Servidor
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/ceea590765f4e59aef1bd3a2540c03a7fe51d1d2/OWASP/Grupo4/OWANSP_TOP10.png)
  
 
 
