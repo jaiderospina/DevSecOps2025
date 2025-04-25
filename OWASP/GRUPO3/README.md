@@ -93,7 +93,17 @@ Robo de datos debido a falta de cifrado en tránsito (por ejemplo, uso de HTTP e
 - Cifrar todos los datos sensibles en tránsito y en reposo.
 ---
 #### 3. **Injection:**
-Ataques como SQL Injection que permiten ejecutar comandos maliciosos a través de entradas no validadas.
+**Ataques como SQL Injection que permiten ejecutar comandos maliciosos a través de entradas no validadas.**
+OWASP se refiere a la inyección como una falla de seguridad donde datos no confiables son enviados a un intérprete (como un motor de base de datos, un sistema operativo o un navegador web) de tal manera que alteran la intención original de los comandos que se están ejecutando.
+**Existen varios tipos de inyección, siendo los más comunes mencionados por OWASP:**
+**Inyección SQL:** Explotación de vulnerabilidades en la forma en que las aplicaciones interactúan con las bases de datos SQL.
+**Cross-Site Scripting (XSS):** Inyección de scripts maliciosos en sitios web vistos por otros usuarios.
+**Command Injection:** Inyección de comandos del sistema operativo que la aplicación vulnerable ejecuta.
+**LDAP Injection:** Explotación de aplicaciones que construyen consultas LDAP basadas en la entrada del usuario.
+**XML Injection:** Inyección de código malicioso en documentos XML que son procesados por la aplicación.
+**OS Command Injection:** Similar a Command Injection, pero específicamente enfocado en la inyección de comandos al sistema operativo subyacente.
+La prevención de las vulnerabilidades de inyección es una de las prioridades de OWASP, y sus guías y recursos proporcionan las mejores prácticas para evitar estos ataques, como la validación y sanitización de entradas, el uso de consultas parametrizadas o "prepared statements", y la aplicación del principio de mínimo privilegio.
+
 ---
 #### 4. **Insecure Design:**
 Diseños de sistemas que no consideran la seguridad desde el inicio del desarrollo.
