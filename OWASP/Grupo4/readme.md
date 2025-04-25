@@ -1,4 +1,5 @@
 # OWASP Top 10
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/OWASP/Grupo4/Owasp-top-10-980x551%20CU.jpg)
 
 El Top 10 de OWASP es un informe actualizado de forma regular que subraya las preocupaciones de seguridad en el caso de la seguridad de las aplicaciones web, centrándose en los 10 riesgos más vitales. El informe es confeccionado por un equipo de expertos en seguridad de todo el mundo. OWASP se refiere al Top 10 como un "documento de conscienciación" en el que se recomienda que todas las compañías incorporen el informe en sus procesos con el fin de minimizar y/o mitigar los riesgos de seguridad.
 
