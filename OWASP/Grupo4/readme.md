@@ -47,3 +47,19 @@ En general, los ataques de inyección pueden evitarse al validar y/o sanitizar l
 
 Más información sobre cómo evitar la inyección de código SQL.
 
+## 4. Diseño no seguro
+El diseño no seguro incluye una serie de vulnerabilidades que se pueden integrar en la arquitectura de una aplicación. Se centra en el diseño de una aplicación, no en su implementación. OWASP enumera el uso de preguntas de seguridad (p. ej. "¿En qué calle creciste?") para la recuperación de contraseñas como un ejemplo de un flujo de trabajo que no es seguro por diseño. Por muy bien que los desarrolladores implementen un flujo de trabajo de este tipo, la aplicación seguirá siendo vulnerable, porque más de una persona puede saber la respuesta a esas preguntas de seguridad.
+
+El uso del modelado de amenaza antes de la implementación de una aplicación puede ayudar a mitigar este tipo de vulnerabilidades.
+
+## 5. Mala configuración de la seguridad
+La desconfiguración de la seguridad es la vulnerabilidad más común de la lista, y suele ser el resultado de usar configuraciones por defecto o de mostrar errores excesivamente detallados. Por ejemplo, una aplicación podría mostrar al usuario errores demasiado descriptivos que mostraran vulnerabilidades en la aplicación. Esto se puede mitigar mediante la eliminación cualquier función no utilizada en el código y al asegurarse de que los mensajes de error sean más generales.
+
+La categoría Errores de configuración de seguridad incluye el ataque XML External Entities (XEE), anteriormente una categoría propia en el informe de 2017. Se trata de un ataque contra una aplicación web que analiza la entrada XML*. Esta entrada puede hacer referencia a una entidad externa, que intenta explotar una vulnerabilidad en el analizador. Una "entidad externa" en este contexto hace referencia a una unidad de almacenamiento, como un disco duro. Se puede engañar a un analizador XML para que envíe datos a una entidad externa no autorizada, que puede pasar datos confidenciales directamente a un atacante. La mejor forma de prevenir los ataques XEE es hacer que las aplicaciones web acepten un tipo de datos menos complejo, como JSON, o al menos que revisen los analizadores XML y desactiven el uso de entidades externas en una aplicación XML.
+
+*El XML, o lenguaje de marcado extensible, es un lenguaje de marcado destinado a ser inteligible tanto por humanos como por máquinas. Debido a su complejidad y vulnerabilidades de seguridad, se está dejando de utilizar en muchas aplicaciones web.
+
+## 6. Componentes vulnerables y obsoletos
+Muchos desarrolladores web modernos utilizan componentes como bibliotecas y marcos en sus aplicaciones web. Estos componentes son piezas de software que ayudan a los desarrolladores a evitar el trabajo redundante y a ofrecer la funcionalidad necesaria; un ejemplo común son los marcos frontales como React y las bibliotecas más pequeñas que se utilizan para añadir iconos compartidos o pruebas a/b. Algunos atacantes buscan vulnerabilidades en estos componentes que luego pueden utilizar para orquestar ataques. Algunos de los componentes más famosos se utilizan en cientos de miles de sitios web; un atacante que encuentre un agujero de seguridad en uno de estos componentes podría dejar cientos de miles de sitios vulnerables.
+
+Los desarrolladores de contenidos a menudo ofrecen revisiones de seguridad y actualizaciones para incluir vulnerabilidades conocidas, pero los desarrolladores de aplicaciones web no siempre tienen las versiones más recientes o parcheadas de los componentes que se ejecutan en sus aplicaciones. Con el fin de minimizar los riesgos de ejecutar componentes con vulnerabilidades conocidas, los desarrolladores deberían eliminar los componentes no utilizados de sus proyectos, así como asegurar que están recibiendo componentes actualizados de una fuente de confianza.
