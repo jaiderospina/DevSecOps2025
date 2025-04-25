@@ -202,10 +202,38 @@ No proteger adecuadamente los flujos críticos, permitiendo que un atacante enti
 
 ### A05:2021 – Configuración de Seguridad Incorrecta
 
+**📌 Descripción:**  
+Malas configuraciones de servidores, servicios en la nube, frameworks, permisos, etc.
 
+**🎯 Métodos de explotación:**
+- Acceso a consolas de administración sin autenticación.
+- Exposición de paneles de debug.
+- Escaneo con herramientas como Nikto, Nmap.
+
+**📌 Ejemplo:**  
+Un servidor expone la consola de administración de Jenkins sin protección.
+
+**🛡️ Prevención y mitigación:**
+- Deshabilitar funciones innecesarias.
+- Configurar correctamente cabeceras HTTP.
+- Automatizar revisiones de configuración y despliegue seguro (IaC con seguridad).
 
 ### A06:2021 – Componentes Vulnerables y Desactualizados
 
+**📌 Descripción:**  
+Uso de librerías, dependencias o sistemas con vulnerabilidades conocidas sin aplicar parches.
+
+**🎯 Métodos de explotación:**
+- Explotar CVEs conocidas.
+- Uso de herramientas como Dependabot, OWASP Dependency-Check, o Retire.js.
+
+**📌 Ejemplo:**  
+Una app usa Log4j sin parchear, vulnerable a Log4Shell.
+
+**🛡️ Prevención y mitigación:**
+- Mantener dependencias actualizadas.
+- Monitorizar CVEs y boletines de seguridad.
+- Usar herramientas de análisis de componentes (SCA).
 
 
 ### A07:2021 – Fallos de Autenticación e Identificación
