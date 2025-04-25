@@ -151,8 +151,32 @@ Estas fallas pueden provocar:
 > *Imagen: Representación de una autenticación fallida y sus consecuencias.*
 
 ---
-#### 8. **Software and Data Integrity Failures:**
-Falta de validación de integridad del software o datos, como actualizaciones no verificadas.
+## 🧩 8. Software and Data Integrity Failures
+
+> **Descripción**  
+Esta vulnerabilidad ocurre cuando las aplicaciones no verifican la integridad del software, bibliotecas externas o datos críticos, lo que puede ser aprovechado por atacantes para introducir código malicioso o manipular información sensible.
+
+### ❗ ¿Qué significa esto?
+
+Se produce cuando:
+
+- Se instalan actualizaciones automáticas sin verificación de firma digital.
+- Se cargan librerías o plugins desde fuentes no confiables.
+- No se valida la integridad de archivos de configuración o scripts críticos.
+
+### 🔥 Riesgos
+
+Estas fallas pueden permitir:
+
+- Ejecución remota de código malicioso.
+- Manipulación de datos o configuración crítica.
+
+### 🛠️ Buenas prácticas para mitigarlas
+
+- Firmar y verificar todas las actualizaciones de software.
+- Validar integridad de dependencias (checksums, firmas).
+- Implementar DevSecOps con verificación continua de integridad.
+
 ---
 #### 9. **Security Logging and Monitoring Failures:**
 (Fallas de registro y monitoreo de seguridad), 
