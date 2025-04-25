@@ -3,7 +3,8 @@
 
 
 ## Tema: OWASP Top 10 – Principales Riesgos de Seguridad en Aplicaciones Web
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fmicrohackers.net%2Fes%2Fciberseguridad%2Fowasp-top-10%2F&psig=AOvVaw2FEq49k8mNjFgBjyOeTQw8&ust=1745699431183000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPj9g8WD9IwDFQAAAAAdAAAAABAE
+![image](https://github.com/user-attachments/assets/c98e12cc-8287-4b66-8129-b97560d4cfdd)
+
 ### - Desarrollo del Tema
 
 El **OWASP Top 10** es una lista reconocida a nivel mundial que identifica los 10 principales riesgos de seguridad en aplicaciones web. Es mantenida por la comunidad de OWASP (Open Worldwide Application Security Project) y sirve como referencia para desarrolladores, analistas y equipos de seguridad.
