@@ -89,8 +89,8 @@ Diseños de sistemas que no consideran la seguridad desde el inicio del desarrol
 ---
 #### 5. **Security Misconfiguration:** 
 **Configuraciones inseguras en servidores, frameworks o software que abren puertas a atacantes.**
-
 La configuración incorrecta de seguridad se refiere a vulnerabilidades derivadas de configuraciones incorrectas en aplicaciones web, servidores, bases de datos u otros componentes de una infraestructura de TI. Estas configuraciones incorrectas pueden ocurrir en cualquier nivel de la pila de aplicaciones, incluyendo configuraciones predeterminadas, funciones innecesarias o controles de seguridad deficientes, como contraseñas predeterminadas o instancias de bases de datos abiertas. Cuando los sistemas no están configurados de forma segura, se vuelven vulnerables a ataques, lo que permite accesos no autorizados, filtraciones de datos y otros incidentes de seguridad. Una configuración correcta es crucial para mantener la integridad, la confidencialidad y la disponibilidad de una aplicación.
+
 ![image](https://github.com/user-attachments/assets/0ad91434-0578-4fed-a371-ac745c5d5f68)
 ---
 #### 6. **Vulnerable and Outdated Components:**
