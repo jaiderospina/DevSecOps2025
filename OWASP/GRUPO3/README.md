@@ -108,8 +108,38 @@ Además, es fundamental utilizar únicamente componentes que reciban mantenimien
 Además, si estos componentes ya no reciben soporte de sus desarrolladores, podrían no recibir actualizaciones de seguridad ni parches para las vulnerabilidades recién descubiertas, lo que los deja expuestos a la explotación durante un período prolongado.
 
 ---
-#### 7. **Identification and Authentication Failures:**
-Errores en la autenticación de usuarios que pueden permitir suplantación de identidad.
+## 🛡️ 7. Identification and Authentication Failures
+
+> **Descripción**  
+Este tipo de vulnerabilidad ocurre cuando los mecanismos de autenticación o identificación de los usuarios no están correctamente implementados. Puede permitir que atacantes suplanten la identidad de otros usuarios o accedan a cuentas sin autorización.
+
+### 🔍 ¿Qué son las fallas de identificación y autenticación?
+
+Se presentan cuando:
+
+- Se usan contraseñas débiles o por defecto.
+- No hay control de bloqueo después de múltiples intentos fallidos.
+- Las sesiones no se invalidan correctamente tras el cierre de sesión.
+
+### 🎯 Riesgos
+
+Estas fallas pueden provocar:
+
+- Acceso no autorizado a cuentas.
+- Robo de información sensible.
+
+### 💡 Buenas prácticas para mitigarlas
+
+- Implementar autenticación multifactor (MFA).
+- Requerir contraseñas fuertes y únicas.
+- Limitar intentos de inicio de sesión (protección contra fuerza bruta).
+- 
+### 🖼️ Ejemplo gráfico
+
+![authentication-failure-example](https://raw.githubusercontent.com/tuusuario/tu-repo/main/assets/authentication-failure.png)
+
+> *Imagen: Representación de una autenticación fallida y sus consecuencias.*
+
 ---
 #### 8. **Software and Data Integrity Failures:**
 Falta de validación de integridad del software o datos, como actualizaciones no verificadas.
