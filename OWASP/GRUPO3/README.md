@@ -194,8 +194,8 @@ En un ataque de Falsificación de Solicitudes del Lado del Servidor (SSRF), el a
 
 ### Integrantes del Grupo
 
-- Sara Sofía  
-- Juan Camilo  
+- Sara Sofía Moreno
+- Juan Camilo Cristiano
 - Yonatan Castellanos  
-- Luis Alejandro  
+- Luis Alejandro Romero
 - Marlon Artunduaga
