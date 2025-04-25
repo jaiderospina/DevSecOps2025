@@ -19,7 +19,8 @@ Hay tres nuevas categorías, cuatro categorías con cambios de nombre y alcance,
 - A09:2021 - Fallas en el Registro y Monitoreo
 - A10:2021 - Falsificación de Solicitudes del Lado del Servidor
 
-
+¿Qué es el OWASP Top 10?
+El Top 10 de OWASP es un informe actualizado de forma regular que subraya las preocupaciones de seguridad en el caso de la seguridad de las aplicaciones web, centrándose en los 10 riesgos más vitales. El informe es confeccionado por un equipo de expertos en seguridad de todo el mundo. OWASP se refiere al Top 10 como un "documento de conscienciación" en el que se recomienda que todas las compañías incorporen el informe en sus procesos con el fin de minimizar y/o mitigar los riesgos de seguridad.
  
 
 
