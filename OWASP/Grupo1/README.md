@@ -111,7 +111,7 @@ El diseño inseguro es una categoría amplia que representa diferentes debilidad
 
 #### 5. **A05:2021 - Configuración de Seguridad Incorrecta**
 
-La falta de refuerzo de la seguridad en los marcos de aplicación web, plataformas, servidores o controles de seguridad puede dar lugar a acceso no autorizado, exposición de información confidencial u otras vulnerabilidades de seguridad.
+La falta de refuerzo de la seguridad en los framework de aplicación web, plataformas, servidores o controles de seguridad puede dar lugar a acceso no autorizado, exposición de información confidencial u otras vulnerabilidades de seguridad.
 
 ##### **Ejemplo**
 
