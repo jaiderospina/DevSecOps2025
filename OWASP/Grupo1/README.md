@@ -62,6 +62,8 @@ Se centra en las fallas relacionadas con la criptografía (o la falta de ésta).
 
 #### 3. **A03:2021 - Inyección**
 
+![Image](https://github.com/jaiderospina/DevSecOps2025/blob/main/OWASP/Grupo1/A032021%20Inyecci%C3%B3n.png)
+
 Resumen
 La Inyección desciende a la tercera posición. El 94% de las aplicaciones fueron probadas para algún tipo de inyección con una tasa de incidencia máxima del 19%, una tasa de incidencia promedio del 3% y 274.000 ocurrencias. Las CWE incluidas son CWE-79: Secuencia de Comandos en Sitios Cruzados (XSS), CWE-89: Inyección SQL, y la CWE-73:Control Externo de Nombre de archivos o ruta.
 
@@ -87,6 +89,8 @@ Se utilizan datos dañinos directamente o se concatenan, de modo que el SQL o co
 - Utilizar codificación de salida (Output Encoding) adecuada para evitar XSS (Cross-Site Scripting), que es otro tipo de inyección.
 
 #### 4. **A04:2021 - Diseño Inseguro**
+
+![Image](https://github.com/jaiderospina/DevSecOps2025/blob/main/OWASP/Grupo1/A042021%20Dise%C3%B1o%20Inseguro.png)
 
 Resumen
 Una nueva categoría en la versión 2021. se centra en los riesgos relacionados con el diseño y las fallas arquitectónicas, exhortando a un mayor uso de: modelado de amenazas, patrones de diseño seguros y arquitecturas de referencia. Como comunidad, debemos ir más allá de la codificación y adoptar actividades cruciales para obtener Seguridad por Diseño. Debemos "mover a la izquierda" del proceso de desarrollo las actividades de seguridad. Las CWE notables incluidas son CWE-209: Generación de mensaje de error que contiene información confidencial, CWE-256: Almacenamiento desprotegido de credenciales, CWE-501: Violación de las fronteras de confianza y CWE-522: Credenciales protegidas insuficientemente.
