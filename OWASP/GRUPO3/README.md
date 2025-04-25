@@ -88,14 +88,23 @@ Ataques como SQL Injection que permiten ejecutar comandos maliciosos a través d
 Diseños de sistemas que no consideran la seguridad desde el inicio del desarrollo.
 ---
 #### 5. **Security Misconfiguration:** 
-#Configuraciones inseguras en servidores, frameworks o software que abren puertas a atacantes.
+**Configuraciones inseguras en servidores, frameworks o software que abren puertas a atacantes.**
 
 La configuración incorrecta de seguridad se refiere a vulnerabilidades derivadas de configuraciones incorrectas en aplicaciones web, servidores, bases de datos u otros componentes de una infraestructura de TI. Estas configuraciones incorrectas pueden ocurrir en cualquier nivel de la pila de aplicaciones, incluyendo configuraciones predeterminadas, funciones innecesarias o controles de seguridad deficientes, como contraseñas predeterminadas o instancias de bases de datos abiertas. Cuando los sistemas no están configurados de forma segura, se vuelven vulnerables a ataques, lo que permite accesos no autorizados, filtraciones de datos y otros incidentes de seguridad. Una configuración correcta es crucial para mantener la integridad, la confidencialidad y la disponibilidad de una aplicación.
 ![image](https://github.com/user-attachments/assets/0ad91434-0578-4fed-a371-ac745c5d5f68)
-
 ---
 #### 6. **Vulnerable and Outdated Components:**
-Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.
+**Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.**
+Los componentes vulnerables y obsoletos son bibliotecas o frameworks de terceros utilizados en aplicaciones web que presentan vulnerabilidades conocidas o que ya no reciben soporte de sus desarrolladores. Estos componentes pueden ser explotados por atacantes para obtener acceso no autorizado a datos confidenciales o tomar el control del sistema.
+
+**Los riesgos de utilizar componentes vulnerables y obsoletos**
+El uso de componentes vulnerables y obsoletos puede suponer riesgos significativos para las aplicaciones web. Los atacantes pueden explotar estas vulnerabilidades para lanzar ataques como inyección SQL, secuencias de comandos entre sitios (XSS), ejecución remota de código, etc.
+**¿Cómo podemos mitigar estos riesgos?**
+Para mitigar los riesgos del uso de componentes vulnerables y obsoletos, es fundamental mantenerlos actualizados. Esto implica revisar periódicamente las actualizaciones o parches de seguridad de los desarrolladores del componente y aplicarlos con prontitud.
+Además, es fundamental utilizar únicamente componentes que reciban mantenimiento activo de sus desarrolladores. Esto garantiza que cualquier vulnerabilidad recién descubierta se solucione con prontitud.
+![image](https://github.com/user-attachments/assets/d92f62f9-4803-4972-8ff4-e584b3e6c42b)
+
+Además, si estos componentes ya no reciben soporte de sus desarrolladores, podrían no recibir actualizaciones de seguridad ni parches para las vulnerabilidades recién descubiertas, lo que los deja expuestos a la explotación durante un período prolongado.
 ---
 #### 7. **Identification and Authentication Failures:**
 Errores en la autenticación de usuarios que pueden permitir suplantación de identidad.
