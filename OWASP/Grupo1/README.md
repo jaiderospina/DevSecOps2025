@@ -62,7 +62,19 @@ Se centra en las fallas relacionadas con la criptografía (o la falta de ésta).
 
 #### 3. **A03:2021 - Inyección**
 
-Las fallas de inyección ocurren cuando los atacantes insertan datos no confiables u hostiles en lenguajes de comando o consulta, o cuando la aplicación no valida, filtra
+Resumen
+La Inyección desciende a la tercera posición. El 94% de las aplicaciones fueron probadas para algún tipo de inyección con una tasa de incidencia máxima del 19%, una tasa de incidencia promedio del 3% y 274.000 ocurrencias. Las CWE incluidas son CWE-79: Secuencia de Comandos en Sitios Cruzados (XSS), CWE-89: Inyección SQL, y la CWE-73:Control Externo de Nombre de archivos o ruta.
+
+Descripción
+Una aplicación es vulnerable a estos tipos de ataque cuando:
+
+Los datos proporcionados por el usuario no son validados, filtrados ni sanitizados por la aplicación.
+
+Se invocan consultas dinámicas o no parametrizadas, sin codificar los parámetros de forma acorde al contexto.
+
+Se utilizan datos dañinos dentro de los parámetros de búsqueda en consultas Object-Relational Mapping (ORM), para extraer registros adicionales sensibles.
+
+Se utilizan datos dañinos directamente o se concatenan, de modo que el SQL o comando resultante contiene datos y estructuras con consultas dinámicas, comandos o procedimientos almacenados.
 
 ##### **Ejemplo**
 
@@ -76,7 +88,11 @@ Las fallas de inyección ocurren cuando los atacantes insertan datos no confiabl
 
 #### 4. **A04:2021 - Diseño Inseguro**
 
-Se trata de una categoría amplia que representa diferentes debilidades, expresadas como controles de seguridad faltantes o ineficaces y fallas arquitectónicas. Estas fallas pueden ocurrir cuando una aplicación está diseñada para depender de procesos que son inherentemente inseguros o cuando no se implementan los controles de seguridad necesarios para defenderse contra ataques específicos.
+Resumen
+Una nueva categoría en la versión 2021. se centra en los riesgos relacionados con el diseño y las fallas arquitectónicas, exhortando a un mayor uso de: modelado de amenazas, patrones de diseño seguros y arquitecturas de referencia. Como comunidad, debemos ir más allá de la codificación y adoptar actividades cruciales para obtener Seguridad por Diseño. Debemos "mover a la izquierda" del proceso de desarrollo las actividades de seguridad. Las CWE notables incluidas son CWE-209: Generación de mensaje de error que contiene información confidencial, CWE-256: Almacenamiento desprotegido de credenciales, CWE-501: Violación de las fronteras de confianza y CWE-522: Credenciales protegidas insuficientemente.
+
+Descripción
+El diseño inseguro es una categoría amplia que representa diferentes debilidades, expresadas como "diseño de control faltante o ineficaz". El diseño inseguro no es la fuente de las otras 10 categorías. Existe una diferencia entre un diseño inseguro y una implementación insegura. Distinguimos entre fallas de diseño y defectos de implementación por un motivo, difieren en la causa raíz y remediaciones. Incluso un diseño seguro puede tener defectos de implementación que conduzcan a vulnerabilidades que pueden explotarse. Un diseño inseguro no se puede arreglar con una implementación perfecta, ya que, por definición, los controles de seguridad necesarios nunca se crearon para defenderse de ataques específicos. Uno de los factores que contribuyen al diseño inseguro es la falta de perfiles de riesgo empresarial inherentes al software o sistema que se está desarrollando y, por lo tanto, la falta de determinación del nivel de diseño de seguridad que se requiere.
 
 ##### **Ejemplo**
 
