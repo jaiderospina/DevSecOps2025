@@ -174,7 +174,8 @@ Estas fallas pueden provocar:
 - 
 ### 🖼️ Ejemplo gráfico
 
-![Monitoreo](https://media.licdn.com/dms/image/v2/D4E12AQFarhlofTupBw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700471014980?e=2147483647&v=beta&t=drYkwicEpBMmCX9VU-gPiG_GqNTcn47lfntbLYr5Srs)
+![image](https://github.com/user-attachments/assets/61571fb6-5970-4184-8a00-655295abb532)
+
 
 > *Imagen: Representación de una autenticación.*
 
