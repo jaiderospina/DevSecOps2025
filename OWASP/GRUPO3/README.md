@@ -139,7 +139,7 @@ La prevención de las vulnerabilidades de inyección es una de las prioridades d
 
 La configuración incorrecta de seguridad es una de las vulnerabilidades más comunes, pero también es una de las más fáciles de prevenir si se siguen las mejores prácticas y se realiza una configuración adecuada desde el principio.
 
-![image](https://github.com/user-attachments/assets/6b9bdc82-25ba-4303-8180-e1b03dc5e971)
+![image](https://github.com/user-attachments/assets/096baa2d-0e76-4b6b-8646-0715b2c7ba75)
 
 ---
 #### 5. **Security Misconfiguration:**
