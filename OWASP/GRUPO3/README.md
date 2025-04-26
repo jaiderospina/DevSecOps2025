@@ -144,6 +144,23 @@ La configuración incorrecta de seguridad es una de las vulnerabilidades más co
 ---
 #### 5. **Security Misconfiguration:**
 
+Security Misconfiguration" (o "Mala Configuración de Seguridad") se refiere a una vulnerabilidad que ocurre cuando los sistemas, aplicaciones o redes están mal configurados, lo que puede dejar brechas que los atacantes pueden explotar para acceder a datos o recursos no autorizados. Este tipo de fallo de seguridad puede ser causado por varias razones, como configuraciones incorrectas, credenciales predeterminadas sin cambiar, permisos excesivos, o la falta de actualizaciones de seguridad.
+
+**Ejemplos comunes de "Security Misconfiguration"**
+Contraseñas predeterminadas: Si los dispositivos o aplicaciones usan contraseñas predeterminadas que no se han cambiado, un atacante puede fácilmente acceder a ellos.
+Puertos abiertos innecesarios: Dejar puertos de red abiertos sin necesidad puede permitir que un atacante acceda a servicios o información sensible.
+Permisos incorrectos: Asignar permisos excesivos o incorrectos a usuarios o sistemas puede permitir el acceso no autorizado a datos sensibles.
+Falta de actualizaciones: No aplicar parches de seguridad o actualizaciones recomendadas en software y hardware puede dejar al sistema vulnerable a ataques.
+
+**¿Cómo prevenirla?**
+Revisar y actualizar configuraciones regularmente.
+Eliminar servicios o puertos innecesarios.
+Usar contraseñas fuertes y cambiarlas regularmente.
+Implementar políticas de acceso basadas en el principio de mínimo privilegio.
+Monitorear constantemente el sistema en busca de configuraciones incorrectas.
+![image](https://github.com/user-attachments/assets/e029f778-3116-41a6-b224-10912060deb3)
+
+Configuración incorrecta de servicios: Algunos servicios (como bases de datos o servidores web) pueden tener configuraciones por defecto que no son seguras, y no cambiarlas aumenta el riesgo de un ataque.
 ---
 #### 6. **Vulnerable and Outdated Components:**
 **Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.**
