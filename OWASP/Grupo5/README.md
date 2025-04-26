@@ -220,10 +220,15 @@ Para cada vulnerabilidad se presentan ejemplos de cómo puede ser explotada:
 
 | Vulnerabilidad             | Recomendaciones clave                                                   |
 |----------------------------|--------------------------------------------------------------------------|
-| Injection                  | Usa consultas preparadas (Prepared Statements).                         |
 | Broken Access Control      | Valida siempre roles y permisos del usuario.                           |
-| Security Misconfiguration  | Elimina funciones por defecto, actualiza todo regularmente.             |
 | Cryptographic Failures     | Usa algoritmos seguros (ej: AES, bcrypt), nunca reinventes la rueda.    |
+| Injection                  | Usa consultas preparadas (Prepared Statements).                         |
+| Security Misconfiguration  | Elimina funciones por defecto, actualiza todo regularmente.             |
+| Vulnerable and Outdated Components | Automatización del Ciclo de Actualización                       |
+| Identification and Authentication Failures	| Implementar Autenticación Multifactor (MFA)             |
+| Software and Data Integrity Failures	| Implementar Firmas Digitales y Hashing                        |
+| Server-Side Request Forgery (SSRF)	| Registros y Auditoría de Actividad                              |
+| Security Logging and Monitoring Failures	| Implementación de Monitoreo Continuo                     |
 | Outdated Components        | Usa herramientas como Dependabot para actualizar dependencias.          |
 
 
