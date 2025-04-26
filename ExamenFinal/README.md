@@ -240,3 +240,49 @@ En un proyecto **DevSecOps**, la documentación es clave para garantizar la inte
 - **Escalabilidad**: Documenta procesos repetibles para futuros proyectos.  
 
 
+---
+
+### **Herramientas de Escaneo de Vulnerabilidades en Contenedores**
+| **Herramienta**          | **Sitio Web**                              | **Descripción**                                                                 |
+|---------------------------|--------------------------------------------|---------------------------------------------------------------------------------|
+| **Trivy**                | [aquasec.github.io/trivy](https://aquasec.github.io/trivy/) | Escáner de código abierto para imágenes de contenedores, sistemas de archivos y repositorios. |
+| **Clair**                | [quay.io/clair](https://quay.io/clair)     | Herramienta de análisis estático de vulnerabilidades en contenedores (usada por Quay.io). |
+| **Anchore Engine**       | [anchore.com](https://anchore.com/)        | Escaneo detallado de imágenes Docker contra políticas personalizadas (CVE, compliance). |
+| **Docker Bench for Security** | [github.com/docker/docker-bench-security](https://github.com/docker/docker-bench-security) | Script para verificar prácticas recomendadas de seguridad en Docker. |
+| **Snyk Container**       | [snyk.io/product/container-vulnerability-management](https://snyk.io/product/container-vulnerability-management/) | Escaneo de vulnerabilidades en imágenes y dependencias, integración con CI/CD. |
+| **Prisma Cloud (Twistlock)** | [paloaltonetworks.com/prisma/cloud](https://www.paloaltonetworks.com/prisma/cloud) | Plataforma comercial para seguridad de contenedores (escaneo, runtime, compliance). |
+| **Aqua Security**        | [aquasec.com](https://aquasec.com/)        | Suite para escanear imágenes, runtime y gestión de vulnerabilidades en contenedores. |
+| **Grype**                | [github.com/anchore/grype](https://github.com/anchore/grype) | Escáner de vulnerabilidades de código abierto para imágenes y sistemas de archivos. |
+| **Falco**                | [falco.org](https://falco.org/)            | Herramienta de monitoreo en tiempo real para detectar comportamientos sospechosos (runtime). |
+| **Checkov**              | [checkov.io](https://www.checkov.io/)      | Escaneo de infraestructura como código (IaC) y configuraciones de contenedores. |
+| **Sysdig Secure**        | [sysdig.com](https://sysdig.com/)          | Escaneo de imágenes, runtime y compliance para Kubernetes y contenedores. |
+| **MicroScanner (Aqua)**  | [github.com/aquasecurity/microscanner](https://github.com/aquasecurity/microscanner) | Escáner gratuito para integración en pipelines CI/CD. |
+| **NeuVector**            | [neuvector.com](https://neuvector.com/)    | Solución de seguridad para contenedores (escaneo, firewall, runtime). |
+| **Harbor**               | [goharbor.io](https://goharbor.io/)        | Registro de contenedores con escaneo integrado de vulnerabilidades (usa Clair). |
+| **DependencyTrack**      | [dependencytrack.org](https://dependencytrack.org/) | Gestión de SBOM (Software Bill of Materials) y vulnerabilidades en dependencias. |
+| **Lynis**                | [cisofy.com/lynis](https://cisofy.com/lynis/) | Auditoría de seguridad en sistemas y contenedores (incluye hardening). |
+| **Hadolint**             | [github.com/hadolint/hadolint](https://github.com/hadolint/hadolint) | Linter para Dockerfiles que detecta malas prácticas y configuraciones inseguras. |
+
+---
+
+### **Herramientas Adicionales Útiles**
+- **Kube-bench**: [github.com/aquasecurity/kube-bench](https://github.com/aquasecurity/kube-bench)  
+  *Verifica la configuración de Kubernetes contra las prácticas de CIS Benchmark*.
+
+- **Kube-hunter**: [github.com/aquasecurity/kube-hunter](https://github.com/aquasecurity/kube-hunter)  
+  *Pruebas de penetración para clústeres de Kubernetes*.
+
+- **Notary** (TUF): [github.com/theupdateframework/notary](https://github.com/theupdateframework/notary)  
+  *Firma y verificación de imágenes de contenedores para garantizar su integridad*.
+
+---
+
+### **Recomendaciones de Uso**
+- **Integración en CI/CD**: Usa herramientas como **Trivy**, **Snyk** o **Checkov** en pipelines para escaneo automatizado.  
+- **Runtime**: Combina escaneo estático (pre-despliegue) con herramientas de runtime como **Falco** o **Sysdig**.  
+- **Hardening**: Aplica **Docker Bench for Security** o **Lynis** para asegurar la configuración base.  
+
+## Referencias
+
+- https://geko.cloud/es/dependency-track-analiza-tus-vulnerabilidades-por-el-uso-de-componentes-de-terceros/
+
