@@ -160,7 +160,6 @@ Implementar políticas de acceso basadas en el principio de mínimo privilegio.
 Monitorear constantemente el sistema en busca de configuraciones incorrectas.
 ![image](https://github.com/user-attachments/assets/e029f778-3116-41a6-b224-10912060deb3)
 
-Configuración incorrecta de servicios: Algunos servicios (como bases de datos o servidores web) pueden tener configuraciones por defecto que no son seguras, y no cambiarlas aumenta el riesgo de un ataque.
 ---
 #### 6. **Vulnerable and Outdated Components:**
 **Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.**
