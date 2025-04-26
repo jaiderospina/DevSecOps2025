@@ -94,6 +94,7 @@ Robo de datos debido a falta de cifrado en tránsito (por ejemplo, uso de HTTP e
 ---
 #### 3. **Injection:**
 **Ataques como SQL Injection que permiten ejecutar comandos maliciosos a través de entradas no validadas.**
+
 OWASP se refiere a la inyección como una falla de seguridad donde datos no confiables son enviados a un intérprete (como un motor de base de datos, un sistema operativo o un navegador web) de tal manera que alteran la intención original de los comandos que se están ejecutando.
 **Existen varios tipos de inyección, siendo los más comunes mencionados por OWASP:**
 **Inyección SQL:** Explotación de vulnerabilidades en la forma en que las aplicaciones interactúan con las bases de datos SQL.
@@ -106,30 +107,42 @@ La prevención de las vulnerabilidades de inyección es una de las prioridades d
 
 ---
 #### 4. **Insecure Design:**
-Diseños de sistemas que no consideran la seguridad desde el inicio del desarrollo.
----
-#### 5. **Security Misconfiguration:** 
+
 **Configuración incorrecta de seguridad (Security Misconfiguration)** se refiere a una vulnerabilidad que ocurre cuando una aplicación, servidor o sistema no está configurado adecuadamente para prevenir accesos no autorizados o explotación. Esto puede suceder en cualquier nivel de la pila de la aplicación, como la red, el sistema operativo, la base de datos o la propia aplicación. Puede originarse por configuraciones incorrectas o la falta de seguimiento de las mejores prácticas de seguridad.
+
 **Ejemplos comunes de configuración incorrecta de seguridad:**
 
 **1**: Credenciales predeterminadas: Dejar los nombres de usuario y contraseñas predeterminadas (por ejemplo, "admin"/"admin") sin cambiar, lo que facilita que los atacantes las adivinen o busquen.
+
 **2**:Datos sensibles expuestos: Dejar archivos sensibles (como archivos de configuración, claves privadas o credenciales) accesibles a usuarios no autorizados.
+
 **3**:Permisos excesivos: Otorgar a los usuarios o procesos privilegios innecesarios, permitiéndoles acceder o modificar datos que no deberían.
+
 **4**:Servicios innecesarios en ejecución: Dejar servicios o puertos abiertos que no son necesarios para la aplicación o sistema. Por ejemplo, un servidor web podría tener habilitado el acceso SSH cuando no es necesario.
+
 **5**:Cabeceras HTTP mal configuradas: Por ejemplo, no configurar cabeceras HTTP como Content Security Policy (CSP), X-Content-Type-Options o HTTP Strict Transport Security (HSTS), dejando la aplicación vulnerable a ataques como Cross-Site Scripting (XSS) o ataques de intermediarios (MITM).
+
 **6**:Software desactualizado: Ejecutar versiones antiguas de software (como CMS, frameworks, bibliotecas) con vulnerabilidades conocidas debido a no aplicar parches o actualizaciones.
+
 **7**:Mensajes de error o depuración expuestos: Dejar mensajes de error detallados o información de depuración visibles para los usuarios finales, lo que puede revelar información sobre el funcionamiento interno del sistema.
 
 **PREVENCIÒN**
 **1**:Minimizar la superficie de ataque: Deshabilitar o eliminar servicios y características innecesarias.
+
 **2**:Usar configuraciones seguras: Seguir guías de configuración segura para software, aplicaciones y servidores (por ejemplo, las CIS Benchmarks).
+
 **-3**:Actualizar regularmente el software: Mantener todos los componentes, incluidas las bibliotecas de terceros, actualizados.
+
 **4**:Control de acceso basado en roles (RBAC): Implementar el principio de mínimos privilegios, asegurando que los usuarios y sistemas solo tengan acceso a lo que necesitan.
+
 **5**:Monitoreo y auditoría continua: Realizar auditorías y monitorear regularmente las configuraciones y accesos a los sistemas.
 
 La configuración incorrecta de seguridad es una de las vulnerabilidades más comunes, pero también es una de las más fáciles de prevenir si se siguen las mejores prácticas y se realiza una configuración adecuada desde el principio.
 
 ![image](https://github.com/user-attachments/assets/6b9bdc82-25ba-4303-8180-e1b03dc5e971)
+
+---
+#### 5. **Security Misconfiguration:**
 
 ---
 #### 6. **Vulnerable and Outdated Components:**
