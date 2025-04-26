@@ -129,7 +129,8 @@ Diseños de sistemas que no consideran la seguridad desde el inicio del desarrol
 
 La configuración incorrecta de seguridad es una de las vulnerabilidades más comunes, pero también es una de las más fáciles de prevenir si se siguen las mejores prácticas y se realiza una configuración adecuada desde el principio.
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fqawerk.com%2Fblog%2Fsecurity-misconfiguration%2F&psig=AOvVaw1ukcwnpAY4tv0wJgyh5ZK_&ust=1745757414452000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDN06vb9YwDFQAAAAAdAAAAABAY
+![image](https://github.com/user-attachments/assets/6b9bdc82-25ba-4303-8180-e1b03dc5e971)
+
 ---
 #### 6. **Vulnerable and Outdated Components:**
 **Uso de librerías, dependencias o sistemas obsoletos con vulnerabilidades conocidas.**
