@@ -109,8 +109,27 @@ La prevención de las vulnerabilidades de inyección es una de las prioridades d
 Diseños de sistemas que no consideran la seguridad desde el inicio del desarrollo.
 ---
 #### 5. **Security Misconfiguration:** 
-**Configuraciones inseguras en servidores, frameworks o software que abren puertas a atacantes.**
-La configuración incorrecta de seguridad se refiere a vulnerabilidades derivadas de configuraciones incorrectas en aplicaciones web, servidores, bases de datos u otros componentes de una infraestructura de TI. Estas configuraciones incorrectas pueden ocurrir en cualquier nivel de la pila de aplicaciones, incluyendo configuraciones predeterminadas, funciones innecesarias o controles de seguridad deficientes, como contraseñas predeterminadas o instancias de bases de datos abiertas. Cuando los sistemas no están configurados de forma segura, se vuelven vulnerables a ataques, lo que permite accesos no autorizados, filtraciones de datos y otros incidentes de seguridad. Una configuración correcta es crucial para mantener la integridad, la confidencialidad y la disponibilidad de una aplicación.
+**Configuración incorrecta de seguridad (Security Misconfiguration)** se refiere a una vulnerabilidad que ocurre cuando una aplicación, servidor o sistema no está configurado adecuadamente para prevenir accesos no autorizados o explotación. Esto puede suceder en cualquier nivel de la pila de la aplicación, como la red, el sistema operativo, la base de datos o la propia aplicación. Puede originarse por configuraciones incorrectas o la falta de seguimiento de las mejores prácticas de seguridad.
+**Ejemplos comunes de configuración incorrecta de seguridad:**
+
+**1**: Credenciales predeterminadas: Dejar los nombres de usuario y contraseñas predeterminadas (por ejemplo, "admin"/"admin") sin cambiar, lo que facilita que los atacantes las adivinen o busquen.
+**2**:Datos sensibles expuestos: Dejar archivos sensibles (como archivos de configuración, claves privadas o credenciales) accesibles a usuarios no autorizados.
+**3**:Permisos excesivos: Otorgar a los usuarios o procesos privilegios innecesarios, permitiéndoles acceder o modificar datos que no deberían.
+**4**:Servicios innecesarios en ejecución: Dejar servicios o puertos abiertos que no son necesarios para la aplicación o sistema. Por ejemplo, un servidor web podría tener habilitado el acceso SSH cuando no es necesario.
+**5**:Cabeceras HTTP mal configuradas: Por ejemplo, no configurar cabeceras HTTP como Content Security Policy (CSP), X-Content-Type-Options o HTTP Strict Transport Security (HSTS), dejando la aplicación vulnerable a ataques como Cross-Site Scripting (XSS) o ataques de intermediarios (MITM).
+**6**:Software desactualizado: Ejecutar versiones antiguas de software (como CMS, frameworks, bibliotecas) con vulnerabilidades conocidas debido a no aplicar parches o actualizaciones.
+**7**:Mensajes de error o depuración expuestos: Dejar mensajes de error detallados o información de depuración visibles para los usuarios finales, lo que puede revelar información sobre el funcionamiento interno del sistema.
+
+**PREVENCIÒN**
+**1**:Minimizar la superficie de ataque: Deshabilitar o eliminar servicios y características innecesarias.
+**2**:Usar configuraciones seguras: Seguir guías de configuración segura para software, aplicaciones y servidores (por ejemplo, las CIS Benchmarks).
+**-3**:Actualizar regularmente el software: Mantener todos los componentes, incluidas las bibliotecas de terceros, actualizados.
+**4**:Control de acceso basado en roles (RBAC): Implementar el principio de mínimos privilegios, asegurando que los usuarios y sistemas solo tengan acceso a lo que necesitan.
+**5**:Monitoreo y auditoría continua: Realizar auditorías y monitorear regularmente las configuraciones y accesos a los sistemas.
+
+La configuración incorrecta de seguridad es una de las vulnerabilidades más comunes, pero también es una de las más fáciles de prevenir si se siguen las mejores prácticas y se realiza una configuración adecuada desde el principio.
+
+https://qawerk.com/wp-content/uploads/2022/11/Lead_magnet.svg
 
 ![image](https://github.com/user-attachments/assets/0ad91434-0578-4fed-a371-ac745c5d5f68)
 ---
