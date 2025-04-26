@@ -154,8 +154,6 @@ Las causas de la vulnerabilidad de inyección son varias y generalmente están r
 
 **Insecure Design:**
 
-***Naturaleza:***
-
 <p style="text-align: center;">
   <img src="https://logique.s3.ap-southeast-1.amazonaws.com/2024/06/insecure-design-adalah.webp" alt="Descripción de la imagen" />
 </p>
@@ -166,6 +164,8 @@ La naturaleza de la vulnerabilidad de diseño inseguro está relacionada con la 
 - Superficies de ataque innecesarias.
 - Descuido en la privacidad de los datos.
 - Falta de validación de entrada.
+
+***Naturaleza:***
 
 ***Causas:***
 
