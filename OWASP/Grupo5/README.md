@@ -66,13 +66,6 @@ Para cada vulnerabilidad se presentan ejemplos de cómo puede ser explotada:
 - **SQL Injection**: El atacante inserta código SQL malicioso en formularios o URLs.
 - **Broken Access Control**: Acceso a páginas restringidas mediante modificación de URLs.
 - **Insecure Design**: Falta de validaciones permite comportamientos no deseados.
-- **Vulnerable and Outdated Components**: Dependencias, frameworks o bibliotecas obsoletos o con vulnerabilidades conocidas, pero que siguen utilizándose en una aplicación . Falta de parches. Software sin soporte.
-- **Cryptographic Failures** : Se centran en la manipulación o eludir la seguridad de las aplicaciones web al explotar debilidades en la implementación criptográfica. Estos métodos incluyen ataques de fuerza bruta, ataques de texto plano conocido, ataques de hombre en el medio, y el uso de algoritmos criptográficos débiles o en desuso.
-- **Security Misconfiguration** : Implica aprovechar fallas en la configuración de una aplicación para obtener acceso no autorizado, elevar privilegios o comprometer la integridad del sistema.
-- **Identification and Authentication Failures** : Debilidades en la forma en que una aplicación web maneja la identificación y autenticación de usuarios. Esto puede permitir a atacantes suplantar la identidad de usuarios, acceder a recursos protegidos o comprometer la integridad de la aplicación. 
-- **Software and Data Integrity Failures** : Se pueden llegar a explotar cuando un atacante manipula, modifica o elimina datos sin autorización, o cuando la aplicación no verifica la integridad de los datos o software. Esto puede ocurrir a través de varias técnicas, incluyendo la manipulación de datos, el uso de actualizaciones no verificadas, o la inyección de código malicioso. 
-- **Security Logging and Monitoring Failures** : Estos fallos pueden impedir que los operadores detecten rápidamente intrusiones o ataques, lo que puede permitir que los atacantes permanezcan en el sistema durante un tiempo prolongado, causando mayor daño.
-- **Server-Side Request Forgery (SSRF)** : Implica manipular una aplicación web o API para que realice solicitudes HTTP a recursos internos o externos no autorizados, utilizando la funcionalidad del servidor en lugar del cliente. Esto puede ocurrir cuando la aplicación no valida o depura adecuadamente las URL o datos de entrada proporcionados por el usuario. 
   
 > 🔧 Herramientas comunes:
 > - [Burp Suite](https://portswigger.net/burp)
