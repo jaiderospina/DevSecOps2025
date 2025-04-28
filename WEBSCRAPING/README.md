@@ -6,7 +6,7 @@ El web scraping es una técnica que consiste en **extraer información de sitios
 
 Ahora, pensando en un proyecto que involucre DevOps y ciberseguridad, podríamos proponer el siguiente:
 
-** Ejemplo ---->  Proyecto: Plataforma de Monitoreo de Precios Competitivos Segura y Automatizada**
+**Ejemplo ---->  Proyecto: Plataforma de Monitoreo de Precios Competitivos Segura y Automatizada**
 
 **Descripción del Proyecto:**
 
