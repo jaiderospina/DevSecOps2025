@@ -119,6 +119,7 @@ Como se explico en clase adoptar las prçticas adoptadas en los anteriores labor
 
 - https://github.com/SabyasachiRana/WebMap
 - https://securedrop.org/
+- https://nucleiprompts.com/prompt.php?vuln_id=4
 
 
 *********
@@ -285,4 +286,5 @@ En un proyecto **DevSecOps**, la documentación es clave para garantizar la inte
 ## Referencias
 
 - https://geko.cloud/es/dependency-track-analiza-tus-vulnerabilidades-por-el-uso-de-componentes-de-terceros/
+  
 
