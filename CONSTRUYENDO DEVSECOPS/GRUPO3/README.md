@@ -9,13 +9,13 @@ Generar un SBOM (Software Bill of Materials) automáticamente desde un proyecto 
 
 ---
 
-¿Qué es un SBOM?
+## ¿Qué es un SBOM?
 Un SBOM es un inventario detallado de todos los componentes de software (dependencias, bibliotecas, versiones, etc.) incluidos en una aplicación. Es clave para gestionar vulnerabilidades y cumplir con normas sobre ciberseguridad. Ayuda a:
 - Identificar vulnerabilidades conocidas.
 - Facilitar auditorías de seguridad.
 - Cumplir con regulaciones.
 ---
-Generar SBOM en Node.js
+## Generar SBOM en Node.js
 
 Herramienta recomendada: CycloneDX + Node.js.
 
@@ -42,7 +42,7 @@ Esto generará un archivo SBOM en formato CycloneDX usando las dependencias list
 
 ---
 
- Formatos comunes de SBOM
+ ## Formatos comunes de SBOM
 
  - CycloneDX (JSON/XML)
  - SPDX (Software Package Data Exchange)
@@ -71,7 +71,7 @@ ejemplo práctico de cómo generar un SBOM automáticamente en un proyecto Node.
 
   integrar la generación automática de un SBOM en un pipeline CI/CD, tanto en GitHub Actions
 
- Estructura esperada:
+## Estructura esperada:
 
  El  proyecto ya debe tener su código y un archivo requirements.txt (Python) o package-lock.json (Node.js).
 
