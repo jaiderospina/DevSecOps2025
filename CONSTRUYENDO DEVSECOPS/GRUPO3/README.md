@@ -123,41 +123,8 @@ GitHub Actions necesita este archivo para saber exactamente qué dependencias ti
 Crea un archivo en tu repositorio en:
 .github/workflows/sbom.yml
 
-name: Generar SBOM
+![image](https://github.com/user-attachments/assets/4ed2238a-af17-4fd8-bb5b-dbcc618f398a)
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  sbom:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Clonar el repositorio
-        uses: actions/checkout@v3
-
-      - name: Instalar Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'  # Ajusta según tu versión de Node
-
-      - name: Instalar dependencias
-        run: npm ci
-
-      - name: Instalar herramienta CycloneDX
-        run: npm install -g @cyclonedx/bom
-
-      - name: Generar SBOM
-        run: cyclonedx-bom -o sbom.xml
-
-      - name: Guardar SBOM como artefacto
-        uses: actions/upload-artifact@v3
-        with:
-          name: sbom
-          path: sbom.xml
 
 **Resultado**
 1. Instala tus dependencias.
