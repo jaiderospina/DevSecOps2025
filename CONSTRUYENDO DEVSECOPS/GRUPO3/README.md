@@ -1,3 +1,6 @@
+SBOM (Software Bill of Materials)
+
+---
 
 Generar un SBOM (Software Bill of Materials) automáticamente desde un proyecto como Node.js o Python es una práctica fundamental para la seguridad del software, ya que permite listar de forma estructurada todas las dependencias y componentes usados. A continuación, te explico cómo hacerlo en ambos entornos:
 
@@ -76,12 +79,13 @@ ejemplo práctico de cómo generar un SBOM automáticamente en un proyecto Node.
  ---
 
  Grupo3:
-
+--
  - Sara Sofia Moreno
  - Juan Camilo Cristiano
- - Luis Alejandro
- - Jhonatan
+ - Luis Alejandro Romero
+ - Yonatan Castellanos
  - Marlon Artunduaga
 
+---
  
 
