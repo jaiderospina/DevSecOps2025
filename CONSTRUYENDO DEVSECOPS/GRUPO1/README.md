@@ -164,7 +164,7 @@ cyclonedx-bom -o tourisplan-sbom.json -j
 
 ```
 
-##Pasos generales para generar un SBOM automático desde Python:
+## Pasos generales para generar un SBOM automático desde Python:
 
 1. Elige una herramienta de generación SBOM:
 
