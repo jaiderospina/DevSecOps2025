@@ -164,4 +164,27 @@ cyclonedx-bom -o tourisplan-sbom.json -j
 
 ```
 
+Pasos generales para generar un SBOM automático desde Python:
 
+1. Elige una herramienta de generación SBOM:
+
+Syft: Una herramienta de línea de comandos y biblioteca de Go que puede generar SBOMs para una variedad de lenguajes y formatos. 
+CycloneDX Python SBOM Generation Tool: Herramienta específica para Python que soporta diferentes formatos de dependencia. 
+sbom4python: Una herramienta gratuita de código abierto que genera SBOMs en diversos formatos, incluyendo SPDX y CycloneDX. 
+distro2sbom: Genera SBOM para aplicaciones o instalaciones completas del sistema en diversos formatos. 
+
+2. Instala la herramienta elegida:
+
+Utiliza pip para instalar la herramienta: pip install syft o pip install cyclone-dx o pip install sbom4python. 
+
+3. Ejecuta la herramienta:
+
+La herramienta utilizará los archivos de dependencia de tu proyecto para generar el SBOM. Por ejemplo, para Syft: syft -f json . > my_project_sbom.json (esto genera un SBOM en formato JSON). 
+Para CycloneDX: cyclonedx-python-sbom . -o my_project_sbom.xml (esto genera un SBOM en formato XML). 
+
+Ejemplo usando Syft:
+Código
+
+pip install syft
+syft -f json . > my_project_sbom.json
+Este comando instalará Syft y luego generará un archivo my_project_sbom.json que contendrá el SBOM de tu proyecto en formato JSON. 
