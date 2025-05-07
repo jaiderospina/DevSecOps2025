@@ -1,3 +1,14 @@
+¿Qué son los SBOM, las herramientas SCA y por qué son importantes?
+En primer lugar, SBOM significa Lista de Materiales de Software y sirve como un inventario completo de todos los componentes y dependencias de software de un proyecto. Para Node.js, mantener una SBOM precisa es vital debido a la naturaleza cambiante de los paquetes npm.
+
+SCA significa herramientas de análisis de composición de software, que son esenciales para identificar y gestionar vulnerabilidades en estos componentes y garantizar que sus aplicaciones se mantengan seguras.
+
+ 
+
+¿Qué es Node.js y npm?
+npm es el administrador de paquetes para Node.js, un entorno de ejecución de JavaScript multiplataforma y de código abierto . npm permite a los desarrolladores compartir y reutilizar código, y contiene más de un millón de paquetes.
+
+
 # Creating SBOMs from npm Projects
 
 ## Introduction
