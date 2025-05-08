@@ -1,4 +1,4 @@
-# Quées un SBOM
+# Qué es un SBOM
 
 SBOM es el acrónimo de Lista de Materiales de Software (Software Bill of Materials) , que es una lista de todos los paquetes npm de código abierto que forman parte de tu proyecto. Pero no se limita solo a paquetes de código abierto o de software, sino que puede incluir bibliotecas de sistemas operativos, inventario de microservicios y más.
 
