@@ -58,6 +58,10 @@ Proporciona un historial claro de los componentes utilizados en cada versión de
 - Mejora la confianza de clientes y stakeholders
 - Permite reproducibilidad de builds
 
+### 6. Auditoría y control de calidad
+
+Facilita procesos de verificación y aseguramiento de la integridad del software.}
+
 ---
 
 ## 📑 Contenido recomendado de una SBOM
