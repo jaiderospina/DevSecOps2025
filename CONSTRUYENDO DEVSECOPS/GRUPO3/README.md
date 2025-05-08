@@ -1,4 +1,4 @@
-xx|# SBOM (Software Bill of Materials)
+|# SBOM (Software Bill of Materials)
 
    ![image](https://github.com/user-attachments/assets/fbb9eab6-5f36-4470-b823-b38f8fae7af7)
 
