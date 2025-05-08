@@ -7,11 +7,11 @@ Sus paquetes de software npm se representarían en dos archivos: el package.json
 
 ## ¿Por qué es importante?
 
-Seguridad: Saber qué versiones de librerías usas y si tienen vulnerabilidades conocidas.
+- Seguridad: Saber qué versiones de librerías usas y si tienen vulnerabilidades conocidas.
 
-Cumplimiento: Verificar licencias de dependencias.
+- Cumplimiento: Verificar licencias de dependencias.
 
-Transparencia: Mejora el mantenimiento y auditoría del software.
+- Transparencia: Mejora el mantenimiento y auditoría del software.
 
 ## ¿Qué contiene un SBoM?
 Una Lista de Materiales de Software (SBOM) es un registro formal que detalla los componentes y dependencias de un producto de software, similar a la lista de ingredientes de una receta. En respuesta a la Orden Ejecutiva de Ciberseguridad de mayo de 2021 , la Administración Nacional de Telecomunicaciones e Información (NTIA) publicó directrices sobre los elementos mínimos requeridos en una SBOM. Estas directrices contribuyen a mejorar la transparencia, la seguridad y la integridad de las cadenas de suministro de software.
