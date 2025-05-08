@@ -1,4 +1,4 @@
-# SBOM (Software Bill of Materials)
+xx|# SBOM (Software Bill of Materials)
 
    ![image](https://github.com/user-attachments/assets/fbb9eab6-5f36-4470-b823-b38f8fae7af7)
 
@@ -14,7 +14,7 @@ La SBOM (del inglés Software Bill of Materials) es un inventario detallado de l
 - Identificar vulnerabilidades conocidas.
 - Facilitar auditorías de seguridad.
 - Cumplir con regulaciones.
-
+En otras palabras, el SBOM es una lista detallada de "ingredientes" del software, que documenta qué software se usa, quién lo proporciona, en qué versión está, y cómo se relaciona con otros componentes.
 ---
 # 📘 Guía Profesional sobre SBOM (Software Bill of Materials)
 
