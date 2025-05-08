@@ -182,9 +182,10 @@ Esto generará un archivo SBOM en formato CycloneDX usando las dependencias list
 
  ## Formatos comunes de SBOM
 
- - CycloneDX (JSON/XML)
- - SPDX (Software Package Data Exchange)
- - SWID (Software Identification Tags)
+Existen varios formatos y estándares reconocidos internacionalmente para estructurar un SBOM, entre ellos:
+ - CycloneDX (JSON/XML): Promovido por OWASP, con enfoque en seguridad.
+ - SPDX (Software Package Data Exchange): Desarrollado por la Linux Foundation.
+ - SWID (Software Identification Tags) : Utilizado por grandes empresas y organismos gubernamentales.
 
 ---
 **Buenas prácticas**
@@ -245,6 +246,13 @@ Puedes encontrar el archivo SBOM en la pestaña Actions de GitHub > elegir el wo
  
  ![image](https://github.com/user-attachments/assets/41328dc9-3df4-44a6-9a23-f3f9d1498a06)
 
+ ## Relevancia actual
+
+ En 2021, el gobierno de Estados Unidos emitió una orden ejecutiva que establece el uso de SBOM como requisito obligatorio en contratos de software con entidades federales, marcando un hito en su adopción.
+
+Las organizaciones modernas —desde startups hasta gobiernos— están implementando SBOM como parte de su estrategia de seguridad y gestión de riesgos, especialmente frente a la creciente ola de amenazas en la cadena de suministro de software.
+
+ 
  ---
 
  Grupo3:
