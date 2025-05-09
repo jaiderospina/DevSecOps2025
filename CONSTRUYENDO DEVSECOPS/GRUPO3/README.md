@@ -252,7 +252,26 @@ Puedes encontrar el archivo SBOM en la pestaña Actions de GitHub > elegir el wo
 
 Las organizaciones modernas —desde startups hasta gobiernos— están implementando SBOM como parte de su estrategia de seguridad y gestión de riesgos, especialmente frente a la creciente ola de amenazas en la cadena de suministro de software.
 
- 
+## Ventajas de un SBOM
+
+- Identificación de vulnerabilidades:
+Permite identificar rápidamente vulnerabilidades en componentes de software, lo que facilita su remediación y mejora la seguridad general del producto. 
+
+- Gestión de licencias:
+Facilita el seguimiento y la gestión de las licencias de los componentes de software, evitando posibles problemas legales y mejorando el cumplimiento.
+
+- Respuesta a incidentes:
+Permite una respuesta más rápida y efectiva a incidentes de seguridad, al facilitar la identificación de los componentes afectados y la implementación de medidas de mitigación
+
+- Ahorro de tiempo y costos:
+Automatiza la recopilación y gestión de información sobre los componentes de software, reduciendo el tiempo y los costos asociados con la seguridad y el cumplimiento.
+
+- Optimización de los procesos de desarrollo:
+Permite una mejor planificación y ejecución de las pruebas de seguridad, al identificar de forma temprana posibles vulnerabilidades y riesgos
+
+- Reducción de riesgos:
+Ayuda a reducir el riesgo de ataques a la cadena de suministro, al identificar y mitigar los riesgos asociados con componentes de software vulnerables o maliciosos. 
+
  ---
 
  Grupo3:
