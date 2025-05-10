@@ -40,7 +40,11 @@ Desarrollar una aplicación web para la administración de los servicios de hosp
 ## Objetivos específicos
 
 •	Definir los requerimientos funcionales y no funcionales para dimensionar el sistema a partir de las entrevistas con los usuarios de la aplicación.
+
 •	Implementar el módulo de servicio de alojamiento para la gestión de la información del hospedaje con base en las historias de usuario.
+
 •	Codificar el módulo de servicio de cafetería ayudando a mejorar la administración del inventario y las ventas utilizando el lenguaje de programación de PHP.
+
 •	Implementar el módulo de Dashboard para visualizar la información relevante para los administradores de la Casa del Café usando gráficas e indicadores de resumen.
+
 
