@@ -8,8 +8,10 @@ En este documento se describe el proceso que se llevó a cabo para el desarrollo
 
 ## Introducción
 Casa del Café es un negocio familiar que comenzó su labor en 2009, como una cafetería ofreciendo café de la región del Huila. En 2017, se convirtió en un hostal para alojar a los turistas y locales.
+
 Casa del Café manejaba la información de la cafetería y el hospedaje de manera manual, lo que ocasionaba la pérdida de información, no llevar un buen registro de las ventas de la cafetería y desconocimiento de los productos que se tenían en stock. Además, para el servicio de hospedaje no se contaba con el registro de los clientes hospedados en el lugar, ni el control de las llegadas de los clientes y la asignación de las habitaciones.
 El presente trabajo propuso el desarrollo de una aplicación web para administrar el inventario y las ventas de los productos de la cafetería y la gestión de reservas del hospedaje. Este software apoya la realización de los procesos y actividades tanto del hospedaje como de la cafetería, permitiendo la administración de la información de los servicios que brinda la Casa del Café.
+
 La aplicación web consideró las siguientes funcionalidades: el módulo de hospedaje para la gestión de las reservas y el registro de los huéspedes; el módulo de cafetería que incluye el control de inventario y de las ventas; el módulo de administración para la gestión de los usuarios y el dashboard que permite visualizar información relevante de los dos servicios. El desarrollo de la aplicación web se realizó aplicando la metodología incremental, que facilitó manejar las tareas a realizar durante cada una de las etapas del trabajo. 
 
 
