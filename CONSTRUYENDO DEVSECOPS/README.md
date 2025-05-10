@@ -26,8 +26,6 @@ Hoy en día, los SBOM son muy importantes, sobre todo tras normativas como el **
 
 # Ejemplo No 1.
 
-¡Perfecto! Vamos a verlo.
-
 Un **SBOM** puede presentarse en varios formatos (como **CycloneDX**, **SPDX** o **SWID**), este ejemplo de manera sencilla ilustra un caso en formato **SPDX** (uno de los más comunes), que es básicamente un archivo de texto estructurado.
 
 Imagina que tienes un proyecto llamado `MiAppWeb` que usa dos librerías: `React v18.2.0` y `Axios v1.5.0`.  
@@ -75,7 +73,7 @@ También en empresas grandes, los SBOM son mucho más extensos e incluyen **cien
 
 # Ejemplo No 2
 
-¡Excelente! Aquí tienes un ejemplo visual de un **SBOM (Software Bill of Materials)** en **formato de tabla**, como podría verse en una herramienta de gestión o en una hoja de cálculo:
+Un **SBOM (Software Bill of Materials)** en **formato de tabla**, como podría verse en una herramienta de gestión o en una hoja de cálculo:
 
 | **Nombre del Componente** | **Versión** | **Proveedor**           | **Licencia** | **Ubicación de Descarga**                          | **Hash (SHA-256)**                              |
 |---------------------------|-------------|--------------------------|--------------|----------------------------------------------------|--------------------------------------------------|
