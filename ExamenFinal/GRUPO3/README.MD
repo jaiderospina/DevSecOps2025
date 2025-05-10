@@ -193,6 +193,12 @@ Esta arquitectura promueve la separación de responsabilidades, lo que facilita 
 
 **•	Reportes:** muestras graficas semanales de los ingresos de la cafetería y el hospedaje
 
+## Requerimientos no funcionales 
+**•	Seguridad:** como información de usuarios y el ingreso de un usuario y contraseña.
+
+**•	Disponibilidad:** la plataforma debe estar disponible las 24 horas del día, los 7 días de la semana, para asegurar que los administradores puedan acceder y realizar tareas en cualquier momento necesario.
+
+**● Escalabilidad:** el sistema debe ser escalable para acomodar un crecimiento en el número de habitaciones, mesas en la cafetería y usuarios administradores.
 
 
 
