@@ -21,5 +21,6 @@ La información de la cafetería y el hospedaje se manejaba de forma manual, gen
 
 Por lo tanto, en el presente trabajo de grado se propuso realizar una aplicación web cuya finalidad es administrar el inventario y las ventas de los productos de la cafetería y gestionar las reservas del hospedaje, buscando simplificar el manejo de la información y los procesos del hospedaje y la cafetería de la Casa del Café.
 
-
+## Formulación del problema
+Con el desarrollo de una aplicación web que facilita la realización de las reservas, el registro de los huéspedes y la asignación de las habitaciones, el registro y control del inventario de los productos de la cafetería, así como, la visualización gráfica de la información relevante del servicio de hospedaje y cafetería, ¿los administradores de la Casa del Café podrán simplificar el manejo de la información y los procesos de estos dos servicios?
 
