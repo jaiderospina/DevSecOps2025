@@ -95,6 +95,113 @@ Aunque la operación principal se realiza en Colombia, se toman como referencia 
 •	Derecho de acceso, rectificación y eliminación de datos.
 
 •	Limitación de acceso a información personal a usuarios autorizados únicamente.
+## Buenas prácticas alineadas con la norma ISO/IEC 27001
+Se aplican principios de la norma para el establecimiento de un Sistema de Gestión de Seguridad de la Información (SGSI), incluyendo:
+
+•	Control de acceso basado en roles.
+
+•	Respaldo periódico de bases de datos.
+
+•	Mecanismos de autenticación segura (usuario y contraseña cifrada).
+
+•	Registro de actividades en el sistema (logs) para auditoría.
+Se aplican principios de la norma para el establecimiento de un Sistema de Gestión de Seguridad de la Información (SGSI), incluyendo:
+
+•	Control de acceso basado en roles.
+
+•	Respaldo periódico de bases de datos.
+
+•	Mecanismos de autenticación segura (usuario y contraseña cifrada).
+
+•	Registro de actividades en el sistema (logs) para auditoría.
+
+## Estrategia de Gestión de Riesgos y Responsabilidades del Equipo
+
+## Identificación y análisis de riesgos
+Se realiza una evaluación periódica de riesgos tecnológicos asociados a la operación del sistema, considerando amenazas como:
+
+•	Pérdida de información por fallos del sistema.
+
+•	Accesos no autorizados.
+
+•	Fallas en la disponibilidad del servicio.
+
+## Medidas de mitigación adoptadas
+•	Implementación de firewalls y cifrado en tránsito (HTTPS).
+
+•	Control de versiones y respaldo automático del sistema 
+
+•	Pruebas regulares de seguridad (penetration testing y análisis de vulnerabilidades).
+
+## Plan de respuesta a incidentes
+•	Protocolos de respuesta ante filtraciones o pérdidas de datos.
+
+•	Notificación al responsable del sistema y bloqueo temporal de accesos si se detecta actividad anómala.
+
+## Roles y responsabilidades
+**Administrador del sistema:** Gestión de usuarios, monitoreo de seguridad y ejecución de respaldos.
+
+**Desarrollador principal:** Corrección de errores críticos, actualización de código y soporte técnico.
+
+**Encargado de privacidad (si aplica):** Asegura que los datos de los usuarios sean tratados conforme a las políticas definidas.
+
+## Desarrollo del proyecto
+la aplicación web “Aplicación web para la administración de los servicios de hospedaje y cafetería de la Casa del Café” tendrá 4 entregables, lo que proporciona un producto mínimo viable desde el inicio.
+Se establecieron 4 entregables, es decir, es decir, cuatro entregas durante el desarrollo del proyecto.
+
+Modulo 1: hace referencia al módulo de administración, incluye la gestión de los roles de los usuarios de la aplicación y la parametrización de este.
+
+Modulo 2: hace referencia al módulo de hospedaje, que incluye el check-in de huéspedes y visualización de disponibilidad. Se tienen funcionalidades como registro de reserva, check-out.
+
+Modulo  3: hace referencia al módulo de cafetería, Esto incluye gestionar la compra, venta y gestión de inventario de productos de cafetería. Se tienen funciones como registro de inventario, registro de compras y registro de ingresos.
+
+Modulo 4: hace referencia al Dashboard, muestra un gráfico del estado actual de las ventas de la cafetería y reservas de alojamiento para ayudar a la administración de Casa del Café.
+
+La arquitectura y los requisitos del sistema se definen de forma transversal. Cada incremento contiene historias de usuario, diagramas de secuencia y clases, y casos de prueba, de acuerdo con la funcionalidad especificada.
+
+## Roles del sistema 
+
+Administrador global: la persona que gestiona usuarios asigna/modifica permisos y brinda soporte sobre la plataforma.
+
+Coordinador: quien ingresa los datos en el día a día.
+
+Empleado: pueda ver reportes y generar estadísticas de pago.
+
+## Arquitectura del software 
+En este proyecto se adaptó la arquitectura Modelo Vista Controlador - MVC, que facilito a la organización, la escalabilidad y el manejo del software, como se muestra en la figura.
+
+IMAGEN
+
+El patrón MVC separa la aplicación en tres componentes principales: modelo, Vista y Controlador. Cada componente tiene una responsabilidad específica:
+
+•	Modelo: representa los datos y la lógica del negocio. Aquí se gestionó la interacción con la base de datos, el manejo de reservas, habitaciones, productos, entre otros.
+
+•	Vista: es la interfaz de usuario que presenta los datos y permite la interacción del usuario. Aquí se encuentran las páginas HTML, CSS y el código relacionado.
+
+•	Controlador: maneja las acciones del usuario y coordina la comunicación entre el Modelo y la Vista. Aquí se procesan los formularios, autenticación de usuarios y otros eventos.
+
+Esta arquitectura promueve la separación de responsabilidades, lo que facilita la modificación y extensión del código.
+
+##  Requerimientos 
+
+##  Requerimientos funcionales 
+**•	Administración de usuarios:** los administradores deben poder crear, modificar, consultar y eliminar cuentas de usuarios del sistema, asignando roles y permisos específicos. Los roles incluyen, administrador, coordinador y empleado.
+
+**•	Gestión de reservas:** el sistema debe permitir a los administradores registrar y gestionar reservas de habitaciones. Debe ser posible visualizar el calendario de ocupación y asignar disponibilidades de acuerdo con las fechas seleccionadas
+
+**•	Inventario de cafetería:** debe existir un módulo que permita a los administradores gestionar el inventario de la cafetería. Esto incluye agregar y eliminar productos, actualizar cantidades disponibles, establecer precios 
+
+**•	Reportes:** muestras graficas semanales de los ingresos de la cafetería y el hospedaje
+
+
+
+
+
+
+
+
+
+
 
 
 
