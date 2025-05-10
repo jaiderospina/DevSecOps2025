@@ -78,4 +78,12 @@ o	Registro de ventas: permite ver los productos que se encuentran en venta
 
 La aplicación web se implementó en php que es un lenguaje de código abierto para desarrollar aplicaciones para la web y favorece la conexión de servidores y la interfaz de usuario. Adicionalmente se utilizó Xampp, distribución de apache que incluye varios softwares libres y visual studio, como herramienta para editar, depurar y compilar el código para después publicar la aplicación. Por último, MySQL como gestor de bases de datos por ser software libre y con licencia BSD.
 
+##  Limitaciones
+•	El software solo va a ser usado por el administrador. Solo funciona en Google Chrome y no funciona en dispositivos Android o IOS.
+
+•	No se lleva un registro de contabilidad y facturación 
+
+•	No se cargan los datos del inventario de la cafetería y las habitaciones del hospedaje (se harán ejemplos o pruebas, para que la empresa misma cargue la información que necesita).
+
+
 
