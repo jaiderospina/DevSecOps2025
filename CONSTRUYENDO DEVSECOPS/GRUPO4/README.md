@@ -115,3 +115,5 @@ Herramientas en línea SPDX : para validar y visualizar SBOM SPDX.
 
 ## 7. Automatización de la creación de SBOM
 Puede integrar la generación de SBOM en sus pipelines de CI/CD usando herramientas como GitHub Actions , GitLab CI o Jenkins para crear automáticamente un SBOM para cada compilación.
+
+
