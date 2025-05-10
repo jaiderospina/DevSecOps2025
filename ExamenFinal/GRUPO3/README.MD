@@ -25,3 +25,22 @@ Por lo tanto, en el presente trabajo de grado se propuso realizar una aplicació
 
 Con el desarrollo de una aplicación web que facilita la realización de las reservas, el registro de los huéspedes y la asignación de las habitaciones, el registro y control del inventario de los productos de la cafetería, así como, la visualización gráfica de la información relevante del servicio de hospedaje y cafetería, ¿los administradores de la Casa del Café podrán simplificar el manejo de la información y los procesos de estos dos servicios?
 
+## Justificación
+
+El desarrollo de la aplicación web para la administración de los servicios de hospedaje y cafetería beneficia tanto a la empresa La Casa del Café como a sus empleados, en la medida en que soluciona el principal problema que tienen actualmente que es, el manejo manual de tanta información. Cada dato documentado de forma manual representa un riesgo para el establecimiento, lo que demanda una mayor atención al realizar el registro de la información de cada uno de los servicios. Al contar con una base de datos en donde se centralice la información para poder administrar de una mejor manera los datos, se logra un mejor y óptimo proceso de administración y gestión de estos. 
+
+De igual forma, con el uso de esta herramienta los usuarios pueden procesar la información fácilmente. Esto incluye el registro de entrada y salida de los huéspedes, para el caso del hospedaje y el de las materias primas que conforman el inventario y las ventas, para la cafetería.
+
+##  Objetivos
+
+## Objetivo general
+
+Desarrollar una aplicación web para la administración de los servicios de hospedaje y cafetería de la Casa del Café que permita una mejor gestión de la información sobre los servicios prestados, aplicando la metodología incremental y usando herramientas de desarrollo para este tipo de aplicaciones.
+
+## Objetivos específicos
+
+•	Definir los requerimientos funcionales y no funcionales para dimensionar el sistema a partir de las entrevistas con los usuarios de la aplicación.
+•	Implementar el módulo de servicio de alojamiento para la gestión de la información del hospedaje con base en las historias de usuario.
+•	Codificar el módulo de servicio de cafetería ayudando a mejorar la administración del inventario y las ventas utilizando el lenguaje de programación de PHP.
+•	Implementar el módulo de Dashboard para visualizar la información relevante para los administradores de la Casa del Café usando gráficas e indicadores de resumen.
+
