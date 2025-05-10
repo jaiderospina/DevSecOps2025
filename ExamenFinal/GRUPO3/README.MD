@@ -47,4 +47,35 @@ Desarrollar una aplicación web para la administración de los servicios de hosp
 
 •	Implementar el módulo de Dashboard para visualizar la información relevante para los administradores de la Casa del Café usando gráficas e indicadores de resumen.
 
+## Alcance y limitaciones 
+
+## Alcance
+En este proyecto se llevó a cabo el desarrollo una aplicación web para la administración de los servicios de hospedaje y cafetería de la Casa del Café, que permitió solucionar las problemáticas de manejo de la información antes mencionadas. Este software considera los siguientes módulos y sus respectivas funcionalidades:
+
+•	Módulo de hospedaje: incluye el registro de los huéspedes y la visualización de la disponibilidad de las habitaciones. Se incluyen las funcionalidades de:
+
+o	Registro de reservas: muestra las habitaciones que se encuentran reservadas y las fechas de las mismas. Asimismo, permite ingresar, modificar o cancelar una reserva.
+
+○ Check-in: es el registro de los datos del usuario necesarios para asignarle una habitación.
+
+○ check-out: permite visualizar los clientes que salen y las habitaciones que están disponibles para una nueva reserva.
+
+○ Registro de ingresos: muestra una gráfica de ingresos por las reservas.
+
+•	Módulo de cafetería: incluye la gestión de la compra, venta y manejo del stock de los productos de la cafetería
+
+o	Registro de inventario: permite controlar los productos, el stock y los productos que llegan.
+
+o	Registro de ventas: permite ver los productos que se encuentran en venta
+
+•	Registro de compras: permite al administrador ver los productos y seleccionar el producto
+
+•	Registro de ingresos: muestra una gráfica de ingresos semanal por las reservas
+
+•	Módulo de administración: incluye la gestión de los roles de los usuarios de la aplicación y la parametrización de este.
+
+•	Módulo de Dashboard: muestra las gráficas del estado actual de las ventas de la cafetería y las reservas del hospedaje para apoyar la toma de decisiones por parte de la administración de la Casa del Café.
+
+La aplicación web se implementó en php que es un lenguaje de código abierto para desarrollar aplicaciones para la web y favorece la conexión de servidores y la interfaz de usuario. Adicionalmente se utilizó Xampp, distribución de apache que incluye varios softwares libres y visual studio, como herramienta para editar, depurar y compilar el código para después publicar la aplicación. Por último, MySQL como gestor de bases de datos por ser software libre y con licencia BSD.
+
 
