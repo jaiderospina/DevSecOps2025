@@ -1,7 +1,4 @@
-Aquí tienes el documento solicitado en formato **Markdown**:
-
-    ````markdown
-    # Manual de Buenas Prácticas para Dockerfiles
+# Manual de Buenas Prácticas para Dockerfiles
     
     Un Dockerfile es un archivo de texto que contiene las instrucciones para construir una imagen de Docker. Seguir buenas prácticas asegura imágenes más pequeñas, rápidas de construir y más fáciles de mantener.
     
