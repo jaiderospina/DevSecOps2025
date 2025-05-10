@@ -8,10 +8,54 @@ Este documento explica cómo generar automáticamente un **SBOM (Software Bill o
 
 Un **SBOM** es una lista formal de los componentes de software (dependencias, bibliotecas, versiones) que conforman una aplicación. Es esencial para:
 
-✅ Seguridad de la cadena de suministro
-✅ Cumplimiento normativo
+✅ Seguridad de la cadena de suministro<br>
+✅ Cumplimiento normativo<br>
 ✅ Auditorías y gestión de vulnerabilidades
 
+SBOM (Software Bill of Materials, por sus siglas en inglés) es un inventario detallado de los componentes de software que conforman una aplicación o sistema. En otras palabras, es una lista estructurada que describe todos los elementos de código, bibliotecas y dependencias que componen un software, indicando las versiones y otras informaciones relevantes.
+
+***Características clave de un SBOM:***
+
+- **Transparencia:** Un SBOM proporciona visibilidad sobre los componentes de software que se están utilizando, lo cual es crucial para la seguridad, el cumplimiento y la gestión de riesgos.
+
+- **Seguridad:** Permite identificar vulnerabilidades en bibliotecas o dependencias de terceros, ya que si una vulnerabilidad es descubierta en una librería que estás usando, puedes rápidamente localizar todas las aplicaciones o sistemas afectados.
+
+- **Cumplimiento:** Algunas regulaciones y estándares requieren la creación de un SBOM para garantizar que las organizaciones puedan demostrar el uso de software de código abierto o licencias adecuadas.
+
+- **Gestión de dependencias:** Con un SBOM, puedes tener un control detallado sobre las versiones de las dependencias de software y asegurarte de que no haya versiones antiguas o inseguras en uso.
+
+- **Interoperabilidad:** El SBOM puede ser generado en formatos estándar (como SPDX, CycloneDX, o SWID) que permiten la interoperabilidad entre diferentes herramientas y sistemas.
+
+***¿Por qué es importante un SBOM?***
+
+- **Seguridad:** Con el aumento de vulnerabilidades conocidas (como las de Log4j, Heartbleed, etc.), tener un SBOM te permite identificar rápidamente qué componentes en tu software pueden estar afectados.
+
+- **Gestión de riesgos:** Al conocer los componentes exactos que componen tu software, puedes gestionar mejor los riesgos asociados con ellos, como la obsolescencia, las actualizaciones o los cambios de licencias.
+
+- **Cumplimiento legal:** Es importante para organizaciones que necesitan demostrar el cumplimiento de las licencias de software de código abierto y otros requisitos regulatorios.
+
+***Ejemplo de un SBOM:***
+
+Un SBOM podría contener información como:
+
+✅ Nombre de la librería o componente.<br>
+✅ Versión.<br>
+✅ Licencia.<br>
+✅ Autor(es).<br>
+✅ Vulnerabilidades conocidas.<br>
+✅ Descripción del componente.
+
+***Formatos comunes de SBOM:***
+
+**PDX (Software Package Data Exchange):** Un formato abierto utilizado para compartir información sobre licencias y componentes de software.
+
+**CycloneDX:** Un estándar abierto para crear SBOMs enfocados en la seguridad y el cumplimiento.
+
+**SWID (Software Identification Tags):** Un estándar para crear etiquetas de identificación de software, que también puede ser utilizado para generar SBOMs.
+
+<p align="center">
+  <img src="https://scribesecurity.com/wp-content/uploads/2022/01/sbom-components-scribe-security-768x451.jpeg.webp" alt="SBOM" />
+</p>
 ---
 
 ## 🚀 Generar SBOM en **Node.js**
@@ -122,9 +166,11 @@ git push
 
 ## ✅ Recomendaciones
 
-🔐 Genera y actualiza tu SBOM con cada release
-📦 Usa el SBOM en herramientas de análisis de vulnerabilidades
-📝 Puedes publicarlo como parte de la documentación de tu proyecto
+🔐 Genera y actualiza tu SBOM con cada release.
+
+📦 Usa el SBOM en herramientas de análisis de vulnerabilidades.
+
+📝 Puedes publicarlo como parte de la documentación de tu proyecto.
 
 ---
 
