@@ -85,5 +85,20 @@ La aplicación web se implementó en php que es un lenguaje de código abierto p
 
 •	No se cargan los datos del inventario de la cafetería y las habitaciones del hospedaje (se harán ejemplos o pruebas, para que la empresa misma cargue la información que necesita).
 
+##  Políticas de Seguridad Aplicables
+Para garantizar la confidencialidad, integridad y disponibilidad de la información en la aplicación web de Casa del Café, se adoptan las siguientes políticas de seguridad basadas en marcos y normativas reconocidas:
+## Cumplimiento del Reglamento General de Protección de Datos (GDPR)
+Aunque la operación principal se realiza en Colombia, se toman como referencia los principios del GDPR para el tratamiento de datos personales:
+
+•	Consentimiento informado para la recopilación de datos de huéspedes.
+
+•	Derecho de acceso, rectificación y eliminación de datos.
+
+•	Limitación de acceso a información personal a usuarios autorizados únicamente.
+
+
+
+
+
 
 
