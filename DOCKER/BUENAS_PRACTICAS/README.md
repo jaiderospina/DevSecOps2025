@@ -225,7 +225,7 @@ Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con
     COPY . .
     RUN go build -o /out/app
     
-   # Etapa 2: Imagen final
+    # Etapa 2: Imagen final
     FROM alpine:latest
     WORKDIR /app
     COPY --from=builder /out/app ./app
