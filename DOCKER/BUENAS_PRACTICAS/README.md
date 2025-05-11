@@ -245,15 +245,16 @@ Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con
     FROM ubuntu:latest
     ```
     
-    **Buena Práctica:**
+**Buena Práctica:**
     
     ```dockerfile
     FROM ubuntu:20.04
     ```
     
-    ---
+---
     
-    ## Resumen de Buenas Prácticas
+
+##**Resumen de Buenas Prácticas**
     
     ✅ Usa imágenes base específicas y ligeras
     ✅ Minimiza el número de capas
@@ -268,7 +269,6 @@ Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con
     ✅ Considera las construcciones multi-etapa
     ✅ No uses la etiqueta `latest`
     
-    ---
-    
+
  
     
