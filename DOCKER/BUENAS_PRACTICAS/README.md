@@ -1,69 +1,70 @@
-# Manual de Buenas Prácticas para Dockerfiles
-    
+# Manual de Buenas Prácticas para Dockerfiles 
     Un Dockerfile es un archivo de texto que contiene las instrucciones para construir una imagen de Docker. Seguir buenas prácticas asegura imágenes más pequeñas, rápidas de construir y más fáciles de mantener.
     
-    ---
+---
     
-    ## 1. Elige una Imagen Base Específica y Ligera
+## 1. Elige una Imagen Base Específica y Ligera
     
-    **Mala Práctica:**
-    ```dockerfile
+**Mala Práctica:**
+
+```dockerfile
     FROM ubuntu
     RUN apt-get update && apt-get install -y python3
     WORKDIR /app
     COPY . /app
     CMD ["python3", "mi_aplicacion.py"]
-    ````
+````
     
-    **Buena Práctica:**
+**Buena Práctica:**
     
-    ```dockerfile
+```dockerfile
     FROM python:3.9-slim-buster
     WORKDIR /app
     COPY requirements.txt .
     RUN pip install -r requirements.txt --no-cache-dir
     COPY . .
     CMD ["python", "mi_aplicacion.py"]
-    ```
+```
     
-    **Explicación:**
-    Usar imágenes base oficiales y específicas (como `python:3.9-slim-buster`) en lugar de imágenes genéricas (como `ubuntu`) reduce el tamaño de la imagen final. Las imágenes `slim` o `alpine` eliminan componentes innecesarios.
+**Explicación:**
+
+Usar imágenes base oficiales y específicas (como `python:3.9-slim-buster`) en lugar de imágenes genéricas (como `ubuntu`) reduce el tamaño de la imagen final. Las imágenes `slim` o `alpine` eliminan componentes innecesarios.
     
-    ---
+---
     
-    ## 2. Minimiza el Número de Capas
+## 2. Minimiza el Número de Capas
     
-    Cada instrucción en un Dockerfile (`RUN`, `COPY`, `ADD`) crea una capa. Muchas capas aumentan el tamaño de la imagen.
+Cada instrucción en un Dockerfile (`RUN`, `COPY`, `ADD`) crea una capa. Muchas capas aumentan el tamaño de la imagen.
     
-    **Mala Práctica:**
+**Mala Práctica:**
     
-    ```dockerfile
+```dockerfile
     FROM ubuntu
     RUN apt-get update
     RUN apt-get install -y nginx
     RUN echo "Hola desde Docker" > /usr/share/nginx/html/index.html
-    ```
+```
     
-    **Buena Práctica:**
+**Buena Práctica:**
     
-    ```dockerfile
+```dockerfile
     FROM ubuntu
     RUN apt-get update && apt-get install -y nginx && \
         echo "Hola desde Docker" > /usr/share/nginx/html/index.html
-    ```
+```
     
-    **Explicación:**
+**Explicación:**
     Combina los comandos `RUN` en uno solo para reducir capas. El carácter `\` mejora la legibilidad de líneas largas.
     
-    ---
+---
     
-    ## 3. Aprovecha el Caché de Docker
+## 3. Aprovecha el Caché de Docker
     
-    Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con menos frecuencia al principio.
+Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con menos frecuencia al principio.
     
-    **Orden Recomendado de Instrucciones:**
+**Orden Recomendado de Instrucciones:**
     
-    ```text
+```text
     FROM
     ARG
     COPY o ADD de dependencias
@@ -75,11 +76,11 @@
     USER
     WORKDIR
     CMD o ENTRYPOINT
-    ```
+```
     
-    **Ejemplo:**
+**Ejemplo:**
     
-    ```dockerfile
+```dockerfile
     FROM node:14
     WORKDIR /app
     COPY package*.json ./
@@ -87,14 +88,14 @@
     COPY . ./
     EXPOSE 3000
     CMD ["npm", "start"]
-    ```
+```
     
-    **Explicación:**
+**Explicación:**
     Si solo cambias el código fuente, las capas de instalación de dependencias se reutilizan del caché.
     
-    ---
+---
     
-    ## 4. Usa un Archivo `.dockerignore`
+## 4. Usa un Archivo `.dockerignore`
     
     Crea un archivo `.dockerignore` junto al Dockerfile para excluir archivos innecesarios del contexto de construcción.
     
@@ -110,7 +111,7 @@
     
     ---
     
-    ## 5. Evita Instalar Paquetes Innecesarios
+## 5. Evita Instalar Paquetes Innecesarios
     
     Instala solo lo que necesitas para reducir el tamaño de la imagen y mejorar la seguridad.
     
@@ -129,7 +130,7 @@
     
     ---
     
-    ## 6. Limpia Después de Instalar Paquetes
+## 6. Limpia Después de Instalar Paquetes
     
     Elimina archivos temporales y cachés en la misma instrucción `RUN`.
     
@@ -143,7 +144,7 @@
     
     ---
     
-    ## 7. Ejecuta Procesos como Usuario No Root
+## 7. Ejecuta Procesos como Usuario No Root
     
     Evita usar `root` para mayor seguridad. Crea y usa un usuario específico.
     
@@ -162,7 +163,7 @@
     
     ---
     
-    ## 8. Usa Variables de Entorno
+ ## 8. Usa Variables de Entorno
     
     Define variables de entorno que tu aplicación pueda usar.
     
@@ -180,7 +181,7 @@
     
     ---
     
-    ## 9. Define `ENTRYPOINT` y `CMD` Claramente
+ ## 9. Define `ENTRYPOINT` y `CMD` Claramente
     
     * `ENTRYPOINT`: comando principal.
     * `CMD`: argumentos por defecto o comando si no se proporciona otro.
@@ -195,7 +196,7 @@
     
     ---
     
-    ## 10. Etiqueta tus Imágenes
+ ## 10. Etiqueta tus Imágenes
     
     Usa `LABEL` para añadir metadatos.
     
@@ -207,9 +208,9 @@
     LABEL maintainer="tu_correo@ejemplo.com"
     ```
     
-    ---
+ ---
     
-    ## 11. Usa Construcciones Multi-Etapa
+ ## 11. Usa Construcciones Multi-Etapa
     
     Divide el proceso en etapas para obtener imágenes finales más ligeras.
     
@@ -224,7 +225,7 @@
     COPY . .
     RUN go build -o /out/app
     
-    # Etapa 2: Imagen final
+   # Etapa 2: Imagen final
     FROM alpine:latest
     WORKDIR /app
     COPY --from=builder /out/app ./app
@@ -234,7 +235,7 @@
     
     ---
     
-    ## 12. No Uses la Etiqueta `latest`
+ ## 12. No Uses la Etiqueta `latest`
     
     Usa versiones específicas para garantizar reproducibilidad.
     
@@ -269,10 +270,5 @@
     
     ---
     
-    Siguiendo estas prácticas, puedes crear Dockerfiles que resulten en imágenes de Docker eficientes, seguras y fáciles de mantener.
-    
-    ```
-    
-    ¿Deseas que lo convierta también en un PDF o archivo `.md` descargable?
-    ```
+ 
     
