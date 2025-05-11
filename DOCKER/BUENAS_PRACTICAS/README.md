@@ -212,12 +212,12 @@ Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con
     
  ## 11. Usa Construcciones Multi-Etapa
     
-    Divide el proceso en etapas para obtener imágenes finales más ligeras.
+Divide el proceso en etapas para obtener imágenes finales más ligeras.
     
-    **Ejemplo (Go):**
+**Ejemplo (Go):**
     
-    ```dockerfile
-    # Etapa 1: Construcción
+**Dockerfile**
+# Etapa 1: Construcción
     FROM golang:1.16-alpine AS builder
     WORKDIR /app
     COPY go.mod go.sum ./
@@ -225,16 +225,14 @@ Docker reutiliza capas que no han cambiado. Coloca instrucciones que cambian con
     COPY . .
     RUN go build -o /out/app
     
-    # Etapa 2: Imagen final
-    FROM alpine:latest
+# Etapa 2: Imagen final
+
+FROM alpine:latest
     WORKDIR /app
     COPY --from=builder /out/app ./app
     EXPOSE 8080
     CMD ["./app"]
-    ```
-    
-    ---
-    
+   
  ## 12. No Uses la Etiqueta `latest`
     
     Usa versiones específicas para garantizar reproducibilidad.
