@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# mensaje=${mensaje:-"¡Hola desde un contenedor Docker animado en la terminal!"}
-# velocidad=${velocidad:-0.05}
-
-
 # Solicita al usuario el mensaje
 read -p "Escribe el mensaje que deseas mostrar: " mensaje
 
