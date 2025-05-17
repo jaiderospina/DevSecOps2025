@@ -77,22 +77,22 @@ docker build -t animacion-texto .
 ```
 
 ## ¿Qué hace?
--**docker build:** Construye una imagen desde el Dockerfile.
--**-t animacion-texto:** Le da el nombre animacion-texto a la imagen.
--**.:** Indica que la construcción se realiza en el directorio actual (donde están el Dockerfile y el typewriter.sh).
+  - **docker build:** Construye una imagen desde el Dockerfile.
+  - **-t animacion-texto:** Le da el nombre animacion-texto a la imagen.
+  - **.:** Indica que la construcción se realiza en el directorio actual (donde están el Dockerfile y el typewriter.sh).
 
 # 4. Ejecuar el contenedor
 ```bash
 docker run --rm -it animacion-texto
 ```
 ## ¿Qué hace?
--**docker run:** Ejecuta un contenedor basado en la imagen.
--**--rm:** Elimina el contenedor automáticamente cuando termina.
--**-it:**  Combina dos opciones:
-  - `-i` (interactivo): Mantiene la entrada estándar abierta.
-  - `-t` (tty): Asigna una terminal para que puedas interactuar con el contenedor.
--**animacion-texto:** Es la imagen que creamos antes.
--**Resultado final:** Cuando ejecutas este comando, verás en tu terminal cómo se imprime el mensaje carácter por carácter, simulando una animación tipo máquina de escribir.
+  - **docker run:** Ejecuta un contenedor basado en la imagen.
+  - **--rm:** Elimina el contenedor automáticamente cuando termina.
+  - **-it:**  Combina dos opciones:
+    - `-i` (interactivo): Mantiene la entrada estándar abierta.
+    - `-t` (tty): Asigna una terminal para que puedas interactuar con el contenedor.
+  - **animacion-texto:** Es la imagen que creamos antes.
+  - **Resultado final:** Cuando ejecutas este comando, verás en tu terminal cómo se imprime el mensaje carácter por carácter, simulando una animación tipo máquina de escribir.
 
 
 # 5. URL de la IMAGEN DockerHUB
