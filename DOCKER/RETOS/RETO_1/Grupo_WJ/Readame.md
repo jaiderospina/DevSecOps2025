@@ -5,7 +5,7 @@
 
 # 🐳 Microservicio: Animación de Texto en la Terminal con Docker
 
-![Maquina de Escribir](/imagen1.png)
+![Maquina de Escribir](./imagen1.png)
 
 Este microservicio es una imagen Docker basada en Alpine Linux que ejecuta un script interactivo para animar la escritura de texto en la terminal.  
 El usuario ingresa un mensaje y una velocidad, y el texto se imprime letra por letra con un retardo personalizado, simulando una máquina de escribir.
