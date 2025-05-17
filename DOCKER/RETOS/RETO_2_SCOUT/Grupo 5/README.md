@@ -59,8 +59,7 @@ Para habilitar Docker Scout en tu repositorio de Docker Hub:
 
 5. En "Image insight settings", activa "Advanced image analysis with Docker Scout"
 
-
-![segunda imagen](images/tres.png)
+<img src="images/tres.png" alt="tres" width="800" height="300">
 
 
 
