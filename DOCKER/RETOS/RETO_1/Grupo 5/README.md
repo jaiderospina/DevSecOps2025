@@ -1,10 +1,12 @@
-#INTEGRANTES GRUPO 5
+## 🧑‍🎓 Autores Grupo 5
 
-### - Ángel Eduardo Rodríguez Arguello    
-### - Alfredo José Gutiérrez Flórez    
-### - Yesith Alonso Calvera    
-###  - Andrés Felipe Cruz Rojas    
-### - Yeikin Andrés Mera Varga
+- Calvera Chaparro Yesith Alonso
+- Gutierrez Florez Alfredo Jose
+- Cruz Rojas Andres Felipe
+- Mena Vargas Yeikin Andres
+- Rodriguez Arguello Angel Eduardo
+
+---
 # Máquina de escribir
 
 ## Overview de código
