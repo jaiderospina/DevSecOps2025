@@ -1,10 +1,10 @@
 #INTEGRANTES GRUPO 5
 
-### Ángel Eduardo Rodríguez Arguello    
-### Alfredo José Gutiérrez Flórez    
-### Yesith Alonso Calvera    
-### Andrés Felipe Cruz Rojas    
-### Yeikin Andrés Mera Varga
+### - Ángel Eduardo Rodríguez Arguello    
+### - Alfredo José Gutiérrez Flórez    
+### - Yesith Alonso Calvera    
+###  - Andrés Felipe Cruz Rojas    
+### - Yeikin Andrés Mera Varga
 # Máquina de escribir
 
 ## Overview de código
