@@ -3,6 +3,7 @@
 ### Integrantes:
 
 German Gonzalez
+
 Diana Mahecha
 
 ### Descripción del reto:
@@ -65,6 +66,8 @@ echo ""
 ```
 
 ## **2.Construir dockerfile**
+
+![Animación de máquina de escribir](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/New_Logo_Alpine_Linux.svg/1200px-New_Logo_Alpine_Linux.svg.png)
 
 ```bash
 
