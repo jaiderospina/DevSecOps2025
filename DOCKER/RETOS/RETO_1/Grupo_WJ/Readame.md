@@ -1,4 +1,4 @@
-# Resto 1 
+# Reto 1 
 # integrantes 
     Wilmer Rafael Briceño Camacho
     Jairo Yesid RTodriguez Gonzalez
