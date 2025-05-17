@@ -1,6 +1,13 @@
 # INTEGRANTES
-
-- 
+- JUAN CAMILO CRISTIANO
+- YONATHAN CASTELLANOS
+- LUIS ALEJANDRO ROMERO
+- MARLON ARTUNDUAGA
+- SARA UMBELINA MORENO
+  
+  ---
+ - LINK:
+https://hub.docker.com/r/juanc411/maquina_de_escribir
 
 # Máquina de Escribir Dockerizada
 
