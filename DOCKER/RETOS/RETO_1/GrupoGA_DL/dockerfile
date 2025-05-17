@@ -1,0 +1,13 @@
+#Usar última imagen de alpine
+FROM alpine:latest
+
+#Instalar bash
+RUN apk add --no-cache bash
+
+#Copiar archivo typewriter.sh
+COPY typewriter.sh /typewriter.sh
+
+RUN chmod +x /typewriter.sh
+
+#Ejecutar typewriter.sh
+CMD ["/typewriter.sh"]
