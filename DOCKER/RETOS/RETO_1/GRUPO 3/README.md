@@ -1,4 +1,5 @@
-# INTEGRANTES
+# INTEGRANTES 
+
 - JUAN CAMILO CRISTIANO
 - YONATHAN CASTELLANOS
 - LUIS ALEJANDRO ROMERO
@@ -10,6 +11,11 @@
 https://hub.docker.com/r/juanc411/maquina_de_escribir
 
 # Máquina de Escribir Dockerizada
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/95a81b12-cfcf-4292-9085-0a211f70d6b6" alt="Máquina de Escribir" width="400"/>
+</div>
+
 
 Este proyecto es un contenedor Docker que simula el efecto "máquina de escribir" en tu terminal, mostrando un mensaje de texto con un efecto animado. El contenedor permite al usuario personalizar tanto el mensaje como la velocidad de la animación mediante variables de entorno o interacción directa. Además, ofrece un menú interactivo para facilitar la personalización.
 
