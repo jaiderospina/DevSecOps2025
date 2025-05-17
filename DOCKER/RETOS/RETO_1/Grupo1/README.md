@@ -59,6 +59,52 @@ Este contenedor ejecuta un script bash que muestra un mensaje de texto definido 
 - `Dockerfile`: Configuración para construir la imagen Docker
 - `docker-compose.yml`: Configuración para Docker Compose
 
+## Archivo typewriter1.sh
+```bash
+
+#!/bin/bash
+
+# Valores predeterminados
+DEFAULT_MENSAJE="¡Hola desde un contenedor Docker animado en la terminal!"
+DEFAULT_VELOCIDAD=0.05
+
+echo "Crea un mensaje de bienvenida"
+read mensaje
+echo "Asigna la velocidad del mensaje, caracter por caracter. La velocidad debe estar en un rango de 0.05 s a 1 s."
+read velocidad
+
+if [ -z "$mensaje" ]; then
+    mensaje=$DEFAULT_MENSAJE
+fi
+if [ -z "$velocidad" ]; then
+    velocidad=$DEFAULT_VELOCIDAD
+fi
+
+for ((i=0; i<${#mensaje}; i++)); do
+    echo -n "${mensaje:$i:1}"
+    sleep $velocidad
+done
+```
+
+
+
+## Archivo DockerFile
+```bash
+
+FROM alpine:latest
+
+RUN apk add --no-cache bash
+
+WORKDIR /app
+COPY typewriter.sh /app/typewriter.sh
+RUN chmod +x /app/typewriter.sh
+
+# No establecemos valores predeterminados aquí para permitir que el usuario los proporcione
+
+CMD ["/bin/bash", "/app/typewriter.sh"]
+```
+ 
+
 ## Notas
 
 - Asegúrate de usar nombres en minúsculas para las imágenes Docker
