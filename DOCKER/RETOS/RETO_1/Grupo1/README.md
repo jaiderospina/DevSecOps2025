@@ -1,9 +1,9 @@
 # Integrantes del Grupo:
-Heriberto Tirado
-Johanny Castro
-Edwin Herrera
-Jhon Pinto
-Juan Pablo ramirez
+- Heriberto Tirado
+- Johanny Castro
+- Edwin Herrera
+- Jhon Pinto
+- Juan Pablo ramirez
 
 # Máquina de Escribir - Animación de Texto en Terminal
 
