@@ -10,7 +10,7 @@ El usuario ingresa un mensaje y una velocidad, y el texto se imprime letra por l
 
 ---
 
-## 1️⃣ Descripción del Microservicio
+## Descripción del Microservicio
 
 Este contenedor está diseñado para ejecutarse en modo interactivo.  
 Su función principal es ofrecer una animación sencilla tipo "typewriter" en la terminal. El usuario interactúa proporcionando:
@@ -24,7 +24,7 @@ Su función principal es ofrecer una animación sencilla tipo "typewriter" en la
 
 ---
 
-## 2️⃣ funcion del Script (`typewriter.sh`)
+## funcion del Script (`typewriter.sh`)
 
 El script se encarga de pedir al usuario el mensaje y la velocidad de animación, y luego lo imprime carácter por carácter con la pausa definida.
 
