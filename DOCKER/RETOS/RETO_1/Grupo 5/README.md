@@ -1,4 +1,9 @@
-# Máquina de escribir AC
+### Alfredo José Gutiérrez Flórez    
+### Yesith Alonso Calvera    
+### Andrés Felipe Cruz Rojas    
+### Ángel Eduardo Rodríguez Arguello    
+### Yeikin Andrés Mera Varga
+# Máquina de escribir
 ## Overview de código
 
 
