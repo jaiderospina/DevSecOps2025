@@ -1,10 +1,10 @@
 ## 🧑‍🎓 Autores Grupo 5
 
-- Calvera Chaparro Yesith Alonso
-- Gutierrez Florez Alfredo Jose
-- Cruz Rojas Andres Felipe
-- Mena Vargas Yeikin Andres
-- Rodriguez Arguello Angel Eduardo
+- Calvera Chaparro Yesith Alonso 👾
+- Gutierrez Florez Alfredo Jose 🪗
+- Cruz Rojas Andres Felipe 🤖
+- Mena Vargas Yeikin Andres 🪖
+- Rodriguez Arguello Angel Eduardo 👑
 
 ---
 # Máquina de escribir
