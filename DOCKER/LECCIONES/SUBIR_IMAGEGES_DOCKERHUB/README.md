@@ -1,4 +1,3 @@
-
 ## Subir imáges a dockerhub.
 
 Una de las etapas esperadas en DevSecOps es poder distribuir nustra imágenes. En este ejemplo envíaremos  a dockerhub
@@ -7,7 +6,6 @@ Enviar imágen a dockerhub
 
 
 # 1. Valida el nombre de tu imágen.
-
 
 '''
 $ docker images
