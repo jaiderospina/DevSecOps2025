@@ -54,9 +54,14 @@ Para habilitar Docker Scout en tu repositorio de Docker Hub:
 2. Selecciona la organización que contiene el repositorio "maquinaescribir".
 
 3. Abre el repositorio y ve a la pestaña "Settings".
+   
 ![activacion1](images/imagen.png)
-4. En "Image insight settings", activa "Advanced image analysis with Docker Scout"
+
+5. En "Image insight settings", activa "Advanced image analysis with Docker Scout"
+
 
 ![activacion](images/imagen (1).png)
+
+
 
 Una vez activado, Docker Scout comenzará a analizar automáticamente las imágenes del repositorio.
