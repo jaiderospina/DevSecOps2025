@@ -136,3 +136,5 @@ docker tag animacion-texto dianamahecha12/maquina-escribir_dl:latest
 docker push dianamahecha12/maquina-escribir_dl
 
 ```
+
+##  **Link de imagen en dockerHub: https://hub.docker.com/repository/docker/dianamahecha12/maquina-escribir_dlv2/general**
