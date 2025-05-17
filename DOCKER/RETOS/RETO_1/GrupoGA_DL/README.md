@@ -1,8 +1,9 @@
 # Reto: Máquina de Escribir
-
+![Animación de máquina de escribir](https://losvictorinos.co/cdn/shop/files/10001000-Photoroom_2_206c5515-e40e-4ca8-a890-7fe112e84b17.jpg?v=1720728786)  
 ### Integrantes:
 
-German GonzalezDiana Mahecha
+German Gonzalez
+Diana Mahecha
 
 ### Descripción del reto:
 
@@ -104,7 +105,7 @@ Se realizan pruebas manuales para asegurar:
 
 *El contenedor se comporta de acuerdo con las entradas interactivas
 
-##  **4.Despliegue en docker Hub**
+##  **5.Despliegue en docker Hub**
 
 Una vez que la imagen esté probada, se sube a Docker Hub para que esté disponible públicamente o para compartirla con otros usuarios.
 
