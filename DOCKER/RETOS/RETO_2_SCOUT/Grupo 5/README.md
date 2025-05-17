@@ -13,7 +13,7 @@
 # Scout⌨️️
 Scout es una herramienta que ayuda a detectar vulnerabilidades y gestionar la seguridad de los contenedores
 
-## Ejecucion SCOUT a traves de comando
+## Ejecucion SCOUT a traves de comandos
 
 ## Paso 1: Instalar Scout
 
@@ -43,3 +43,18 @@ Una vez que SCOUT esté instalado y tengas el contenedor de Docker, puedes ejecu
 scout scan --image dockermena/maquinaescribir
 ```
 
+## Ejecucion SCOUT a traves de Docker hub
+
+## Paso 1: Iniciar sesion
+
+Para habilitar Docker Scout en tu repositorio de Docker Hub:
+
+1. Inicia sesión en Docker Hub.
+
+2. Selecciona la organización que contiene el repositorio "maquinaescribir".
+
+3. Abre el repositorio y ve a la pestaña "Settings".
+
+4. En "Image insight settings", activa "Advanced image analysis with Docker Scout" 
+
+Una vez activado, Docker Scout comenzará a analizar automáticamente las imágenes del repositorio.
