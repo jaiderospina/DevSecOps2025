@@ -9,7 +9,7 @@
 - Rodriguez Arguello Angel Eduardo 👑
 
 ---
-# Máquina de escribir
+# Máquina de escribir ⌨️
 
 ## Overview de código
 
