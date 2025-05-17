@@ -272,9 +272,9 @@ docker run --rm animacion-texto
 
 **Resultado final:** Cuando ejecutas este comando, verás en tu terminal cómo se imprime el mensaje carácter por carácter, simulando una animación tipo máquina de escribir.
 
-## RETO INDIVIDUAL
+## RETO No 1. INDIVIDUAL
 
-Mejorar el scrpt para:
+Mejorar el script para:
 
 - **Pasar el mensaje como variable de entorno (-e MENSAJE="Hola mundo").**
 - **Cambiar la velocidad (-e VELOCIDAD=0.1).**
