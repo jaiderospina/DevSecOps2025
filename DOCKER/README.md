@@ -172,7 +172,7 @@ https://github.com/jaiderospina/Docker20242
 
 ---
 
-##**Ejercicio Máquina de Escribir**
+## **Ejercicio Máquina de Escribir**
 
 En este ejemplo se crea una animación de texto tipo *"máquina de escribir"* usando Bash dentro de un contenedor Docker muy ligero basado en Alpine Linux.
 
