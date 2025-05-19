@@ -53,3 +53,4 @@ scout scan --mage jrami1519/animacion-texto
 - Edwin Herrera
 - Heriberto Tirado
 
+[Ingresa al enlace del repositorio de Docker Hub](https://hub.docker.com/repository/docker/jrami1519/animacion-texto/general)
