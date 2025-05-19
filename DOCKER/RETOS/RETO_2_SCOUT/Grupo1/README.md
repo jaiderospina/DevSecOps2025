@@ -1,4 +1,4 @@
-    # <center>Docker Scout</center>
+# Docker Scout
 
 ### Tabla de Contenido
 
