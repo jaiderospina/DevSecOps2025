@@ -53,6 +53,6 @@ scout scan --mage jrami1519/animacion-texto
 - Edwin Herrera
 - Heriberto Tirado
 
-[Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/jrami1519/animacion-texto/general){:target="_blank"}
-[Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/heribertotiradopinzon/vulnerable-image/general){:target="_blank"}
+- [Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/jrami1519/animacion-texto/general){:target="_blank"}
+- [Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/heribertotiradopinzon/vulnerable-image/general){:target="_blank"}
 
