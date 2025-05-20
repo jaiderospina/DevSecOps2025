@@ -7,22 +7,21 @@ Enviar imágen a dockerhub
 
 # 1. Valida el nombre de tu imágen.
 
-'''
+
+```
 $ docker images
 REPOSITORY                            TAG       IMAGE ID       CREATED         SIZE
 animacion-texto                       latest    7c59172c0d5f   8 hours ago     15.2MB
 mysql                                 latest    2247f6d47a59   4 weeks ago     1.17GB
-'''
-
+```
 En esta ocasión haremos uso de la imágen "animacion-texto". Esta debe prepararse para ser enviada a dockerhub, 
 realizando sobre la misma una copia y nombrandolo con nuestro nombre de usuario en dockerhub y
 un tag, como se indica a continuación.
 
-'''
+```
 jaider@TTG MINGW64 /e/UNIMINUTO_2021_2/Especializacion_2025/REPO/SCRIPT_HOLA_DINAMICO
 $ docker tag animacion-texto jaiderospina/maquinaescribir:v1
-'''
-
+```
 Acto seguido validar la existencia de nuestra nueva imágen.
 
 '''
