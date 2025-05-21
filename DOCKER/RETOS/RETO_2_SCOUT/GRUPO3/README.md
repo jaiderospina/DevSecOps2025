@@ -27,3 +27,4 @@ Usamos el siguiente comando: **docker scout cves m4rl0n25/typewriter:latest --fo
 
 Ejemplo de salida resumida:
 
+![image](https://github.com/user-attachments/assets/b04a46a3-3169-46ef-a1e1-39ad68ba51bf)
