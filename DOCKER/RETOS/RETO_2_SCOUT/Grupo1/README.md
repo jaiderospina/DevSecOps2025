@@ -45,6 +45,13 @@ scout scan --mage jrami1519/animacion-texto
 
 ![Analisis con docker scout](https://i.ibb.co/JFgZYw3x/Screenshot-from-2025-05-19-09-24-31.png)
 
+
+### Tambien Puedes ver informacion del analisis usuando Docker Desktop
+
+- En esta ocasión analizamos una imagen llamada phpmyadmin/phpmyadmin:latest , donde observamos  un cuadro que nos indica  que tenemos 5 vulnerabilidades Altas, 12 vulnerabilidades Medias, 59 bajas y 1 no especificada.
+
+![Analisis con docker scout](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo1/docker%20scout.png)
+
 ## Integantes Grupo 1:
 
 - Juan Pablo Ramírez Gutiérrez
