@@ -52,6 +52,11 @@ scout scan --mage jrami1519/animacion-texto
 
 ![Analisis con docker scout](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo1/docker%20scout.png)
 
+### Tambien Puedes ver informacion del analisis usuando Docker Desktop
+
+![image](https://github.com/user-attachments/assets/8e1b6907-bd2c-44f8-a5e2-8b992ab18f91)
+
+
 ## Integantes Grupo 1:
 
 - Juan Pablo Ramírez Gutiérrez
