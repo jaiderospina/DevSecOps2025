@@ -48,11 +48,13 @@ scout scan --mage jrami1519/animacion-texto
 
 ### Tambien Puedes ver informacion del analisis usuando Docker Desktop
 
-- En esta ocasión analizamos una imagen llamada phpmyadmin/phpmyadmin:latest , donde observamos  un cuadro que nos indica  que tenemos 5 vulnerabilidades Altas, 12 vulnerabilidades Medias, 59 bajas y 1 no especificada.
+-Una forma cómoda de administrar tanta información o incluso filtrarla es a través de Docker Desktop: En esta ocasión analizamos una imagen llamada phpmyadmin/phpmyadmin:latest , donde observamos  un cuadro que nos indica  que tenemos 5 vulnerabilidades Altas, 12 vulnerabilidades Medias, 59 bajas y 1 no especificada.
 
 ![Analisis con docker scout](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo1/docker%20scout.png)
 
-### Tambien Puedes ver informacion del analisis usuando Docker Desktop
+-Desde allí, dispone de diferentes vistas, como imágenes, paquetes y vulnerabilidades, que le ayudan a analizar todos los datos como prefiera. 
+
+-Puedes navegar utilizando las pestañas y revisar cada una de las recomendaciones individualmente:
 
 ![image](https://github.com/user-attachments/assets/8e1b6907-bd2c-44f8-a5e2-8b992ab18f91)
 
