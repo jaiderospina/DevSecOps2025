@@ -56,4 +56,5 @@ scout scan --mage jrami1519/animacion-texto
 
 - [Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/jrami1519/animacion-texto/general){:target="_blank"}
 - [Ver repositorio de Docker Hub](https://hub.docker.com/repository/docker/heribertotiradopinzon/vulnerable-image/general){:target="_blank"}
+- [Ver repositorio de Docker Hub](https://hub.docker.com/r/edwinh25/animacion-texto/tags){:target="_blank"}
 
