@@ -1,4 +1,6 @@
+ **RETO SCOUT**
 
+ ---
 
 - **Iniciar sesión en Docker desde terminal:**
 ![image](https://github.com/user-attachments/assets/ee59034c-8ba1-4e3a-b398-85243a5bdf14)
