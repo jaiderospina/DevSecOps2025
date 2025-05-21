@@ -29,9 +29,16 @@ Ejemplo de salida resumida:
 
 ![image](https://github.com/user-attachments/assets/b04a46a3-3169-46ef-a1e1-39ad68ba51bf)
 
+---
+LINK:
+
+https://hub.docker.com/repository/docker/m4rl0n25/typewriter/general
+
+---- 
+
 Nombres:
-Sara Sofia Moreno
-Yonathan Castellanos
-Juan Camilo Cristiano
-Luis Alejandro Romero
-Marlon Artunduaga
+- Sara Sofia Moreno
+- Yonathan Castellanos
+- Juan Camilo Cristiano
+- Luis Alejandro Romero
+- Marlon Artunduaga
