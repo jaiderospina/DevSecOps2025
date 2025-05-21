@@ -46,32 +46,6 @@ scout scan --mage jrami1519/animacion-texto
 ![Analisis con docker scout](https://i.ibb.co/JFgZYw3x/Screenshot-from-2025-05-19-09-24-31.png)
 
 
-### Tambien Puedes ver informacion del analisis usuando Docker Desktop
-
--Una forma cómoda de administrar tanta información o incluso filtrarla es a través de Docker Desktop: En esta ocasión analizamos una imagen llamada phpmyadmin/phpmyadmin:latest , donde observamos  un cuadro que nos indica  que tenemos 5 vulnerabilidades Altas, 12 vulnerabilidades Medias, 59 bajas y 1 no especificada.
-
-![Analisis con docker scout](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo1/docker%20scout.png)
-
--Desde allí, dispone de diferentes vistas, como imágenes, paquetes y vulnerabilidades, que le ayudan a analizar todos los datos como prefiera. 
-
--Puedes navegar utilizando las pestañas y revisar cada una de las recomendaciones individualmente:
-
-![image](https://github.com/user-attachments/assets/8e1b6907-bd2c-44f8-a5e2-8b992ab18f91)
-
-Sin embargo, analizar las vulnerabilidades es solo una parte de la ecuación. Dado que el objetivo real es remediarlas, aquí es donde las recomendaciones de Docker Scout resultan útiles.
-
-## docker scout recommendations Comando
-
--Una de las características clave de Docker Scout son las recomendaciones que ofrece para corregir cada CVE, lo que, en definitiva, le ahorra tiempo. Solo tiene que ejecutar el comando docker scout recommendations, como este:
-
-```bash
-docker scout recommendations local://<DOCKER_HUB_ORG>/scout-demo:v1  >_
-```
-
-Como alternativa, puede utilizar las banderas --only-refresho --only-updatepara mostrar solo recomendaciones de actualización o actualización de la imagen base.
-
-Al igual que con los comandos anteriores, también puede revisar las recomendaciones con Docker Desktop. Para ello, simplemente seleccione "Recomendaciones para la imagen base" :
-
 ## Integantes Grupo 1:
 
 - Juan Pablo Ramírez Gutiérrez
