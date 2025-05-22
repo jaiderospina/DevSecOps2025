@@ -56,6 +56,8 @@ Esta vulnerabilidad afecta al módulo pam_access y se debe a un manejo inadecuad
 - Solución. Para mitigar esta vulnerabilidad, se recomienda actualizar a una versión corregida de pam_access.  Para actualizar a través del gestor de paquetes utilizar los siguientes comandos: 
 sudo apt-get update
 sudo apt-get install --only-upgrade libpam-modules
+![image](https://github.com/user-attachments/assets/7ae6452f-7dce-4ea1-87cd-8a890f87980b)
+
 
 ### 2. CVE-2024-10041. 
 Esta vulnerabilidad afecta al módulo PAM (Pluggable Authentication Modules) y se debe a un almacenamiento inseguro de información sensible en la memoria.
@@ -64,12 +66,14 @@ Esta vulnerabilidad afecta al módulo PAM (Pluggable Authentication Modules) y s
 sudo apt-get update
 sudo apt-get install --only-upgrade libpam-modules
 
+![image](https://github.com/user-attachments/assets/ee332ea6-c06d-43c4-8db4-0247827958d5)
+
 https://hub.docker.com/repository/docker/johanycp/mi-animacion/general
 
-## Integantes Grupo 1:
+## Integrantes Grupo 1:
 
 - Juan Pablo Ramírez Gutiérrez
-- Johanny Castro
+- Johany Castro
 - Jhon Pinto
 - Edwin Herrera
 - Heriberto Tirado
