@@ -47,6 +47,21 @@ scout scan --mage jrami1519/animacion-texto
 
 ## Escaneo de vulnerabilidades:
 ![image](https://github.com/user-attachments/assets/4832c87d-f832-4f22-8871-0f5be17f1956)
+![image](https://github.com/user-attachments/assets/2f1c358b-bb21-408e-9532-1413a02485e7)
+
+1.	CVE-2024-10963. Esta vulnerabilidad afecta al módulo pam_access y se debe a un manejo inadecuado de tokens en el archivo de configuración access.conf, que son interpretados erróneamente como nombres de host. 
+•	Impacto. Permite a los atacantes eludir las restricciones de acceso falsificando nombres de host, lo que puede resultar en acceso no autorizado a servicios o terminales específicos.
+•	Solución. Para mitigar esta vulnerabilidad, se recomienda actualizar a una versión corregida de pam_access.  Para actualizar a través del gestor de paquetes utilizar los siguientes comandos: 
+sudo apt-get update
+sudo apt-get install --only-upgrade libpam-modules
+
+2.	CVE-2024-10041. Esta vulnerabilidad afecta al módulo PAM (Pluggable Authentication Modules) y se debe a un almacenamiento inseguro de información sensible en la memoria.
+•	Impacto. Permite a un atacante local entrenar el predictor de bifurcaciones para ejecutar una cadena ROP (Return-Oriented Programming) de manera especulativa, lo que podría resultar en la filtración de contraseñas almacenadas en archivos como /etc/shadow durante los procesos de autenticación.
+•	Solución. Para mitigar esta vulnerabilidad, se recomienda actualizar a una versión corregida de PAM. Para actualizar a través del gestor de paquetes utilizar los siguientes comandos: 
+sudo apt-get update
+sudo apt-get install --only-upgrade libpam-modules
+
+https://hub.docker.com/repository/docker/johanycp/mi-animacion/general
 
 ## Integantes Grupo 1:
 
