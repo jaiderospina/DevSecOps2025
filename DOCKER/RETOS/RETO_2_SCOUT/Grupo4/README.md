@@ -32,7 +32,9 @@ Debe contener un Dockerfile y/o una imagen Docker construida.
 
 ### 2. Abre la extensión Docker en el panel lateral izquierdo
 
-Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e nstall
+Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e install
+
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo4/EXTENSION_DOCKER_VS_CODE.jpg?raw=true)
  
 ### 3. Analiza una imagen con Scout
 
