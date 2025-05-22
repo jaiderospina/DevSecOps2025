@@ -43,12 +43,15 @@ Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e nstall
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./EXTENSION_DOCKER_VS_CODE.jpg?raw=true)
 
 3. Analiza una imagen con Scout
-4. 
-Ve a la sección Imágenes en el panel de Docker en VS Code.
 
-Haz clic derecho sobre una imagen que ya hayas construido.
+Por CLI colocamos el siguiente comando cn el nombre de la imágen que tengamos cargada en un nuestro Docker hub
 
-Selecciona "Analyze with Docker Scout".
+docker scout quickview (nombre imágen)
 
+En nuestro Caso 
+
+docker scout quickview gpedraza1/maquinaescribir
+
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./SCAN_SCOUT_DOCKER.jpg?raw=true)
 
 
