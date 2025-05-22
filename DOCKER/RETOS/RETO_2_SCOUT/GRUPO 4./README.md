@@ -52,8 +52,20 @@ En nuestro Caso
 
 docker scout quickview gpedraza1/maquinaescribir
 
-Aqui podemos ver el resulta del scaneo de vulnerabilidades encontradas
+4. Resultado
 
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./SCAN_SCOUT_DOCKER.jpg?raw=true)
+
+Docker Scout nos muestra:
+
+Número de vulnerabilidades
+
+Severidad (baja, media, alta, crítica)
+
+Paquetes afectados
+
+Recomendaciones
+
+
 
 
