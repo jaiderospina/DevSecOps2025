@@ -22,17 +22,32 @@ Docker Scout está integrado desde Docker Desktop v4.17+.
 
 Asegúrate de tener sesión iniciada en Docker Desktop con tu cuenta Docker Hub.
 
+
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./LOGIN_DOCKER.jpg?raw=true)
 
 3. Visual Studio Code instalado
    
 https://code.visualstudio.com/
 
-
 5. Extensión de Docker en visua Code
 
+# Pasos para usar Docker Scout desde VS Code
+
+- 1. Abre tu proyecto en VS Code
+Debe contener un Dockerfile y/o una imagen Docker construida.
+
+- 2. Abre la extensión Docker en el panel lateral izquierdo
+
+Haz clic en el icono de Docker en la barra lateral izquierda de VS Code.
 
 
+
+🔹 3. Analiza una imagen con Scout
+Ve a la sección Imágenes en el panel de Docker en VS Code.
+
+Haz clic derecho sobre una imagen que ya hayas construido.
+
+Selecciona "Analyze with Docker Scout".
 
 
 
