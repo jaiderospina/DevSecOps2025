@@ -50,13 +50,13 @@ scout scan --mage jrami1519/animacion-texto
 ![image](https://github.com/user-attachments/assets/47ab0a0b-7bcb-42b7-994c-2a525c134447)
 
 
-###1.	CVE-2024-10963. Esta vulnerabilidad afecta al módulo pam_access y se debe a un manejo inadecuado de tokens en el archivo de configuración access.conf, que son interpretados erróneamente como nombres de host. 
+### 1. CVE-2024-10963. Esta vulnerabilidad afecta al módulo pam_access y se debe a un manejo inadecuado de tokens en el archivo de configuración access.conf, que son interpretados erróneamente como nombres de host. 
 -Impacto. Permite a los atacantes eludir las restricciones de acceso falsificando nombres de host, lo que puede resultar en acceso no autorizado a servicios o terminales específicos.
 -Solución. Para mitigar esta vulnerabilidad, se recomienda actualizar a una versión corregida de pam_access.  Para actualizar a través del gestor de paquetes utilizar los siguientes comandos: 
 sudo apt-get update
 sudo apt-get install --only-upgrade libpam-modules
 
-###2.	CVE-2024-10041. Esta vulnerabilidad afecta al módulo PAM (Pluggable Authentication Modules) y se debe a un almacenamiento inseguro de información sensible en la memoria.
+### 2. CVE-2024-10041. Esta vulnerabilidad afecta al módulo PAM (Pluggable Authentication Modules) y se debe a un almacenamiento inseguro de información sensible en la memoria.
 -Impacto. Permite a un atacante local entrenar el predictor de bifurcaciones para ejecutar una cadena ROP (Return-Oriented Programming) de manera especulativa, lo que podría resultar en la filtración de contraseñas almacenadas en archivos como /etc/shadow durante los procesos de autenticación.
 -Solución. Para mitigar esta vulnerabilidad, se recomienda actualizar a una versión corregida de PAM. Para actualizar a través del gestor de paquetes utilizar los siguientes comandos: 
 sudo apt-get update
