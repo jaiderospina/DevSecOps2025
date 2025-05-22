@@ -18,7 +18,8 @@ https://www.docker.com/products/docker-desktop
 
 Docker Scout está integrado desde Docker Desktop v4.17+.
 Asegúrate de tener sesión iniciada en Docker Desktop con tu cuenta Docker Hub.
- 
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo4/LOGIN_DOCKER.jpg?raw=)
+
 ### 3. Visual Studio Code instalado
 
 https://code.visualstudio.com/
@@ -50,4 +51,4 @@ docker scout quickview gpedraza1/maquinaescribir
 - Severidad (baja, media, alta, crítica)
 - Paquetes afectados
 - Recomendaciones
-
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo4/SCAN_SCOUT_DOCKER.jpg?raw=true)
