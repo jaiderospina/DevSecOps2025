@@ -45,6 +45,8 @@ scout scan --mage jrami1519/animacion-texto
 
 ![Analisis con docker scout](https://i.ibb.co/JFgZYw3x/Screenshot-from-2025-05-19-09-24-31.png)
 
+## Escaneo de vulnerabilidades:
+![image](https://github.com/user-attachments/assets/4832c87d-f832-4f22-8871-0f5be17f1956)
 
 ## Integantes Grupo 1:
 
