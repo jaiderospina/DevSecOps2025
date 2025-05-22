@@ -52,6 +52,8 @@ En nuestro Caso
 
 docker scout quickview gpedraza1/maquinaescribir
 
+Aqui podemos ver el resulta del scaneo de vulnerabilidades encontradas
+
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./SCAN_SCOUT_DOCKER.jpg?raw=true)
 
 
