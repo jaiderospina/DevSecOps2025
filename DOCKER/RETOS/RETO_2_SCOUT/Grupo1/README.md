@@ -45,7 +45,7 @@ scout scan --mage jrami1519/animacion-texto
 
 ![Analisis con docker scout](https://i.ibb.co/JFgZYw3x/Screenshot-from-2025-05-19-09-24-31.png)
 
-## Escaneo de vulnerabilidades:
+## Escaneo de vulnerabilidades con Scout:
 ![image](https://github.com/user-attachments/assets/4832c87d-f832-4f22-8871-0f5be17f1956)
 ![image](https://github.com/user-attachments/assets/47ab0a0b-7bcb-42b7-994c-2a525c134447)
 
