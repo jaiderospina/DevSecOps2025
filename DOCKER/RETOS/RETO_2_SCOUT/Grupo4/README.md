@@ -43,9 +43,9 @@ docker scout quickview gpedraza1/maquinaescribir
 
 ### 4. Resultado
  
-Docker Scout nos muestra:
-Número de vulnerabilidades
-Severidad (baja, media, alta, crítica)
-Paquetes afectados
-Recomendaciones
+- Docker Scout nos muestra:
+- Número de vulnerabilidades
+- Severidad (baja, media, alta, crítica)
+- Paquetes afectados
+- Recomendaciones
 
