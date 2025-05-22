@@ -33,16 +33,17 @@ https://code.visualstudio.com/
 
 # Pasos para usar Docker Scout desde VS Code
 
-- 1. Abre tu proyecto en VS Code
+ 1. Abre tu proyecto en VS Code
 Debe contener un Dockerfile y/o una imagen Docker construida.
 
-- 2. Abre la extensión Docker en el panel lateral izquierdo
+ 2. Abre la extensión Docker en el panel lateral izquierdo
 
 Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e nstall
 
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./EXTENSION_DOCKER_VS_CODE.jpg?raw=true)
 
-🔹 3. Analiza una imagen con Scout
+3. Analiza una imagen con Scout
+4. 
 Ve a la sección Imágenes en el panel de Docker en VS Code.
 
 Haz clic derecho sobre una imagen que ya hayas construido.
