@@ -25,11 +25,11 @@ Asegúrate de tener sesión iniciada en Docker Desktop con tu cuenta Docker Hub.
 
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./LOGIN_DOCKER.jpg?raw=true)
 
-## 3. Visual Studio Code instalado
+### 3. Visual Studio Code instalado
    
 https://code.visualstudio.com/
 
-## 5. Extensión de Docker en visua Code
+## 4. Extensión de Docker en visual Code
 
 # Pasos para usar Docker Scout desde VS Code
 
