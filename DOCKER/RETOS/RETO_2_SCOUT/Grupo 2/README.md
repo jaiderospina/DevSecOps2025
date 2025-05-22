@@ -46,21 +46,21 @@ Vamos a usar el siguiente repositorio para el analisis: [wrafaelbc](https://hub.
 
 Iniciamos sesión en Docker Hub y buscamos el repositorio con la imagen, una vez allí seleccionamos la pestaña **Activate**
 
-![reto1](images/reto1.png)
+![reto1](./Images/reto1.png)
 
 Dentro de la pestaña activamos Docker Scout image analysis y guardamos cambios
 
-![reto2](images/reto2.png)
+![reto2](./Images/reto2.png)
 
 ### Paso 2. Escaneo rápido
 
 Una vez activada la funcion de Docker Scout este comenzara el analisis de forma inmediata.
 
-![reto3](images/reto3.png)
+![reto3](./Images/reto3.png)
 
 Muestra un resumen de vulnerabilidades encontradas y recomendaciones, en nuestro ejemplo no encontro ninguna vulnerabilidad.
 
-![reto4](images/reto4.png)
+![reto4](./Images/reto4.png)
 
 
 ### Observación
@@ -73,13 +73,13 @@ Docker Scout evalúa imágenes en función de políticas de seguridad, como:
 
 - Buenas prácticas de construcción de imágenes.
 
-![reto5](images/reto5.png)
+![reto5](./Images/reto5.png)
 
 3/7 indica que tu imagen solo cumple 3 de estas 7 políticas, lo cual sugiere que hay 4 áreas que podrían mejorarse para reforzar la seguridad o el cumplimiento.
 
 Al ingresar a una de ellas vemos las causas y recomendaciones que este nos da.
 
-![reto6](images/reto6.png)
+![reto6](./Images/reto6.png)
 
 ## Limitaciones
 
