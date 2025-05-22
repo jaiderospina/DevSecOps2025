@@ -12,11 +12,11 @@ Docker Scout es una herramienta que facilita el escaneo de imágenes locales en 
 
 Requisitos
 
-## 1. Debes tener Docker instalado
+### 1. Debes tener Docker instalado
    
 https://www.docker.com/products/docker-desktop
 
-## 3. Debes tener Docker Desktop habilitado con Docker Scout
+### 3. Debes tener Docker Desktop habilitado con Docker Scout
 
 Docker Scout está integrado desde Docker Desktop v4.17+.
 
@@ -29,14 +29,14 @@ Asegúrate de tener sesión iniciada en Docker Desktop con tu cuenta Docker Hub.
    
 https://code.visualstudio.com/
 
-## 4. Extensión de Docker en visual Code
+### 4. Extensión de Docker en visual Code
 
 # Pasos para usar Docker Scout desde VS Code
 
-## 1. Abre tu proyecto en VS Code
+### 1. Abre tu proyecto en VS Code
 Debe contener un Dockerfile y/o una imagen Docker construida.
 
-## 2. Abre la extensión Docker en el panel lateral izquierdo
+### 2. Abre la extensión Docker en el panel lateral izquierdo
 
 Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e nstall
 
@@ -52,7 +52,7 @@ En nuestro Caso
 
 docker scout quickview gpedraza1/maquinaescribir
 
-## 4. Resultado
+##### 4. Resultado
 
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./SCAN_SCOUT_DOCKER.jpg?raw=true)
 
