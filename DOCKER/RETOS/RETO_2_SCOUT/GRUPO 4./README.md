@@ -40,9 +40,8 @@ Debe contener un Dockerfile y/o una imagen Docker construida.
 
 Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e nstall
 
-![image] (https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./EXTENSION_DOCKER_VS_CODE.jpg?raw=true).
-
-
+![image] (https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./EXTENSION_DOCKER_VS_CODE.jpg?raw=true)
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./EXTENSION_DOCKER_VS_CODE.jpg?raw=true)
 
 🔹 3. Analiza una imagen con Scout
 Ve a la sección Imágenes en el panel de Docker en VS Code.
