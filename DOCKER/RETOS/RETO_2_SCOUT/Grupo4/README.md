@@ -49,8 +49,8 @@ docker scout quickview gpedraza1/maquinaescribir.
 - Docker Scout nos muestra:
 - Número de vulnerabilidades
 - Severidad (baja, media, alta, crítica)
-- Paquetes afectados
-- Recomendaciones
+- Paquetes afectados.
+- Recomendaciones.
 ![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/Grupo4/SCAN_SCOUT_DOCKER.jpg?raw=true)
 
 
