@@ -42,7 +42,7 @@ Haz clic en el icono de Docker en la barra lateral izquierda de VS Code e instal
 Por CLI colocamos el siguiente comando cn el nombre de la imágen que tengamos cargada en un nuestro Docker hub
 docker scout quickview (nombre imágen)
 En nuestro Caso
-docker scout quickview gpedraza1/maquinaescribir
+docker scout quickview gpedraza1/maquinaescribir.
 
 ### 4. Resultado
  
