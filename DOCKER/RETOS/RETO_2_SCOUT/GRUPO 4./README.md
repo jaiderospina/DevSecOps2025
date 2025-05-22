@@ -26,7 +26,7 @@ Asegúrate de tener sesión iniciada en Docker Desktop con tu cuenta Docker Hub.
    
 https://code.visualstudio.com/
 
-![image](https://github.com/user-attachments/assets/ee59034c-8ba1-4e3a-b398-85243a5bdf14)
+![image](https://github.com/jaiderospina/DevSecOps2025/blob/main/DOCKER/RETOS/RETO_2_SCOUT/GRUPO%204./LOGIN_DOCKER.jpg?raw=true)
 
 5. Extensión de Docker en visua Code
 
