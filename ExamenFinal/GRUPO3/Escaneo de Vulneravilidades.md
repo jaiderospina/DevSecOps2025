@@ -7,3 +7,4 @@ Puntaje de prioridad: 812
 Identificador CWE: CWE-79
 
 **Descripción de la vulnerabilidad:** La aplicación es vulnerable a un ataque de tipo Cross-site Scripting (XSS). Esto se debe a que los datos enviados por el usuario no están siendo correctamente validados ni sanitizados antes de ser renderizados en el HTML. Por ejemplo, un atacante podría enviar una cadena como:
+<script>alert(1)</script>
