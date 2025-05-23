@@ -170,7 +170,6 @@ Empleado: pueda ver reportes y generar estadísticas de pago.
 ## Arquitectura del software 
 En este proyecto se adaptó la arquitectura Modelo Vista Controlador - MVC, que facilito a la organización, la escalabilidad y el manejo del software, como se muestra en la figura.
 
-IMAGEN
 
 El patrón MVC separa la aplicación en tres componentes principales: modelo, Vista y Controlador. Cada componente tiene una responsabilidad específica:
 
@@ -199,6 +198,7 @@ Esta arquitectura promueve la separación de responsabilidades, lo que facilita 
 **•	Disponibilidad:** la plataforma debe estar disponible las 24 horas del día, los 7 días de la semana, para asegurar que los administradores puedan acceder y realizar tareas en cualquier momento necesario.
 
 **● Escalabilidad:** el sistema debe ser escalable para acomodar un crecimiento en el número de habitaciones, mesas en la cafetería y usuarios administradores.
+
 
 
 
