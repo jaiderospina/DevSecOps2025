@@ -37,8 +37,6 @@ LINK:
 https://hub.docker.com/repository/docker/m4rl0n25/typewriter/general
 
 
-https://hub.docker.com/r/laromero12/maquinaescribir
-
 
 ---- 
 
