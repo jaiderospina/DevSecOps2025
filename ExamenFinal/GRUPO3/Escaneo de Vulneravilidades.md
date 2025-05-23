@@ -35,3 +35,29 @@ El atacante puede forzar que la condición de búsqueda sea siempre verdadera, a
 ![image](https://github.com/user-attachments/assets/b99021b5-63db-4175-8fff-68d97645abb2)
 
 Esto reduce significativamente el riesgo de inyección al garantizar que solo se procesen números enteros como entrada.
+
+# 3. Uso de Credenciales Codificadas en el Código (Hardcoded Credentials)
+
+Ubicación: Línea 10 del código
+
+Puntaje de prioridad: 162
+
+Identificadores CWE: CWE-798, CWE-259
+
+**Descripción de la vulnerabilidad:** Se detectó el uso de credenciales codificadas directamente en el código fuente:
+![image](https://github.com/user-attachments/assets/6329afbf-8be8-425f-a4d2-229b9a69267a)
+
+El uso de este enfoque representa un riesgo significativo por varias razones:
+
+Si un atacante accede al código fuente (por filtración, error de configuración o acceso indebido), las credenciales quedan completamente expuestas.
+
+Dificulta la rotación periódica de contraseñas, ya que requiere modificaciones directas al código.
+
+No permite la separación clara entre entornos (desarrollo, pruebas, producción), lo que puede llevar a errores de configuración y fallas de seguridad.
+
+![image](https://github.com/user-attachments/assets/2c7d39bf-9c21-4bd1-afee-8e4e3e0441e8)
+**Mejores prácticas recomendadas:** Las credenciales nunca deben estar incrustadas en el código fuente. Se recomienda utilizar variables de entorno o archivos de configuración externos, los cuales deben estar fuera del directorio accesible públicamente desde el servidor web. Por ejemplo:
+![image](https://github.com/user-attachments/assets/db94d7e7-4ad9-41db-94c6-c118d99bf232)
+
+Además, se deben implementar controles de acceso adecuados al entorno de ejecución para proteger la información sensible.
+
