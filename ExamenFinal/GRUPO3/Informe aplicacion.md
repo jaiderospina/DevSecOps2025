@@ -170,6 +170,7 @@ Empleado: pueda ver reportes y generar estadísticas de pago.
 ## Arquitectura del software 
 En este proyecto se adaptó la arquitectura Modelo Vista Controlador - MVC, que facilito a la organización, la escalabilidad y el manejo del software, como se muestra en la figura.
 
+![image](https://github.com/user-attachments/assets/ffed17e4-5179-46a2-a7ff-3b972b46faa3)
 
 El patrón MVC separa la aplicación en tres componentes principales: modelo, Vista y Controlador. Cada componente tiene una responsabilidad específica:
 
