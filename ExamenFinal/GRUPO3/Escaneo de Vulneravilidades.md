@@ -13,3 +13,5 @@ Dicha entrada es inyectada directamente en el HTML, lo que permite la ejecución
 
 **Mejores prácticas recomendadas:**
 Para mitigar esta vulnerabilidad, se recomienda utilizar funciones de escape al momento de mostrar datos en el navegador. Un ejemplo de implementación segura en PHP sería:
+![image](https://github.com/user-attachments/assets/72de0069-be74-4367-a85b-85d5945beaaf)
+Esto asegura que cualquier entrada potencialmente peligrosa sea mostrada como texto plano en lugar de ejecutarse como código HTML o JavaScript.
