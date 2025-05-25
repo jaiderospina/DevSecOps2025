@@ -152,6 +152,90 @@ Se verifica que las copias de seguridad puedan ser restauradas correctamente.
 
 El proceso de backup puede ser ejecutado manualmente o programado automáticamente.
 
+## Casos de Uso
+
+📌 Caso de Uso 1: Registrar ítem
+Actor principal: Usuario
+
+Descripción: El usuario ingresa los datos de un nuevo ítem (nombre, cédula, producto, valor) desde el formulario web.
+
+Precondición: El sistema debe estar en funcionamiento y accesible desde el navegador.
+
+Flujo principal:
+
+El usuario accede a la interfaz web.
+
+Completa el formulario con los datos del nuevo ítem.
+
+Hace clic en “Agregar”.
+
+El sistema valida los datos e inserta el registro en la base de datos.
+
+Se muestra el ítem en la tabla actualizada.
+
+📌 Caso de Uso 2: Modificar ítem
+Actor principal: Usuario
+
+Descripción: El usuario selecciona un ítem existente e ingresa los nuevos datos del producto y su valor.
+
+Precondición: El ítem debe existir.
+
+Flujo principal:
+
+El usuario accede al formulario de modificación.
+
+Ingresa el ID del ítem y los nuevos datos.
+
+Hace clic en “Modificar”.
+
+El sistema actualiza la información en la base de datos.
+
+📌 Caso de Uso 3: Eliminar ítem
+Actor principal: Usuario
+
+Descripción: El usuario elimina un ítem del sistema mediante su ID.
+
+Precondición: El ítem debe existir.
+
+Flujo principal:
+
+El usuario accede al formulario de eliminación.
+
+Ingresa el ID del ítem.
+
+Hace clic en “Eliminar”.
+
+El sistema borra el ítem de la base de datos.
+
+📌 Caso de Uso 4: Visualizar ítems
+Actor principal: Usuario
+
+Descripción: El usuario accede a una vista general de todos los ítems registrados.
+
+Precondición: Debe haber al menos un ítem registrado.
+
+Flujo principal:
+
+El usuario abre la página.
+
+El sistema consulta los datos en la base y muestra una tabla con los registros.
+
+📌 Caso de Uso 5: Desplegar el sistema con Docker
+Actor principal: Administrador
+
+Descripción: El administrador configura y despliega los contenedores para la aplicación web, base de datos y phpMyAdmin usando docker-compose.
+
+Precondición: Docker debe estar instalado y configurado.
+
+Flujo principal:
+
+El administrador ejecuta docker-compose up.
+
+El sistema crea los contenedores y monta los volúmenes definidos.
+
+Los servicios quedan accesibles por el navegador.
+
+
 
 ## 3. Manual de Administrador
 
