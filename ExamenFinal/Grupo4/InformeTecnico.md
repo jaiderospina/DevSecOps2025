@@ -60,6 +60,99 @@ Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kuberne
 
 ## 2. Historias de Usuario
 
+🧍‍♂️ Usuario final (operador del sistema)
+1. Como usuario del sistema, quiero registrar nuevos ítems con su respectiva información para mantener actualizado el inventario de manera sencilla y rápida.
+
+Criterios de aceptación:
+
+El formulario de registro valida que todos los campos obligatorios estén completos antes de enviar.
+
+Al enviar, el sistema guarda correctamente el ítem en la base de datos.
+
+El sistema muestra un mensaje de éxito al registrar un ítem nuevo.
+
+En caso de error (datos inválidos o fallos de conexión), se muestra un mensaje claro de error.
+
+El nuevo ítem aparece en la lista actualizada de ítems tras el registro.
+
+2. Como usuario del sistema, quiero modificar los datos de un ítem existente (producto y valor) para corregir errores o actualizar información sin afectar otros registros.
+
+Criterios de aceptación:
+
+El sistema permite seleccionar un ítem existente para editar.
+
+El formulario de edición valida que los datos ingresados sean correctos y completos.
+
+Al guardar cambios, la base de datos se actualiza solo para el ítem seleccionado.
+
+El sistema muestra un mensaje de confirmación tras la modificación exitosa.
+
+La lista de ítems refleja la actualización inmediatamente.
+
+3. Como usuario del sistema, quiero eliminar ítems del sistema para mantener el inventario limpio y evitar datos obsoletos.
+
+Criterios de aceptación:
+
+El usuario puede seleccionar el ítem a eliminar por su ID o desde la lista.
+
+El sistema solicita confirmación antes de eliminar un ítem.
+
+Al confirmar, el ítem es eliminado de la base de datos.
+
+El sistema muestra un mensaje de éxito tras eliminar el ítem.
+
+La lista de ítems ya no muestra el ítem eliminado.
+
+4. Como usuario del sistema, quiero visualizar todos los ítems existentes en una tabla organizada para tener una vista general del inventario y facilitar la toma de decisiones.
+
+Criterios de aceptación:
+
+La tabla muestra los campos principales: ID, nombre, cédula, producto y valor.
+
+Los datos se actualizan dinámicamente tras cualquier operación (crear, modificar, eliminar).
+
+La tabla es fácil de leer y navegar, con formato claro y ordenado.
+
+En caso de que no haya datos, se muestra un mensaje indicando que no hay ítems registrados.
+
+🧑‍💻 Administrador del sistema
+1. Como administrador del sistema, quiero desplegar y configurar todos los servicios del sistema mediante Docker para asegurar un entorno reproducible, escalable y fácil de mantener.
+
+Criterios de aceptación:
+
+El entorno Docker está definido mediante archivos Dockerfile y docker-compose.yml.
+
+Se pueden levantar todos los servicios con un solo comando (docker-compose up).
+
+Los servicios (Apache/PHP, MariaDB, phpMyAdmin) inician correctamente y se comunican entre sí.
+
+El sistema es accesible desde el navegador tras desplegar los servicios.
+
+2. Como administrador del sistema, quiero contar con una herramienta gráfica como phpMyAdmin para gestionar y consultar la base de datos de forma visual y rápida.
+
+Criterios de aceptación:
+
+phpMyAdmin está desplegado como un servicio Docker separado y accesible vía navegador.
+
+Se puede iniciar sesión con las credenciales configuradas para gestionar la base de datos.
+
+Permite visualizar, editar y realizar consultas a las tablas sin problemas.
+
+El acceso a phpMyAdmin está protegido por credenciales.
+
+3. Como administrador del sistema, quiero realizar copias de seguridad periódicas de la base de datos para garantizar la disponibilidad de la información ante fallos o pérdidas de datos.
+
+Criterios de aceptación:
+
+Existen procedimientos o scripts definidos para realizar backups automáticos de la base de datos.
+
+Las copias de seguridad se almacenan en una ubicación segura y accesible.
+
+Se verifica que las copias de seguridad puedan ser restauradas correctamente.
+
+El proceso de backup puede ser ejecutado manualmente o programado automáticamente.
+
+
 ## 3. Manual de Administrador
 
 ## 4. Diagrama de Despliegue
