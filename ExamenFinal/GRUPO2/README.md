@@ -31,7 +31,7 @@ Este proyecto implementa un entorno contenerizado con Docker que integra:
 - Cuenta de Telegram y token del bot.
 - Configuración de GLPI API.
 
-## Requisitos
+## Autores
 
 - Diana Maecha
 - German Gonzalez
