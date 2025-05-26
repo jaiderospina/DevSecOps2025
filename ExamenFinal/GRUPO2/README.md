@@ -1,4 +1,4 @@
-# Plataforma Contenerizada de Gestión de Incidentes con GLPI y Telegram Bot
+# Plataforma contenerizada de gestión de Incidentes con GLPI y Telegram Bot
 
 ## Descripción
 
@@ -22,7 +22,7 @@ Este proyecto implementa un entorno contenerizado con Docker que integra:
 1. Clonar el repositorio.
 2. Crear archivo `.env` con las variables de entorno (ejemplo en `config/telegram_config.env`).
 3. Ejecutar `docker-compose up -d` para levantar todos los servicios.
-4. Acceder a GLPI en `http://localhost:8080`.
+4. Acceder a GLPI en `http://35.224.115.142/front/config.form.php`.
 5. Interactuar con el bot de Telegram para crear y gestionar incidencias.
 
 ## Requisitos
@@ -30,5 +30,13 @@ Este proyecto implementa un entorno contenerizado con Docker que integra:
 - Docker y Docker Compose instalados.
 - Cuenta de Telegram y token del bot.
 - Configuración de GLPI API.
+
+## Requisitos
+
+- Diana Maecha
+- German Gonzalez
+- Wilmer Briceño
+- Jairo Rodriguez
+- Carlos David
 
 
