@@ -10,12 +10,19 @@ Este proyecto implementa un entorno contenerizado con Docker que integra:
 
 ## Estructura
 
-- `docker-compose.yml`: Orquesta los servicios.
-- `src/`: Código fuente del chatbot y Dockerfile.
-- `mysql/`: Scripts para base de datos.
-- `docs/`: Documentación.
-- `config/`: Configuraciones y variables de entorno.
-- `tests/`: Pruebas automatizadas.
+| Carpeta / Archivo | Contenido y propósito                                                                 |
+|-------------------|----------------------------------------------------------------------------------------|
+| `docs/`           | Documentación, diagramas, manuales, especificaciones.                                 |
+| `docker/`         | Dockerfile(s), docker-compose.yml, scripts de despliegue contenerizado.               |
+| `src/`            | Código fuente del chatbot (por ejemplo, scripts Python) u otros programas.            |
+| `mysql/`          | Scripts para crear y poblar la base de datos MySQL.                                   |
+| `tests/`          | Pruebas unitarias o de integración, validaciones.                                     |
+| `config/`         | Archivos de configuración, variables de entorno, settings de GLPI, Telegram.          |
+| `scripts/`        | Scripts para automatización, despliegue o mantenimiento.                              |
+| `README.md`       | Presentación y guía principal del proyecto.                                           |
+| `LICENSE`         | Licencia de uso (MIT, Apache, etc.).                                                  |
+| `.gitignore`      | Archivos y carpetas a ignorar en Git (ej: `.env`, `/data`).                           |
+
 
 ## Instrucciones de uso
 
