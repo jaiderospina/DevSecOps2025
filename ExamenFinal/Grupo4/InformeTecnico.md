@@ -241,36 +241,48 @@ Los servicios quedan accesibles por el navegador.
 
 
 wsl –install
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-•	Instala WSL 2
+Instala WSL 2
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen2.png)
 
-•	Descarga Ubuntu (última versión LTS)
+
+Descarga Ubuntu (última versión LTS)
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen3.png)
 
 docker composse up en bash
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen4.png)
 
 Actualizar docker composse up en bash
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen5.png)
 
 WSL --shutdown
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen6.png)
 
 docker compose up -d
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen7.png)
 
 docker ps
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%208.jpg)
 
 visual de Docker desktop
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%209.jpg)
 
 logueo a docker hup
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2010.jpg)
 
 ver imagenenes
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2011.jpg)
 
 Etiqueta (tag) tu imagen local con el nombre de tu repositorio en Docker Hub
@@ -281,6 +293,14 @@ Sube (push) la imagen a Docker Hub
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2013.jpg)
 
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2014.jpg)
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2015.jpg)
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2016.jpg)
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2017.jpg)
+
+
 
 ## 4. Diagrama de Despliegue
-
