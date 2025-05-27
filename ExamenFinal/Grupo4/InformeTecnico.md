@@ -278,9 +278,8 @@ Etiqueta (tag) tu imagen local con el nombre de tu repositorio en Docker Hub
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2012.jpg)
 
 Sube (push) la imagen a Docker Hub
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2012.jpg)
 
-
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2013.jpg)
 
 
 ## 4. Diagrama de Despliegue
