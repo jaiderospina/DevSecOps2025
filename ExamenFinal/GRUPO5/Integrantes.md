@@ -1,8 +1,7 @@
 ## Integrantes
 
-- [Angel](https://github.com/AngelRod-cyber)
-- [Alfredo](https://github.com/YaccH89)
-- [Yesith](https://github.com/YaccH89)
-- [Felipe](https://github.com/YaccH89)
-- [Yeikin](https://github.com/andres24-uni)
-
+- [Rodriguez Arguello Angel Eduardo](https://github.com/AngelRod-cyber)
+- [Gutierrez Florez Alfredo Jose](https://github.com/YaccH89)
+- [Calvera Chaparro Yesith Alonso](https://github.com/YaccH89)
+- [Cruz Rojas Andres Felipe 🤖](https://github.com/YaccH89)
+- [Mena Vargas Yeikin Andres](https://github.com/andres24-uni)
