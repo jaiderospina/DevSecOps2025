@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+
+  web:
+    build: .
+    container_name: casacafe-web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - casacafe-network
+
+  db:
+    image: mysql:8.0
+    container_name: casacafe-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: casa_del_cafe
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+    ports:
+      - "3307:3306" # Cambié a 3307 para evitar conflictos con un MySQL local
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - casacafe-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: casacafe-phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    networks:
+      - casacafe-network
+
+volumes:
+  db_data:
+
+networks:
+  casacafe-network:
+    driver: bridge
