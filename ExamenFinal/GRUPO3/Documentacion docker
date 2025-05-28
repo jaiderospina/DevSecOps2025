@@ -1,14 +1,4 @@
 
-# **Diagrama de procesos:** 
-
-![imagen](https://github.com/user-attachments/assets/5cf6d815-6c86-4c54-880d-82039e21c9cf)
-
-
-<img width="669" alt="imagen (1)" src="https://github.com/user-attachments/assets/d66ff543-f8dd-426d-a79a-83d47cdffd50" />
-
-
-# **Código Fuente:**
-
 ## Task Manager Frontend
 
 Este es el frontend del sistema **Task Manager**, desarrollado con Angular y TailwindCSS. La aplicación permite a los usuarios autenticarse, gestionar tareas y comunicarse con una API backend para almacenar y recuperar datos.
