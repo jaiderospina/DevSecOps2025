@@ -1,13 +1,90 @@
-📄 Documentación de Implementación del Proyecto "Casa del Café"
-🐳 1. Configuración del Entorno Local con Docker
+## 📄 Documentación de Implementación del Proyecto "Casa del Café"
+
+🐳  Configuración del Entorno Local con Docker
 Estructura del Proyecto
 El proyecto contiene tres contenedores:
+![Imagen de WhatsApp 2025-05-27 a las 16 03 12_a4b81a6f](https://github.com/user-attachments/assets/d237cae9-69de-481c-b23a-220eca91fbb2)
 
-db-1: Servidor MySQL.
+*db-1: Servidor MySQL.
 
-phpmyadmin: Interfaz web para gestión de base de datos.
+*phpmyadmin: Interfaz web para gestión de base de datos.
+![Imagen de WhatsApp 2025-05-27 a las 16 03 13_729ee45c](https://github.com/user-attachments/assets/973cdf45-2537-4ec3-8a12-69676bfa0a7d)
 
-web-1: Proyecto web (frontend y backend).
+*web-1: Proyecto web (frontend y backend).
+![Imagen de WhatsApp 2025-05-27 a las 16 03 12_a4963400](https://github.com/user-attachments/assets/04c4c9f2-7970-4498-857b-3eb26a5e7881)
 
 Comando para iniciar el entorno
 Desde la carpeta raíz del proyecto (mi-proyecto):
+
+![Imagen de WhatsApp 2025-05-27 a las 16 03 12_02ec1ef3](https://github.com/user-attachments/assets/06b3a04e-1fab-40d1-b456-fb427fb2f4d8)
+
+Esto crea y levanta:
+
+Red de Docker: mi-proyecto_default
+
+Volumen de datos: mi-proyecto_db_data
+
+Contenedores: mi-proyecto-db-1, mi-proyecto-phpmyadmin-1, mi-proyecto-web-1
+
+**Nota:** El archivo docker-compose.yml tiene un warning por la clave version, que puede ser removida sin afectar el funcionamiento.
+
+## Subida del Código a Hostinger
+Ubicación del código:
+![image](https://github.com/user-attachments/assets/8293ad6a-57e6-4308-9fd9-f277e5387d70)
+
+En Hostinger, el código del proyecto web se debe subir en la siguiente ruta:
+![image](https://github.com/user-attachments/assets/d1824df9-d8fb-4dbf-80af-50236d941ca0)
+Vista desde el Administrador de Archivos:
+![Imagen de WhatsApp 2025-05-27 a las 16 29 54_3bfb7c41](https://github.com/user-attachments/assets/86f2438b-afc3-4509-875f-17b463611622)
+## 🗃Subida de la Base de Datos en Hostinger
+Cómo se sube:
+Ingresar al phpMyAdmin desde el panel de Hostinger.
+
+Crear una base de datos con el mismo nombre que en local (inventario, por ejemplo).
+
+Importar el .sql exportado desde tu entorno local.
+
+Verifica que las tablas fueron cargadas correctamente.
+
+![Imagen de WhatsApp 2025-05-27 a las 17 21 56_2cb9c8ba](https://github.com/user-attachments/assets/2d8e7034-919f-461d-b7b4-b4a90f2d8ad8)
+
+
+## 🌍  Descripción General de la Aplicación Web
+Esta es una aplicación web desarrollada para la administración de un hospedaje y una cafetería, diseñada para ser accesible desde internet mediante navegadores web. Está construida con tecnologías como PHP, HTML y MySQL, y se encuentra desplegada en un servidor web (Apache) bajo el dominio:
+
+🌐 Acceso a la Aplicación desde un Dominio
+El proyecto fue subido y configurado para estar accesible desde:
+![image](https://github.com/user-attachments/assets/7374d41e-76e5-4d07-978f-ae8ad977669f)
+
+✅ URL Pública de Acceso
+Cualquier persona con conexión a internet puede ingresar a la aplicación web desde:
+https://casadelcafe.store
+🔐 Credenciales de Acceso (para pruebas)
+Para ingresar como usuario en la aplicación, puedes usar las siguientes credenciales predeterminadas:
+
+Usuario:administrador@gmail.com
+
+Contraseña: Test123
+![image](https://github.com/user-attachments/assets/bba70ef8-f322-451a-b36f-4e7a340e340d)
+
+## 🏗️  Arquitectura de la Aplicación
+A continuación, se describe cómo funciona internamente la aplicación, basada en una arquitectura cliente-servidor tradicional:
+
+🔄 Flujo de funcionamiento:
+Cliente (usuario final)
+Accede a la aplicación mediante un navegador web y realiza una petición HTTP al dominio casadelcafe.store.
+
+Servidor Web (Apache)
+Recibe la petición y la pasa a los scripts PHP responsables de procesar la lógica de negocio.
+
+PHP (lógica de aplicación)
+Interpreta las solicitudes, realiza validaciones y consulta la base de datos si es necesario (por ejemplo, para autenticar un usuario o cargar reservas).
+
+Base de datos (MySQL)
+Responde con los datos requeridos, como productos del menú, habitaciones disponibles o reservas registradas.
+
+PHP (respuesta)
+Usa esos datos para formatear una página HTML dinámica.
+
+Respuesta HTML
+Se envía de regreso al navegador del cliente para ser visualizada como una página web completa.
