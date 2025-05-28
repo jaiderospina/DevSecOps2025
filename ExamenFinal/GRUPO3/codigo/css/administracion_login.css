@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #FFC95D;
+  --secondary-color: #904212;
+  --light-color: white;
+  --contrast-color: #260702;
+}
+
+.centrar-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+div {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px #000000;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  color: var(--secondary-color);
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type="submit"], a {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form[action="registro.php"] input[type="submit"] {
+  background-color: var(--contrast-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.imagen-agrandada {
+  max-width: 100%;
+  height: 23rem;
+}

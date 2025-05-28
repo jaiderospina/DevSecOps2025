@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #FFC95D;
+  --secondary-color: #904212;
+  --light-color: white;
+  --contrast-color: #260702;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light-color);
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 450px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+form {
+  text-align: center;
+}
+
+.container label {
+  display: block;
+  text-align: left;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.container input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.container a {
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.container select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,356 @@
+:root {
+    --primary-color: #FFC95D;
+    --secondary-color: #904212;
+    --third-color: #F28D33;
+    --light-color: white;
+    --contrast-color: #260702;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    height: 90%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    color: var(--secondary-color);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.welcome {
+    text-align: center;
+    font-size: 18px;
+}
+
+.acciones {
+    background-color: var(--contrast-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.acciones:hover {
+    background-color: var(--contrast-color); 
+}
+
+.options .acciones {
+    margin: 0 10px;
+}
+
+.options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}   
+
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dialog-box button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.dialog-box button:hover {
+    background-color: var(--contrast-color); 
+}
+
+.options button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: var(--light-color);
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a.table-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+a.table-link:hover {
+    text-decoration: underline;
+}
+
+.dialog-overlay-estado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.dialog-box-estado {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dialog-box-estado button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.dialog-box-estado button:hover {
+    background-color: var(--contrast-color); 
+}
+
+.sidebar {
+    width: 200px;
+    height: 90%;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.image-logo {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+input[type="submit"] {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--contrast-color);
+}
+
+.sidebar a {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0; 
+    color: var(--light-color);
+    text-decoration: none;
+    text-align: left;
+}
+
+.sidebar a:hover {
+    color: var(--primary-color);
+}
+
+.edit-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light-color);
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--contrast-color);
+    z-index: 1000;
+    text-align: center;
+}
+
+.edit-dialog h2 {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.edit-dialog input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--contrast-color);
+    border-radius: 3px;
+}
+
+.edit-dialog button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 10px 0 0;
+}
+
+.edit-dialog button#btnCerrar {
+    background-color: var(--contrast-color);
+}
+
+.edit-dialog button:hover {
+    background-color: var(--contrast-color);
+}
+
+.dialog-overlay-edit {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#inputBuscarNombre{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.dialogSpace{
+    display: flex;
+}
+
+.dialogSpace>p{
+    margin-right: 12px;
+}
