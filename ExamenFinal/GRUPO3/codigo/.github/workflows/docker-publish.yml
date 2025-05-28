@@ -1,0 +1,26 @@
+name: Publicar imagen Docker en GHCR
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checar código
+      uses: actions/checkout@v3
+
+    - name: Loguearse a GHCR
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Construir imagen Docker
+      run: docker build -t ghcr.io/m4rl0n25/casacafe:latest .
+
+    - name: Publicar imagen
+      run: docker push ghcr.io/m4rl0n25/casacafe:latest
