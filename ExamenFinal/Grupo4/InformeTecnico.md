@@ -209,6 +209,9 @@ Para ejecutar la aplicacion se requiere
 
 ## 11. Analisis de vulnerabilidades
 
+![despliegue](ExamenFinal/Grupo4/Analisis de Vulnerabilidades/MADM.html)
+
+ExamenFinal/Grupo4/Analisis de Vulnerabilidades/MADM.html
 
 ## 12. Mockups.
 
