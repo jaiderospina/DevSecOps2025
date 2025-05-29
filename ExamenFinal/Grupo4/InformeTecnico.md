@@ -58,186 +58,68 @@ Ampliar la solución con roles de usuario (administrador, editor, solo lectura).
 
 Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kubernetes
 
-## 2. Historias de Usuario
+## 7. Historias de Usuario 
 
-🧍‍♂️ Usuario final (operador del sistema)
-1. Como usuario del sistema, quiero registrar nuevos ítems con su respectiva información para mantener actualizado el inventario de manera sencilla y rápida.
+###- Historia de usuario 1.
 
-Criterios de aceptación:
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El formulario de registro valida que todos los campos obligatorios estén completos antes de enviar.
+### - Historia de usuario 2.
 
-Al enviar, el sistema guarda correctamente el ítem en la base de datos.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El sistema muestra un mensaje de éxito al registrar un ítem nuevo.
+### - Historia de usuario 3.
 
-En caso de error (datos inválidos o fallos de conexión), se muestra un mensaje claro de error.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El nuevo ítem aparece en la lista actualizada de ítems tras el registro.
+### - Historia de usuario 4.
 
-2. Como usuario del sistema, quiero modificar los datos de un ítem existente (producto y valor) para corregir errores o actualizar información sin afectar otros registros.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-Criterios de aceptación:
+### - Historia de usuario 5.
 
-El sistema permite seleccionar un ítem existente para editar.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El formulario de edición valida que los datos ingresados sean correctos y completos.
+### - Historia de usuario 6.
 
-Al guardar cambios, la base de datos se actualiza solo para el ítem seleccionado.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El sistema muestra un mensaje de confirmación tras la modificación exitosa.
+### - Historia de usuario 7.
 
-La lista de ítems refleja la actualización inmediatamente.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-3. Como usuario del sistema, quiero eliminar ítems del sistema para mantener el inventario limpio y evitar datos obsoletos.
+### - Historia de usuario 8.
 
-Criterios de aceptación:
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El usuario puede seleccionar el ítem a eliminar por su ID o desde la lista.
 
-El sistema solicita confirmación antes de eliminar un ítem.
+## 7. Casos de Uso.
 
-Al confirmar, el ítem es eliminado de la base de datos.
+### - Caso de uso 1.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-El sistema muestra un mensaje de éxito tras eliminar el ítem.
+### - Caso de uso 2.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-La lista de ítems ya no muestra el ítem eliminado.
+### - Caso de uso 3.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-4. Como usuario del sistema, quiero visualizar todos los ítems existentes en una tabla organizada para tener una vista general del inventario y facilitar la toma de decisiones.
+### - Caso de uso 4.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-Criterios de aceptación:
+### - Caso de uso 5.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-La tabla muestra los campos principales: ID, nombre, cédula, producto y valor.
+### - Caso de uso 6.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-Los datos se actualizan dinámicamente tras cualquier operación (crear, modificar, eliminar).
+### - Caso de uso 7.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-La tabla es fácil de leer y navegar, con formato claro y ordenado.
+### - Caso de uso 8.
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-En caso de que no haya datos, se muestra un mensaje indicando que no hay ítems registrados.
-
-🧑‍💻 Administrador del sistema
-1. Como administrador del sistema, quiero desplegar y configurar todos los servicios del sistema mediante Docker para asegurar un entorno reproducible, escalable y fácil de mantener.
-
-Criterios de aceptación:
-
-El entorno Docker está definido mediante archivos Dockerfile y docker-compose.yml.
-
-Se pueden levantar todos los servicios con un solo comando (docker-compose up).
-
-Los servicios (Apache/PHP, MariaDB, phpMyAdmin) inician correctamente y se comunican entre sí.
-
-El sistema es accesible desde el navegador tras desplegar los servicios.
-
-2. Como administrador del sistema, quiero contar con una herramienta gráfica como phpMyAdmin para gestionar y consultar la base de datos de forma visual y rápida.
-
-Criterios de aceptación:
-
-phpMyAdmin está desplegado como un servicio Docker separado y accesible vía navegador.
-
-Se puede iniciar sesión con las credenciales configuradas para gestionar la base de datos.
-
-Permite visualizar, editar y realizar consultas a las tablas sin problemas.
-
-El acceso a phpMyAdmin está protegido por credenciales.
-
-3. Como administrador del sistema, quiero realizar copias de seguridad periódicas de la base de datos para garantizar la disponibilidad de la información ante fallos o pérdidas de datos.
-
-Criterios de aceptación:
-
-Existen procedimientos o scripts definidos para realizar backups automáticos de la base de datos.
-
-Las copias de seguridad se almacenan en una ubicación segura y accesible.
-
-Se verifica que las copias de seguridad puedan ser restauradas correctamente.
-
-El proceso de backup puede ser ejecutado manualmente o programado automáticamente.
-
-## Casos de Uso
-
-📌 Caso de Uso 1: Registrar ítem
-Actor principal: Usuario
-
-Descripción: El usuario ingresa los datos de un nuevo ítem (nombre, cédula, producto, valor) desde el formulario web.
-
-Precondición: El sistema debe estar en funcionamiento y accesible desde el navegador.
-
-Flujo principal:
-
-El usuario accede a la interfaz web.
-
-Completa el formulario con los datos del nuevo ítem.
-
-Hace clic en “Agregar”.
-
-El sistema valida los datos e inserta el registro en la base de datos.
-
-Se muestra el ítem en la tabla actualizada.
-
-📌 Caso de Uso 2: Modificar ítem
-Actor principal: Usuario
-
-Descripción: El usuario selecciona un ítem existente e ingresa los nuevos datos del producto y su valor.
-
-Precondición: El ítem debe existir.
-
-Flujo principal:
-
-El usuario accede al formulario de modificación.
-
-Ingresa el ID del ítem y los nuevos datos.
-
-Hace clic en “Modificar”.
-
-El sistema actualiza la información en la base de datos.
-
-📌 Caso de Uso 3: Eliminar ítem
-Actor principal: Usuario
-
-Descripción: El usuario elimina un ítem del sistema mediante su ID.
-
-Precondición: El ítem debe existir.
-
-Flujo principal:
-
-El usuario accede al formulario de eliminación.
-
-Ingresa el ID del ítem.
-
-Hace clic en “Eliminar”.
-
-El sistema borra el ítem de la base de datos.
-
-📌 Caso de Uso 4: Visualizar ítems
-Actor principal: Usuario
-
-Descripción: El usuario accede a una vista general de todos los ítems registrados.
-
-Precondición: Debe haber al menos un ítem registrado.
-
-Flujo principal:
-
-El usuario abre la página.
-
-El sistema consulta los datos en la base y muestra una tabla con los registros.
-
-📌 Caso de Uso 5: Desplegar el sistema con Docker
-Actor principal: Administrador
-
-Descripción: El administrador configura y despliega los contenedores para la aplicación web, base de datos y phpMyAdmin usando docker-compose.
-
-Precondición: Docker debe estar instalado y configurado.
-
-Flujo principal:
-
-El administrador ejecuta docker-compose up.
-
-El sistema crea los contenedores y monta los volúmenes definidos.
-
-Los servicios quedan accesibles por el navegador.
-
-
-
-## 3. Manual de Administrador
+## 8. Manual de Administrador
 
 Para ejecutar la aplicacion se requiere
 
@@ -314,7 +196,7 @@ Para ejecutar la aplicacion se requiere
   ![login](https://github.com/user-attachments/assets/f7a02e2d-a946-425c-a316-70eace22733c)
 
 
-## 4. Diagrama de Despliegue
+## 9. Diagrama de Despliegue
 
 - Los componentes del despliegue son:
 - Frontend Web: HTML + Bootstrap - cliente.
@@ -324,5 +206,7 @@ Para ejecutar la aplicacion se requiere
 
 
 ![despliegue](https://github.com/user-attachments/assets/50914a05-6c4c-4adc-a7b7-61500cb3b474)
+
+## 10. Analisis de vulnerabilidades
 
 
