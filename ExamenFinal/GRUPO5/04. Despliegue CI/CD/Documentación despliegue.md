@@ -72,6 +72,9 @@ External Services:
   └── DockerHub (Docker Image Registry)
 
 
+
+```
+
 ##### Task Manager Frontend
 
 Este es el frontend del sistema **Task Manager**, desarrollado con Angular y TailwindCSS. La aplicación permite a los usuarios autenticarse, gestionar tareas y comunicarse con una API backend para almacenar y recuperar datos.
@@ -98,7 +101,6 @@ src/
 ├── environments/            # Variables de entorno
 ├── styles/                  # Estilos globales (Tailwind)
 ├── main.ts                  # Punto de entrada
-```
 
 ## ⚙️ Configuración del Entorno
 
