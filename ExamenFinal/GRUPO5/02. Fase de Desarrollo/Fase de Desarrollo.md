@@ -18,7 +18,7 @@
 <img src="IMAGENES/historia 7.png" alt="SIETE" width="500" height="100">
 
 ## **Caso de uso :**
-<img src="IMAGENES/CASO DE USO.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/CASO DE USO.png" alt="tres" width="400" height="500">
 
 
 ## **Código Fuente:**
