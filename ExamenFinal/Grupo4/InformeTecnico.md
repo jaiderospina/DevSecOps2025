@@ -114,7 +114,7 @@ Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kuberne
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso6.png)
 
 ### - Caso de uso 7.
-![image alt](hhttps://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso7.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso7.png)
 
 ### - Caso de uso 8.
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso8.png)
