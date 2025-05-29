@@ -60,64 +60,64 @@ Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kuberne
 
 ## 7. Historias de Usuario 
 
-###- Historia de usuario 1.
+### - Historia de usuario 1.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario1.png)
 
 ### - Historia de usuario 2.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario2.png)
 
 ### - Historia de usuario 3.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario3.png)
 
 ### - Historia de usuario 4.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario4.png)
 
 ### - Historia de usuario 5.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario5.png)
 
 ### - Historia de usuario 6.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario6.png)
 
 ### - Historia de usuario 7.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario7.png)
 
 ### - Historia de usuario 8.
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario8.png)
 
 
 ## 7. Casos de Uso.
 
 ### - Caso de uso 1.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso1.png)
 
 ### - Caso de uso 2.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso2.png)
 
 ### - Caso de uso 3.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso3.png)
 
 ### - Caso de uso 4.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso4.png)
 
 ### - Caso de uso 5.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso5.png)
 
 ### - Caso de uso 6.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso6.png)
 
 ### - Caso de uso 7.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](hhttps://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso7.png)
 
 ### - Caso de uso 8.
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso8.png)
 
 ## 8. Manual de Administrador
 
@@ -210,3 +210,15 @@ Para ejecutar la aplicacion se requiere
 ## 10. Analisis de vulnerabilidades
 
 
+## 11. Mockups.
+
+### * Login
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Mockups/Mockup%201%20Login.jpg)
+
+### * Plataforma
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Mockups/Mockup%202%20Plataforma.jpg)
+
+
+****
