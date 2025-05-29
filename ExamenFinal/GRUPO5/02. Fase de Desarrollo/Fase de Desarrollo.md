@@ -9,7 +9,7 @@
 
 ## **Historias de caso :** 
 
-<img src="IMAGENES/historia 2.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 1.png" alt="tres" width="800" height="300">
 <img src="IMAGENES/historia 2.png" alt="tres" width="800" height="300">
 <img src="IMAGENES/historia 3.png" alt="tres" width="800" height="300">
 <img src="IMAGENES/historia 4.png" alt="tres" width="800" height="300">
