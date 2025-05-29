@@ -10,12 +10,12 @@
 ## **Historias de caso :** 
 
 <img src="IMAGENES/historia 1.png" alt="UNO" width="500" height="100">
-<img src="IMAGENES/historia 2.png" alt="DOS" width="500" height="200">
-<img src="IMAGENES/historia 3.png" alt="TRES" width="250" height="300">
-<img src="IMAGENES/historia 4.png" alt="CUATRO" width="800" height="300">
-<img src="IMAGENES/historia 5.png" alt="CINCO" width="800" height="300">
-<img src="IMAGENES/historia 6.png" alt="SEIS" width="800" height="300">
-<img src="IMAGENES/historia 7.png" alt="SIETE" width="800" height="300">
+<img src="IMAGENES/historia 2.png" alt="DOS" width="500" height="100">
+<img src="IMAGENES/historia 3.png" alt="TRES" width="500" height="100">
+<img src="IMAGENES/historia 4.png" alt="CUATRO" width="500" height="100">
+<img src="IMAGENES/historia 5.png" alt="CINCO" width="500" height="100">
+<img src="IMAGENES/historia 6.png" alt="SEIS" width="500" height="100">
+<img src="IMAGENES/historia 7.png" alt="SIETE" width="500" height="100">
 
 ## **Caso de uso :**
 <img src="IMAGENES/CASO DE USO.png" alt="tres" width="800" height="300">
