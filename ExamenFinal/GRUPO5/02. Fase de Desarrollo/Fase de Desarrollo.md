@@ -7,6 +7,13 @@
 
 <img width="669" alt="imagen (1)" src="https://github.com/user-attachments/assets/d66ff543-f8dd-426d-a79a-83d47cdffd50" />
 
+## **Historias de caso :** 
+
+<img src="images/segunda.png" alt="tres" width="800" height="300">
+
+## **Caso de uso :**
+<img src="images/segunda.png" alt="tres" width="800" height="300">
+
 
 ## **Código Fuente:**
 
