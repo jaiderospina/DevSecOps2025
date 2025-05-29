@@ -311,6 +311,9 @@ Para ejecutar la aplicacion se requiere
 
 - Ingrese a la aplicacion desde un navegador web a la apliacion http://localhost
 
+  ![login](https://github.com/user-attachments/assets/f7a02e2d-a946-425c-a316-70eace22733c)
+
+
 ## 4. Diagrama de Despliegue
 
 - Los componentes del despliegue son:
