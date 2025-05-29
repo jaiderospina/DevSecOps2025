@@ -10,9 +10,15 @@
 ## **Historias de caso :** 
 
 <img src="IMAGENES/historia 1.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 2.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 3.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 4.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 5.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 6.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/historia 7.png" alt="tres" width="800" height="300">
 
 ## **Caso de uso :**
-<img src="images/segunda.png" alt="tres" width="800" height="300">
+<img src="IMAGENES/CASO DE USO.png" alt="tres" width="800" height="300">
 
 
 ## **Código Fuente:**
