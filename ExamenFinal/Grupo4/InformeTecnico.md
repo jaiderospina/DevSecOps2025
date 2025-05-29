@@ -261,7 +261,7 @@ Para ejecutar la aplicacion se requiere
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen5.png)
 
-WSL --shutdown
+- Observe los docker ejecutandose con el comando docker ps
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%207.jpg)
 
@@ -269,15 +269,15 @@ WSL --shutdown
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen6.jpg)
 
-- Observe que los docker se esten ejecutando con el comando docker ps
-
+- Observe que los docker se esten ejecutando en el docker desktop
+  
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%208.jpg)
 
-visual de Docker desktop
+- Inicie sesion en docker hub con el comando docker login, se solicitara usuario y contraseña de docker hub
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%209.jpg)
 
-logueo a docker hup
+- Valide las imagenes de los docker
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2010.jpg)
 
