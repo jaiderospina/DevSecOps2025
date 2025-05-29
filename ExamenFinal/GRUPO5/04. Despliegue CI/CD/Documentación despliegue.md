@@ -1,3 +1,3 @@
 # Implementación Pipelines: 
 
-# Clic para ver [CI/CD](https://markdownlivepreview.com/).
+# Clic para ver [CI/CD](https://markdownlivepreview.com/). 📄
