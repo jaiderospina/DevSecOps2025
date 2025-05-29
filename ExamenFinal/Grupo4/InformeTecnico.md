@@ -241,16 +241,13 @@ Los servicios quedan accesibles por el navegador.
 
 Para ejecutar la aplicacion se requiere
 
-- Instalar el subsistema linux de windos, en una terminal de powershell ejecute el comando 
-
-wsl –install
+- Instalar el subsistema linux de windos, en una terminal de powershell ejecute el comando wsl –install
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen1.png)
 
-- Instala la versio WSL 2
+- Instala la versio WSL 2 (WSL 2) 
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen2.png)
-
 
 - Descarga la distribucion de linus Ubuntu (última versión LTS)
 
@@ -268,13 +265,11 @@ WSL --shutdown
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%207.jpg)
 
-
-
 - Navege hasta la ruta del proyecto donde se encuentra el archivo docker-compose.yml y ejecute el comando docker compose up -d para inicar el despliegue de los contenedores
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen6.jpg)
 
-docker ps
+- Observe que los docker se esten ejecutando con el comando docker ps
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%208.jpg)
 
