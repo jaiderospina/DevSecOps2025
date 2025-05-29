@@ -70,7 +70,9 @@
 External Services:
   ├── SonarCloud (Code Quality Analysis)
   └── DockerHub (Docker Image Registry)
-# Task Manager Frontend
+
+
+##### Task Manager Frontend
 
 Este es el frontend del sistema **Task Manager**, desarrollado con Angular y TailwindCSS. La aplicación permite a los usuarios autenticarse, gestionar tareas y comunicarse con una API backend para almacenar y recuperar datos.
 
