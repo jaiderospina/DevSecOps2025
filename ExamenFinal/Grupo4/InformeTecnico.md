@@ -93,7 +93,7 @@ Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kuberne
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Historia%20de%20usuario8.png)
 
 
-## 7. Casos de Uso.
+## 8. Casos de Uso.
 
 ### - Caso de uso 1.
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso1.png)
@@ -119,7 +119,7 @@ Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kuberne
 ### - Caso de uso 8.
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Historias%20de%20usuario%20y%20casos%20de%20uso/Caso%20de%20uso8.png)
 
-## 8. Manual de Administrador
+## 9. Manual de Administrador
 
 Para ejecutar la aplicacion se requiere
 
@@ -196,7 +196,7 @@ Para ejecutar la aplicacion se requiere
   ![login](https://github.com/user-attachments/assets/f7a02e2d-a946-425c-a316-70eace22733c)
 
 
-## 9. Diagrama de Despliegue
+## 10. Diagrama de Despliegue
 
 - Los componentes del despliegue son:
 - Frontend Web: HTML + Bootstrap - cliente.
@@ -207,10 +207,10 @@ Para ejecutar la aplicacion se requiere
 
 ![despliegue](https://github.com/user-attachments/assets/50914a05-6c4c-4adc-a7b7-61500cb3b474)
 
-## 10. Analisis de vulnerabilidades
+## 11. Analisis de vulnerabilidades
 
 
-## 11. Mockups.
+## 12. Mockups.
 
 ### * Login
 
