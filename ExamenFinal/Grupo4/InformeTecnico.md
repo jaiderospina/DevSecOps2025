@@ -253,57 +253,63 @@ Para ejecutar la aplicacion se requiere
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen3.png)
 
-- Valide la instalacion observando la version de docer con el comando docker version
+- Valide la instalacion observando la version de docer con el comando docker version.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen4.png)
 
-- Actualice el docker composse up en bash con el comando apt update
+- Actualice el docker composse up en bash con el comando apt update.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen5.png)
 
-- Observe los docker ejecutandose con el comando docker ps
+- Observe los docker ejecutandose con el comando docker ps.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%207.jpg)
 
-- Navege hasta la ruta del proyecto donde se encuentra el archivo docker-compose.yml y ejecute el comando docker compose up -d para inicar el despliegue de los contenedores
+- Navege hasta la ruta del proyecto donde se encuentra el archivo docker-compose.yml y ejecute el comando docker compose up -d para inicar el despliegue de los contenedores.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen6.jpg)
 
-- Observe que los docker se esten ejecutando en el docker desktop
+- Observe que los docker se esten ejecutando en el docker desktop.
   
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%208.jpg)
 
-- Inicie sesion en docker hub con el comando docker login, se solicitara usuario y contraseña de docker hub
+- Inicie sesion en docker hub con el comando docker login, se solicitara usuario y contraseña de docker hub.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%209.jpg)
 
-- Valide las imagenes de los docker
+- Valide las imagenes de los docker.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2010.jpg)
 
-ver imagenenes
+- Utilice el comando docker tag para darle a su imagen un nombre que incluya su nombre de usuario de Docker Hub, el nombre del repositorio y, opcionalmente, una etiqueta.
+
+-Docker 1.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2011.jpg)
 
-Etiqueta (tag) tu imagen local con el nombre de tu repositorio en Docker Hub
+-Docker 2.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2012.jpg)
 
+-Docker 3.
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2013.jpg)
 
-Sube (push) la imagen a Docker Hub
+-Utilice el comando docker push seguido del nombre de la imagen etiquetada, para subir las imagenes al docker hub.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%2014.jpg)
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen15.jpg)
 
+- Observe que se cuentan con las nuevas imagenes subidas a docker hub con el comando docker images.
+
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen16.jpg)
 
-imagenes en docker hup
+- imagenes en el docker desktop.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen17.jpg)
 
-
+- Ingrese a la aplicacion desde un navegador web a la apliacion http://localhost
 
 ## 4. Diagrama de Despliegue
 
