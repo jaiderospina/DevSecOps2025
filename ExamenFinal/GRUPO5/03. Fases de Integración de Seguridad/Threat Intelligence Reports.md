@@ -74,5 +74,26 @@ CVSS v3.1 Base Score: 4.7 (Medium)
         * C (Confidentiality Impact): Low (L)
         * I (Integrity Impact): Low (L)
         * A (Availability Impact): None (N)
+# Plan de Remediación de Vulnerabilidades:
 
+## Inyección SQL en Sistema de Gestión de Tareas (CVE-2025-0846)
+
+* **Aplicación afectada:** 1000 Projects Employee Task Management System 1.0
+* **Tipo de Vulnerabilidad:** Inyección SQL (CWE-89) CVSS v3.1 Base Score: 9.8 (Crítico)
+
+Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+
+* **CVSS v4.0 Base Score: 6.9 (Medio)**  (Interesante cómo v4.0 la baja, pero en el contexto de un sistema de gestión de tareas, sigue siendo muy grave).
+
+### Análisis de Riesgo y Priorización:
+
+* **Puntuación CVSS:** Muy alta en v3.1 (Crítico), lo que indica un riesgo severo. Aunque v4.0 la califica como "Medio", un ataque sin autenticación (PR:N, UI:N) que puede llevar a control total (C:H, I:H, A:H) de la base de datos es extremadamente peligroso.
+* **Explotabilidad:** Fácil de explotar (AC:L, PR:N, UI:N). Esto significa que un atacante no necesita privilegios ni interacción del usuario para comprometer el sistema.
+* **Impacto:** Máximo impacto en confidencialidad, integridad y disponibilidad. Un atacante podría robar todos los datos de tareas, modificarlos o eliminarlos, e incluso obtener control del servidor.
+* **Contexto de la aplicación:** Si este sistema gestiona tareas sensibles o datos de empleados, el impacto es catastrófico.
+
+### Cronograma de Corrección Sugerido:
+
+* **Prioridad:** Crítica, Remediar lo antes posible.
+* **Plazo:** Dentro de 24-72 horas. Dada la facilidad de explotación y el impacto devastador, esta vulnerabilidad exige una respuesta de emergencia. Si la aplicación está expuesta a internet, podría ser explotada en minutos. Se debe priorizar la implementación de un parche, una mitigación a nivel de firewall de aplicación web (WAF) o, en última instancia, retirar la aplicación de producción hasta que se aplique la corrección.
 
