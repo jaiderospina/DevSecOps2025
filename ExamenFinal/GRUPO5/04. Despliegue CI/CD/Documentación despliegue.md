@@ -1,7 +1,7 @@
 # Implementación Pipelines: 
 
-## FronEnd[CD/CI](https://github.com/AngelRod-cyber/TaskBackend-grupo5/actions/runs/15245934119).
-
+## BackEnd [CD/CI](https://github.com/AngelRod-cyber/TaskBackend-grupo5/actions/runs/15245934119).
+## FronEnd[CD/CI](https://github.com/AngelRod-cyber/TaskFrontend-grupo5).
 
 # 🏗️ Diagrama de Despliegue: angular-build-security-docker
 
