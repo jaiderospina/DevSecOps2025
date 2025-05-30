@@ -2,7 +2,7 @@
 
 ![Matriz RACI](https://github.com/user-attachments/assets/a589ba8a-68e0-4804-ac7e-e369361fe3cb)
 
-🔋**Leyenda RACI** :
+###🔋**Leyenda RACI** :
 
 R (Responsible): Responsable de hacer el trabajo.
 
