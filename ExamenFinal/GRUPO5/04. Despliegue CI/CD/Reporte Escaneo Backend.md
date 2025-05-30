@@ -5,7 +5,7 @@ Durante el escaneo de seguridad realizado al BACKEND de la aplicación se detect
 
 **Descripción de la vulnerabilidad:** Equivalencia de ruta: 'file.Name' (punto interno) que provoca la ejecución remota de código, la divulgación de información o la adición de contenido malicioso a los archivos subidos mediante el servlet predeterminado con escritura habilitada en Apache Tomcat.
 
- * **Paquete:** org.apache.tomcat.embed:tomcat-embed-core
+ * **Paquete:** org.apache.tomcat.embed:tomcat-embed-core 
  * **Gravedad:** CRITICA 
  * **Puntuación base 4.0:** 9.8 
  * **Version instalada:** 10.1.31 
