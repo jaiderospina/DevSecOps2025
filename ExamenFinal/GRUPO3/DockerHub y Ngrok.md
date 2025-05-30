@@ -52,12 +52,12 @@ Antes de comenzar, instala lo siguiente:
 ```bash
 git clone https://github.com/m4rl0n25/casacafe.git
 ```
-###2. Acceder al directorio
+### 2. Acceder al directorio
 
 ```
 cd casacafe
 ```
-3. Levantar los contenedores
+### 3. Levantar los contenedores
 
 ```
 docker-compose up -d
