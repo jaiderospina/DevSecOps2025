@@ -1,36 +1,42 @@
-# ☕ La Casa del Café - Aplicación Web Dockerizada
+# ☕ La Casa del Café - Aplicación Web
 
-<div align="center">
-    <img src="https://raw.githubusercontent.com/m4rl0n25/casacafe/main/assets/logo_cafe.png" alt="La Casa del Café" width="400"/>
-</div>
+![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)
+![GitHub](https://img.shields.io/badge/version-1.0.0-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Made With](https://img.shields.io/badge/Made%20with-Docker-blue?logo=docker)
 
-Este proyecto contiene una aplicación web de cafetería lista para ejecutarse en contenedores Docker. Incluye una interfaz de usuario web, base de datos MySQL y acceso a phpMyAdmin, todo orquestado con Docker Compose. Además, ofrece la opción de exponer el sitio públicamente mediante **Ngrok**.
-
----
-
-## 🚀 Características
-
-- 🌐 Interfaz web funcional accesible en `localhost`
-- 🧠 phpMyAdmin para la gestión visual de la base de datos
-- 🐳 Totalmente dockerizado para facilitar despliegue y pruebas locales
-- 🔗 Opción de compartir públicamente mediante **Ngrok**
-- 🧾 Proyecto versionado en GitHub
+Bienvenido al repositorio oficial de **La Casa del Café**, una aplicación web que simula un sistema de gestión y presentación de cafetería, desplegada usando contenedores Docker y con opción de exposición pública mediante **Ngrok**.
 
 ---
 
-## 🛠️ Requisitos
+## 📸 Capturas de Pantalla
 
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Git](https://git-scm.com/downloads)
-- (Opcional) [Ngrok](https://ngrok.com/)
+> 📍 Asegúrate de subir tus imágenes en una carpeta `/assets` o `/img` dentro del repositorio y reemplaza las rutas si cambias el nombre.
+
+### Página principal
+
+![Página principal](./assets/pagina_principal.png)
+
+### phpMyAdmin
+
+![phpMyAdmin](./assets/phpmyadmin.png)
 
 ---
 
-## 📦 ¿Cómo ejecutar esta aplicación?
+## ✅ Requisitos Previos
+
+Antes de comenzar, instala lo siguiente:
+
+- 🐳 [Docker](https://www.docker.com/)
+- ⚙️ [Docker Compose](https://docs.docker.com/compose/)
+- 🔧 [Git](https://git-scm.com/downloads)
+- 🌐 [Ngrok (opcional)](https://ngrok.com/)
+
+---
+
+## 🚀 ¿Cómo ejecutar la aplicación?
 
 ### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/m4rl0n25/casacafe.git
-cd casacafe
