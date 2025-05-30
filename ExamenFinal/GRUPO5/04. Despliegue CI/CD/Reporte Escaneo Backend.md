@@ -1,6 +1,6 @@
 ## VULNERABILIDADES DETECTADAS ##
 Durante el escaneo de seguridad realizado al BACKEND de la aplicación se detectan varias vulnerabilidades, a continuación, se describen algunas de ellas:  
-## vulnerabilidad
+## Muestra de vulnerabilidades
 # 1. vulnerabilidad de equivalencia de ruta en Apache Tomca 
 
 **Descripción de la vulnerabilidad:** Equivalencia de ruta: 'file.Name' (punto interno) que provoca la ejecución remota de código, la divulgación de información o la adición de contenido malicioso a los archivos subidos mediante el servlet predeterminado con escritura habilitada en Apache Tomcat.
