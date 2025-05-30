@@ -1,0 +1,65 @@
+☕ **La Casa del Café - Aplicacion Web** ☕
+
+ 
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/imagenes_proyecto/casacafe_logo.png?raw=true)
+
+
+
+ **¿Cómo ejecutar la aplicación?**
+
+1️⃣ Instala Git (si aún no lo tienes)
+Esto con el fin de permitir usar comandos de git directamente desde la terminal.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdd25hyNQOMs4Xx1Cv_A_oaT0zagfSWlXMBA&s)
+
+https://git-scm.com/downloads
+
+
+
+2️⃣ Clonar el repositorio almacenado en github
+
+
+- utilizar el siguiente comando en nuestra terminal
+
+`git clone https://github.com/m4rl0n25/casacafe.git`
+
+![](https://raw.githubusercontent.com/YonatanSmith/testcasacafe/refs/heads/main/gitclone.png)
+
+3️⃣ Cambiamos de directorio
+
+`cd casacafe`
+
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/cd.png?raw=true)
+
+4️⃣ subimos los contenedores y servicios de la aplicación
+
+`docker-compose up -d`
+
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/docker-composer.png?raw=true)
+
+5️⃣ Si el proceso sale correcto en nuestro Docker desktop se debería ver de la siguiente forma
+
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/docker.png?raw=true)
+
+6️⃣ Finalmente para el consumo de la aplicación vamos a conectarnos mediante los puertos.
+
+🌐 Sitio Web	http://localhost:8080	Vista pública del sitio
+
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/website.png?raw=true)
+
+🧠 phpMyAdmin	http://localhost:8081	Panel para gestionar la BD
+
+![](https://github.com/YonatanSmith/testcasacafe/blob/main/admin-db.png?raw=true)
+
+
+
+**Requisitos**
+
+🐳 Docker
+
+⚙️ Docker Compose
+
+🔧 Git
+
+🧾 Proyecto en GitHub
+🔗 https://github.com/m4rl0n25/casacafe
