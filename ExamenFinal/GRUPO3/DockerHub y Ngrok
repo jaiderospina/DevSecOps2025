@@ -1,23 +1,23 @@
-# ☕ La Casa del Café - Aplicación Web
+# ☕ Proyecto "Casa del Café" - Documentación de Despliegue con Docker
 
-Bienvenido al repositorio oficial de **La Casa del Café**, una aplicación web desarrollada con Docker y acceso remoto opcional usando **Ngrok**.
+Este documento explica de forma profesional y paso a paso cómo desplegar un sitio web con base de datos MySQL usando Docker y hacerlo accesible públicamente usando Ngrok, sin necesidad de un dominio o servidor dedicado.
 
 ---
 
 ## ✅ Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalados:
-
-- 🐳 [Docker](https://www.docker.com/)
-- ⚙️ [Docker Compose](https://docs.docker.com/compose/)
-- 🔧 [Git](https://git-scm.com/downloads)
-- 🌐 [Ngrok (opcional)](https://ngrok.com/)
+- Tener instalado:
+  - [Docker y Docker Compose](https://docs.docker.com/get-docker/)
+  - [Ngrok](https://ngrok.com/)
+- Acceso a la terminal o línea de comandos.
+- Conexión a internet.
 
 ---
 
-## 🚀 ¿Cómo ejecutar la aplicación?
+## 🛠️ Paso a Paso del Despliegue
 
-### 1. Clonar el repositorio
+### 1. Clonar el proyecto o crear estructura
 
-```bash
-git clone https://github.com/m4rl0n25/casacafe.git
+Organiza tu proyecto con esta estructura:
+
+
