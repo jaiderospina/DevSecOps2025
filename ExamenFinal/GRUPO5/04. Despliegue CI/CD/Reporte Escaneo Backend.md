@@ -17,9 +17,9 @@ Durante el escaneo de seguridad realizado al BACKEND de la aplicación se detect
 
 **Descripción de la vulnerabilidad:** La vulnerabilidad ACE en JaninoEventEvaluator por QOS.CH logback-core (versiones 0.1 a 1.3.14 y 1.4.0 a 1.5.12) en aplicaciones Java permite a un atacante ejecutar código arbitrario comprometiendo un archivo de configuración de logback existente o inyectando una variable de entorno antes de la ejecución del programa. Los archivos de configuración de logback maliciosos pueden permitir al atacante ejecutar código arbitrario mediante la extensión JaninoEventEvaluator. 
 
-**Gravedad:** MEDIA
-**Puntuación base 4.0:** 5.90
-**Version instalada:** 1.5.11
-**Version recomendada:** 1.5.13
+* **Gravedad:** MEDIA
+* **Puntuación base 4.0:** 5.90
+* **Version instalada:** 1.5.11
+* **Version recomendada:** 1.5.13
 
 - [Pagina analisis (CVE-2024-12798)] (https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/cve-2024-12798)
