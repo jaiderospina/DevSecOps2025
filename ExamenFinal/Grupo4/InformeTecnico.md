@@ -25,7 +25,7 @@ Este proyecto implementa un sistema de gestión de datos utilizando la arquitect
 
 Actualmente, muchos inventarios se gestionan en entornos locales, lo cual limita la disponibilidad, seguridad y control centralizado de la información. Esta solución basada en arquitectura LAMP desplegada con Docker permite acceder en tiempo real a los datos desde cualquier ubicación autorizada, facilitando así una gestión más oportuna y eficiente. Al centralizar la información y automatizar procesos clave, se optimizan los flujos de trabajo internos de las organizaciones, mejorando la toma de decisiones y reduciendo errores operativos.
 
-## 3. Obsejetivos
+## 3. Objetivos
 
 ## 3.1 Objetivo General
 
