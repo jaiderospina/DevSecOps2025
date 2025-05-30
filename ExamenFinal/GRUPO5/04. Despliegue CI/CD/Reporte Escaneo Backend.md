@@ -10,7 +10,7 @@ Durante el escaneo de seguridad realizado al BACKEND de la aplicación se detect
  * **Version instalada:** 10.1.31 
  * **Version recomendada:** 11.0.3 
 
-- [Pagina analisis (CVE-2025-24813)] (https://nvd.nist.gov/vuln/detail/CVE-2025-24813)
+- Pagina analisis (CVE-2025-24813) (https://nvd.nist.gov/vuln/detail/CVE-2025-24813)
 
 
 # 2. Vulnerabilidad en QOS.CH logback-core 
