@@ -43,7 +43,7 @@ Atendiendo a la creciente necesidad de las organizaciones de migrar sus servicio
 
 Con la adopción de tecnologías de contenedorización como Docker, este proceso se optimiza considerablemente al permitir definir y desplegar todo el entorno de ejecución mediante archivos de configuración como Dockerfile y docker-compose.yml.
 
-## 5. Conclusiones:
+## 5. Conclusiones
 
 La implementación de un sistema de gestión de datos mediante arquitectura LAMP orquestada con Docker representa una solución moderna, eficiente y escalable para las organizaciones que buscan optimizar sus procesos internos. Esta plataforma no solo permite una administración centralizada y segura de la información, sino que también habilita el acceso remoto a los datos en tiempo real, mejorando la toma de decisiones y reduciendo errores humanos. La arquitectura LAMP sigue siendo una opción válida para aplicaciones web sencillas y funcionales, reducción de los costos al tener un ambiente web y no local.
 
