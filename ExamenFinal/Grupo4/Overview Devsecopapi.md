@@ -9,7 +9,7 @@ Aplicación web que permita crear, modificar y eliminar ítems de forma sencilla
     - Ngrok es una herramienta que crea túneles seguros a tu localhost, permitiendo exponer servicios locales a través de una URL pública. 
     - Ubuntu es un sistema operativo de código abierto y gratuito, diseñado para ser accesible tanto para usuarios novatos como para profesionales.
 
-### * Como Usar:
+###  Como Usar:
 
     - Navegue hasta la ruta del proyecto donde se encuentra el archivo docker-compose.yml y ejecute el comando docker compose up -d para inicar el despliegue de los contenedores.
 
