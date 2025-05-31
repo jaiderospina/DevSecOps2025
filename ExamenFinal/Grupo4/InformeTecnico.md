@@ -159,7 +159,7 @@ Para ejecutar la aplicacion se requiere
   
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%208.jpg)
 
-- Inicie sesion en docker hub con el comando docker login, se solicitara usuario y contraseña de docker hub.
+- Para cargar las imagenes a docker hub inicie sesion en docker hub con el comando docker login, se solicitara usuario y contraseña de docker hub.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%209.jpg)
 
