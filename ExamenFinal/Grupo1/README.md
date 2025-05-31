@@ -1,7 +1,7 @@
 # TOURISPLAN
 
-<center>Planes turisticos por COLOMBIA 
-<center>Realiza tu reserva facil y sencillo sin salir de tu casa.  🏖️
+Planes turisticos por COLOMBIA 
+Realiza tu reserva facil y sencillo sin salir de tu casa.  🏖️
 
 Aplicación web para la consulta y reserva de planes turísticos en Colombia, desarrollada con Next.js y enfocada en prácticas ágiles, CI/CD y seguridad.
 
