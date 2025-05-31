@@ -51,13 +51,18 @@ La implementación de un sistema de gestión de datos mediante arquitectura LAMP
 ## 6. Recomendaciones
 
 
+Para el desarrollo de este ejercicio se recomienda hacerlo en un ambiente Linux
+
 Implementar controles de acceso y autenticación de usuarios
 
 Realizar copias de seguridad periódicas de la base de datos
 
 Ampliar la solución con roles de usuario (administrador, editor, solo lectura).
 
-Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kubernetes
+Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kubernetes.
+
+![image](https://github.com/user-attachments/assets/b6d7a6d8-ef1a-4458-ae1e-918679f4ffe9)
+
 
 ## 7. Historias de Usuario 
 
@@ -212,7 +217,7 @@ Para ejecutar la aplicacion se requiere
 
 ![despliegue](https://github.com/user-attachments/assets/50914a05-6c4c-4adc-a7b7-61500cb3b474)
 
-## 11. Analisis de vulnerabilidades.
+## 11. Análisis de vulnerabilidades.
 
 
 para realizar los analisis de vulnerabilidades se realiza por medio de las herramientas
