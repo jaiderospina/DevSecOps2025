@@ -143,7 +143,7 @@ Para ejecutar la aplicacion se requiere
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen5.png)
 
-- Clone el repositorio github de la aplicacion en github descktop o descargue el proyecto desde https://github.com/jbuitr18/devsecopapi.git
+- Clone el repositorio github de la aplicacion en github desktop o descargue el proyecto desde https://github.com/jbuitr18/devsecopapi.git
 
 ![desktopgit](https://github.com/user-attachments/assets/178d2885-18be-444e-bd35-4d4909a31a56)
 
