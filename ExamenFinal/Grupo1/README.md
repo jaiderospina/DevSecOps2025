@@ -94,6 +94,10 @@ Para crear las credenciales OAuth de google y github, Ver [documentacion del pro
 ```bash
 docker-compose up -d
 ```
+### Correr migraciones de la base de datos
+```bash
+docker-compse ecex app npx prisma migrate dev
+```
 
 3. **Acceder a la Aplicación:**
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
