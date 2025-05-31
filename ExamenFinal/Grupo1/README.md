@@ -1,7 +1,7 @@
-# <center>TOURISPLAN </center>
+# TOURISPLAN
 
- <center>Planes turisticos por COLOMBIA 
- <center>Realiza tu reserva facil y sencillo sin salir de tu casa.  🏖️
+<center>Planes turisticos por COLOMBIA 
+<center>Realiza tu reserva facil y sencillo sin salir de tu casa.  🏖️
 
 Aplicación web para la consulta y reserva de planes turísticos en Colombia, desarrollada con Next.js y enfocada en prácticas ágiles, CI/CD y seguridad.
 
@@ -11,11 +11,9 @@ Aplicación web para la consulta y reserva de planes turísticos en Colombia, de
 - [Características Principales:](#características-principales)
 - [Stack Tecnológico:](#stack-tecnológico)
 - [Pasos para correr el proyecto:](#pasos-para-correr-el-proyecto)
-  - [Pre-requisitos](#pre-requisitos)
-  - [Instalación](#instalación)
-  - [Ejecutar el Proyecto:](#correr-el-proyecto)
-- [Ejecutar Pruebas](#ejecutar-pruebas)
-- [Construcción para Producción](#construcción-para-producción)
+- [Pre-requisitos](#pre-requisitos)
+- [Instalación](#instalación)
+- [Ejecutar el Proyecto:](#correr-el-proyecto)
 - [CI/CD](#cicd)
 - [Seguridad](#seguridad)
 - [Documentación Adicional](#documentación-adicional)
@@ -45,7 +43,7 @@ El proyecto se desarrolla siguiendo una metodólogia DEVOPS, con integración co
 - **Lenguaje:** JavaScript / TypeScript
 - **Autenticación:** [NextAuth.js](https://next-auth.js.org/)
 - **Base de Datos:** [PostgreSQL](https://www.postgresql.org/).
-  - **ORM :** [Prisma](https://www.prisma.io/)
+- **ORM :** [Prisma](https://www.prisma.io/)
 - **API Externa:** [api-colombia](https://api-colombia.com/)
 - **Contenerización:** [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/)
 - **CI/CD:** [GitHub Actions](https://github.com/features/actions)
@@ -98,7 +96,7 @@ docker-compose up -d
 ```
 
 3. **Acceder a la Aplicación:**
-   Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
 ## CI/CD
 
