@@ -96,7 +96,7 @@ docker-compose up -d
 ```
 ### Correr migraciones de la base de datos
 ```bash
-docker-compse ecex app npx prisma migrate dev
+docker-compose ecex app npx prisma migrate dev
 ```
 
 3. **Acceder a la Aplicación:**
