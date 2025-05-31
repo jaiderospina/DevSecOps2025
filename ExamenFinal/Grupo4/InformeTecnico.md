@@ -208,7 +208,10 @@ Para ejecutar la aplicacion se requiere
 ![despliegue](https://github.com/user-attachments/assets/50914a05-6c4c-4adc-a7b7-61500cb3b474)
 
 ## 11. Analisis de vulnerabilidades
+Para visualizar los informes de anaisis de vulnerabilidad ver los siguientes anexos: 
 
+Ver carpeta Analisis de Vulnerabilidades/MADM.md 
+Ver carpeta Analisis de Vulnerabilidades/MDB.md
 
 ## 12. Mockups.
 
