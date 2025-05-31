@@ -1,5 +1,5 @@
 ## VULNERABILIDADES DETECTADAS ##
-Durante el escaneo de seguridad realizado a la aplicación La Casa del Café utilizando la herramienta Snyk, se identificó la siguiente 
+Durante el escaneo de seguridad realizado a la aplicación La Casa del Café utilizando la herramienta Snyk, se identificó la siguiente:
 ## vulnerabilidad
 # 1. Cross-site Scripting (XSS)
 
