@@ -143,13 +143,17 @@ Para ejecutar la aplicacion se requiere
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen5.png)
 
-- Observe los docker ejecutandose con el comando docker ps.
+- Clone el repositorio github de la aplicacion en github descktop o descargue el proyecto desde https://github.com/jbuitr18/devsecopapi.git
 
-![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%207.jpg)
+![desktopgit](https://github.com/user-attachments/assets/178d2885-18be-444e-bd35-4d4909a31a56)
 
 - Navege hasta la ruta del proyecto donde se encuentra el archivo docker-compose.yml y ejecute el comando docker compose up -d para inicar el despliegue de los contenedores.
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen6.jpg)
+
+- Observe los docker ejecutandose con el comando docker ps.
+
+![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Imagenes/Imagen%207.jpg)
 
 - Observe que los docker se esten ejecutando en el docker desktop.
   
