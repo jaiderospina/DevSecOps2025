@@ -215,16 +215,16 @@ Para visualizar los informes de anaisis de vulnerabilidad ver los siguientes ane
 
 ## 12. Mockups.
 
-### * Login
+### Login
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Mockups/Mockup%201%20Login.jpg)
 
-### * Plataforma
+### Plataforma
 
 ![image alt](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/Grupo4/Mockups/Mockup%202%20Plataforma.jpg)
 
 
-### * Overview devsecopapi
+### Overview devsecopapi
 
 - Ver archivo de Overview Devsecopapi.md
 
