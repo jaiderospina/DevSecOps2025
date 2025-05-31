@@ -27,11 +27,11 @@ Actualmente, muchos inventarios se gestionan en entornos locales, lo cual limita
 
 ## 3. Objetivos
 
-## 3.1 Objetivo General
+### 3.1 Objetivo General
 
 Desarrollar una aplicación web que permita crear, modificar y eliminar ítems de forma sencilla y eficiente, proporcionando una interfaz intuitiva para la gestión dinámica de datos. Esta aplicación debe garantizar la integridad y disponibilidad de la información, facilitando su administración a través de un entorno accesible desde cualquier navegador web. 
 
-## 3.2 Objetivos Específicos
+### 3.2 Objetivos Específicos
 
 - Garantizar la seguridad y consistencia de los datos al permitir la creación, modificación y eliminación de ítems de forma sencilla, eficiente y controlada desde una interfaz web.
 
