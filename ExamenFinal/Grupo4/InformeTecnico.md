@@ -202,7 +202,7 @@ Para ejecutar la aplicacion se requiere
 - Frontend Web: HTML + Bootstrap - cliente.
 - Backend PHP: lógica en index.php  CRUD.
 - Base de Datos MySQL: conexión vía mysqli_connect('db',...).
-- Servidor Web Apache.
+- Red Docker.
 
 
 ![despliegue](https://github.com/user-attachments/assets/50914a05-6c4c-4adc-a7b7-61500cb3b474)
