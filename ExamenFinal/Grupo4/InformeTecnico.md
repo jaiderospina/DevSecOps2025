@@ -61,8 +61,6 @@ Ampliar la solución con roles de usuario (administrador, editor, solo lectura).
 
 Escalar el sistema hacia arquitecturas más robustas como Docker Swarm o Kubernetes.
 
-![image](https://github.com/user-attachments/assets/b6d7a6d8-ef1a-4458-ae1e-918679f4ffe9)
-
 
 ## 7. Historias de Usuario 
 
