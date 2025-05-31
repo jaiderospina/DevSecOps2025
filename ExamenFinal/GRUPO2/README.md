@@ -41,25 +41,24 @@
 ## Desde el diseño:
 
 - Validación de entrada/salida entre bot y GLPI.
-- Comunicación cifrada (HTTPS, uso de tokens o JWT).
+- Comunicación cifrada (uso de tokens).
 
 ## Durante el desarrollo:
 
 - Análisis de dependencias con herramientas como Trivy o Snyk.
+- Analsis con Docker Scode ---------
 - Revisión de código (linters, escáneres de vulnerabilidades).
 
 ## Antes del despliegue:
 
-- Pruebas de penetración básicas.
-- Auditoría de roles y accesos.
-- Políticas de red seguras (puertos mínimos abiertos).
+- Auditoría de roles y accesos. Usuarios y Tokens Agregar Tabla 
+- Políticas de red seguras (puertos mínimos abiertos). Firewall de Google Cloud Plattform 
+  Agregar evidencia
+  
 
 ## En ejecución:
 
-- Monitoreo con alertas de acceso sospechoso.
-- Logs centralizados y cifrados.
-
-
+- Monitoreo con alertas de acceso sospechoso. (Monitoreo de Firewall GCP)
 
 # Estrategia de Gestión de Riesgos
 
@@ -233,6 +232,34 @@ Periodo de aplicación: **3 semanas por riesgo**
 - Supervisar implementación de controles.
 - Comunicar recomendaciones de seguridad al equipo técnico.
 
+## Arquitectura de seguridad 
+
+  Diagrama de Alto nivel y Modelado de amenazas 
+
+# Fase 2 de Desarrollo
+## Documentos Principales
+### Historias de Usuario conrequisitos de seguridad
+### Codigo fuente con anotaciones de seguridad (link de repo)
+### Informe de Analsis de codigo estatico
+#### SNYK
+#### Docker Scode
+## SBOM
+### Inventario de librerias, dependencia esternas
+### Vulnerabilidades conocidas (Usar documentacion de GLPI)
+
+# Fase 3  de integracion de seguridad 
+
+## Informe sobre Amenazas Relevantes para el sistema 
+## Informe de OWASP SAP  
+## Plan de remediacion de vulnerabilidades
+
+# Fase 4 Despliegue 
+
+## Configuracion de Pipelines
+## Infraestructura como Codigo 
+## Registro de Imagenmes de contenedores (Escaneo de imagenes docker)
+
+
 # Fase 5: Operación y Monitoreo
 
 La fase de operación y monitoreo tiene como objetivo asegurar la continuidad del servicio, la detección proactiva de incidentes, la respuesta oportuna ante brechas de seguridad y el cumplimiento constante de estándares y políticas. Esta fase debe estar completamente alineada con los objetivos de seguridad y sostenibilidad definidos desde el diseño del sistema.
@@ -305,6 +332,13 @@ Mecanismo automatizado de verificación de cumplimiento con estándares de segur
 - Asegurar que los **backups** estén en ubicación segura y sean verificables.
 - Revisión automática de roles definidos en GLPI contra una plantilla aprobada.
 
+# Fase 6 Retroalimentacion y Mejora
+ ## Restrospectivas de seguridad
+ Leccioens aprendidas
+ ## Actualizaciond e politicas
+
+
+ 
 
 # Plataforma contenerizada de gestión de Incidentes con GLPI y Telegram Bot
 
@@ -345,6 +379,9 @@ Este proyecto implementa un entorno contenerizado con Docker que integra:
 - Docker y Docker Compose instalados.
 - Cuenta de Telegram y token del bot.
 - Configuración de GLPI API.
+
+
+  
 
 ## Autores
 
