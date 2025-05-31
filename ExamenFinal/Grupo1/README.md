@@ -1,23 +1,26 @@
 # TOURISPLAN
 
-Planes turisticos por COLOMBIA 
-Realiza tu reserva facil y sencillo sin salir de tu casa.  🏖️
+Planes turisticos por COLOMBIA
+Realiza tu reserva facil y sencillo sin salir de tu casa. 🏖️
 
 Aplicación web para la consulta y reserva de planes turísticos en Colombia, desarrollada con Next.js y enfocada en prácticas ágiles, CI/CD y seguridad.
 
 ## Tabla de Contenido
 
-- [Descripción:](#descripción)
-- [Características Principales:](#características-principales)
-- [Stack Tecnológico:](#stack-tecnológico)
-- [Pasos para correr el proyecto:](#pasos-para-correr-el-proyecto)
-- [Pre-requisitos](#pre-requisitos)
-- [Instalación](#instalación)
-- [Ejecutar el Proyecto:](#correr-el-proyecto)
-- [CI/CD](#cicd)
-- [Seguridad](#seguridad)
-- [Documentación Adicional](#documentación-adicional)
-- [Licencia](#licencia)
+- [TOURISPLAN](#tourisplan)
+  - [Tabla de Contenido](#tabla-de-contenido)
+  - [Descripción](#descripción)
+  - [Características Principales](#características-principales)
+  - [Stack Tecnológico](#stack-tecnológico)
+  - [Pasos para correr el proyecto](#pasos-para-correr-el-proyecto)
+    - [Pre-requisitos](#pre-requisitos)
+    - [Instalación](#instalación)
+    - [Correr migraciones de la base de datos](#correr-migraciones-de-la-base-de-datos)
+  - [CI/CD](#cicd)
+  - [Seguridad](#seguridad)
+  - [Documentación Adicional](#documentación-adicional)
+  - [Licencia](#licencia)
+  - [Enlace al Repositorio](#enlace-al-repositorio)
 
 ## Descripción
 
@@ -94,13 +97,15 @@ Para crear las credenciales OAuth de google y github, Ver [documentacion del pro
 ```bash
 docker-compose up -d
 ```
+
 ### Correr migraciones de la base de datos
+
 ```bash
-docker-compose ecex app npx prisma migrate dev
+docker-compose execapp npx prisma migrate dev
 ```
 
 3. **Acceder a la Aplicación:**
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+   Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
 ## CI/CD
 
@@ -127,4 +132,5 @@ Este proyecto utiliza GitHub Actions para CI/CD. Los flujos de trabajo incluyen:
 Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
 ## Enlace al Repositorio
+
 https://github.com/ciscojuan/tourisplan
