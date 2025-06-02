@@ -513,7 +513,62 @@ A continuación, se relaciona el informe sobre amenazas de ataques similares en 
 <details>
 <summary><b>Plan de Remediación de Vulnerabilidades</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+
+A continuación, se relacionan las vulnerabilidades más altas en el proyecto GLPI 10.8.18 (PHP) y sobre las cuáles se elabora el cronograma para la remediación:
+
+
+## 1. Resumen de vulnerabilidades detectadas
+
+| Tipo de Vulnerabilidad         | CWE      | Prioridad | Descripción breve                                                         |
+|-------------------------------|----------|-----------|----------------------------------------------------------------------------|
+| Cross-site Scripting (XSS)    | CWE-79   | 854       | Inyección de scripts que se ejecutan en el navegador del usuario.         |
+| Path Traversal                | CWE-23   | 803       | Acceso a archivos fuera del directorio permitido.                         |
+| Regular Expression DoS (ReDoS)| CWE-400  | 801       | Uso de expresiones regulares costosas en CPU ante entrada maliciosa.     |
+
+
+## 2. Priorización de riesgos
+
+Se categoriza la criticidad basada en el puntaje de prioridad:
+
+- 🔴 **Alta Prioridad (Urgente)**: ≥ 850  
+- 🟠 **Media Prioridad (Próxima iteración)**: 800 – 849  
+- 🟢 **Baja Prioridad (Programar)**: < 800 _(No aplican en este caso para las vulnerabilidades priorizadas)_
+
+
+## 3. Cronograma de Corrección
+
+| Vulnerabilidad                | Prioridad | Tiempo Estimado de Remediación | Fecha Límite Propuesta     |
+|------------------------------|-----------|-------------------------------|-----------------------------|
+| Cross-site Scripting (XSS)   | 854       | 1–3 días                       | Dentro de la primera semana |
+| Path Traversal               | 803       | 3–5 días                       | Semana 2                    |
+| Regular Expression DoS       | 801       | 5–7 días                       | Semana 2–3                  |
+
+
+
+## 4. Plan de acción por vulnerabilidad
+
+### ✅ Cross-site Scripting (XSS) – CWE-79
+
+- **Acción correctiva**:
+  - Escapar o sanear toda salida de datos del usuario.
+  - Validar entradas HTML y deshabilitar ejecución de código dinámico no controlado.
+
+### ✅ Path Transversal – CWE-23
+
+- **Acción correctiva**:
+  - Validar y normalizar rutas de archivos (`realpath`, validaciones manuales).
+  - Restringir acceso a directorios permitidos únicamente.
+
+
+### ✅ Regular Expression DoS (ReDoS) – CWE-400
+
+- **Acción correctiva**:
+  - Evitar patrones regex con retroceso excesivo.
+  - Limitar longitud de entrada y usar expresiones eficientes.
+
+
+Con este plan se busca garantizar la mitigación oportuna de las vulnerabilidades más críticas, minimizando el riesgo para la integridad y seguridad del proyecto (Principalmente en código PHP de GLPI).
+
 
 </details>
 
