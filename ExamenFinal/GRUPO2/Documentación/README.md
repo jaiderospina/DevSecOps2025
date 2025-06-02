@@ -95,6 +95,44 @@ La fase de planificación y diseño establece las bases del proyecto, definiendo
 <details>
 <summary><b>Politicas y Estrategias de Seguridad</b></summary>
 
+## Políticas de seguridad aplicables
+
+
+Con el fin de garantizar los principios de seguridad (Confidencialidad, Integridad y Disponibilidad) sobre toda la solución, se adoptan un conjunto de normas y buenas prácticas recomendadas a nivel internacional.
+
+---
+
+## 1. ISO/IEC 27001:2022 – Sistema de Gestión de Seguridad de la Información (SGSI)
+
+Marco que incluye requisitos relacionados con el análisis de riesgos, control de accesos y seguridad desde el inicio (Integración y despliegue continuo).
+
+### Controles técnicos del anexo A:
+
+1. **A 8.3 Gestión de autenticación de la información**  
+   - **Aplicable a:** Control de accesos a GLPI  
+   - **Recomendación:** Implementación del MFA (Autenticación Multifactor)
+
+2. **A 14.3 Gestión de la seguridad en los ciclos de vida de los sistemas de información**  
+   - **Aplicable a:** Control de versiones de código fuente de GLPI  
+   - **Recomendación:** Documentar cambios del código a través de GitHub.
+
+3. **A 14.2 – Desarrollo seguro de aplicaciones**  
+   - **Aplicable a:** Código fuente de GLPI, API Rest y ChatBot.  
+   - **Recomendación:** Validación del código fuente, librerías y dependencias a través de xxxx (Sonar, Snyk).
+
+---
+
+## 2. ISO/IEC 27005:2018 Gestión de riesgos
+
+Marco metodológico para la identificación, análisis y tratamiento de riesgos. Se aplica en conjunto con Magerit.
+
+---
+
+## 3. MAGERIT – Metodología de Análisis y gestión de riesgos de los sistemas de información
+
+Metodología española que incluye la identificación de activos, amenazas, vulnerabilidades, evaluación, tratamiento y seguimiento de riesgos.
+
+
 ## Metodología seleccionada: MAGERIT
 
 MAGERIT (Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información) se utiliza para estructurar el análisis de riesgos mediante la identificación de activos, amenazas e impactos.
