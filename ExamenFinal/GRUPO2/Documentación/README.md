@@ -107,15 +107,12 @@ Marco que incluye requisitos relacionados con el análisis de riesgos, control d
 
 #### Controles técnicos del anexo A:
 
-1. **A 8.3 Gestión de autenticación de la información**  
-   - **Aplicable a:** Control de accesos a GLPI  
-   - **Recomendación:** Implementación del MFA (Autenticación Multifactor)
 
-2. **A 14.3 Gestión de la seguridad en los ciclos de vida de los sistemas de información**  
+1. **A 14.3 Gestión de la seguridad en los ciclos de vida de los sistemas de información**  
    - **Aplicable a:** Control de versiones de código fuente de GLPI  
    - **Recomendación:** Documentar cambios del código a través de GitHub.
 
-3. **A 14.2 – Desarrollo seguro de aplicaciones**  
+2. **A 14.2 – Desarrollo seguro de aplicaciones**  
    - **Aplicable a:** Código fuente de GLPI, API Rest y ChatBot.  
    - **Recomendación:** Validación del código fuente, librerías y dependencias a través de xxxx (Sonar, Snyk).
 
