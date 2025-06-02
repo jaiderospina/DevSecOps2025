@@ -522,7 +522,7 @@ A continuación, se relacionan las vulnerabilidades más altas en el proyecto GL
 | Tipo de Vulnerabilidad         | CWE      | Prioridad | Descripción breve                                                         |
 |-------------------------------|----------|-----------|----------------------------------------------------------------------------|
 | Cross-site Scripting (XSS)    | CWE-79   | 854       | Inyección de scripts que se ejecutan en el navegador del usuario.         |
-| Path Traversal                | CWE-23   | 803       | Acceso a archivos fuera del directorio permitido.                         |
+| Path Transversal                | CWE-23   | 803       | Acceso a archivos fuera del directorio permitido.                         |
 | Regular Expression DoS (ReDoS)| CWE-400  | 801       | Uso de expresiones regulares costosas en CPU ante entrada maliciosa.     |
 
 
