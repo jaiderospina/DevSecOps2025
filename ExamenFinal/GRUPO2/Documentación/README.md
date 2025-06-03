@@ -481,8 +481,9 @@ Esta fase se enfoca en la construcción segura del software. Incluye la implemen
 <details>
 <summary><b>Código Fuente con Comentarios de Seguridad</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+Se realizó una revisión exhaustiva del código fuente del proyecto, incorporando anotaciones de seguridad directamente en los archivos Dockerfile, archivos .env y el flujo de CI/CD. Estas anotaciones explican decisiones críticas relacionadas con la protección de credenciales, la reducción de la superficie de ataque, el uso seguro de variables de entorno y buenas prácticas en la construcción de contenedores. El objetivo es fortalecer la postura de seguridad desde la fase de construcción y despliegue.
 
+**Link de consulta del informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/Threat%20Intelligence%20Reports.md)
 
 </details>
 <details>

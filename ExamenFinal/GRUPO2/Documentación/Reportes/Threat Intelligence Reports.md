@@ -1,3 +1,7 @@
+<a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#-3-fase-de-integraci%C3%B3n-de-seguridad" target="_blank">
+  <img src="https://img.shields.io/badge/Regresar-Fase%203-blue" alt="Regresar: Fase 3" />
+</a>
+
 # Threat Intelligence Report: Ataques a APIs Similares en la Industria  
 
 **Proyecto**: Gestión de Tickets con GLPI, MariaDB, Bot (API REST) – GCP  
