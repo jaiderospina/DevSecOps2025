@@ -475,7 +475,93 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ## 1. Análisis con SNYK
 
-**COLOCAR CONTENIDO AQUÍ**
+# 🛡️ Informe de Resultados del Análisis Estático
+
+**Proyecto:** GLPI (versión auditada 10.0.17)  
+**Lenguaje:** PHP  
+**Herramienta:** Snyk  
+**Total de vulnerabilidades detectadas:** 630  
+**Fecha del análisis:** _[01 mayo 2025]_
+
+---
+
+## 🔍 Resumen de Resultados por Tipo de Vulnerabilidad
+
+| Tipo de Vulnerabilidad                                   | Total Encontrado |
+|----------------------------------------------------------|------------------|
+| Cross-site Scripting (XSS)                               | 381              |
+| SQL Injection                                            | 168              |
+| Uso de Password Hashing Inseguro                         | 52               |
+| Path Traversal                                           | 13               |
+| Exposición de Información (Information Exposure)         | 7                |
+| Inclusión de Archivos (File Inclusion)                   | 4                |
+| Inyección de Comandos (Command Injection)                | 2                |
+| Deserialización Insegura                                 | 2                |
+| Denegación de Servicio por Exp. Reg. (ReDoS)             | 1                |
+
+---
+
+## 📑 Detalle Técnico por Tipo de Vulnerabilidad
+
+### 1. Cross-site Scripting (XSS) – 381 ocurrencias
+- **Descripción técnica:** Inyección de scripts maliciosos en páginas vistas por otros usuarios, debido a la falta de escape en variables mostradas en el navegador.
+- **Impacto potencial:** Robo de cookies, redirecciones no autorizadas, ejecución remota de scripts.
+
+---
+
+### 2. SQL Injection – 168 ocurrencias
+- **Descripción técnica:** Inclusión de entradas del usuario en consultas SQL sin sanitización ni uso de sentencias preparadas.
+- **Impacto potencial:** Manipulación de datos, acceso no autorizado, eliminación o robo de información.
+
+---
+
+### 3. Uso de Password Hashing Inseguro – 52 ocurrencias
+- **Descripción técnica:** Uso de funciones como `md5()` o `sha1()` para el almacenamiento de contraseñas.
+- **Impacto potencial:** Vulnerabilidad ante ataques de diccionario y fuerza bruta, facilitando el compromiso de cuentas.
+
+---
+
+### 4. Path Traversal – 13 ocurrencias
+- **Descripción técnica:** Inclusión de rutas dinámicas sin validación, permitiendo el acceso a archivos fuera del directorio autorizado.
+- **Impacto potencial:** Lectura o escritura de archivos sensibles en el servidor.
+
+---
+
+### 5. Exposición de Información – 7 ocurrencias
+- **Descripción técnica:** Salida de mensajes de error, trazas de pila o estructuras internas en la respuesta al cliente.
+- **Impacto potencial:** Fugas de información sensible, ayuda al reconocimiento del sistema por parte de un atacante.
+
+---
+
+### 6. Inclusión de Archivos – 4 ocurrencias
+- **Descripción técnica:** Uso de funciones como `include` o `require` con rutas influenciadas por el usuario.
+- **Impacto potencial:** Ejecución remota de código o carga de archivos maliciosos.
+
+---
+
+### 7. Inyección de Comandos – 2 ocurrencias
+- **Descripción técnica:** Ejecución de comandos del sistema operativo a través de funciones como `exec`, `system`, o similares, con entradas del usuario.
+- **Impacto potencial:** Control total del servidor si es explotado correctamente.
+
+---
+
+### 8. Deserialización Insegura – 2 ocurrencias
+- **Descripción técnica:** Deserialización de objetos provenientes de fuentes no confiables.
+- **Impacto potencial:** Ejecución arbitraria de código o modificación de flujo lógico.
+
+---
+
+### 9. Denegación de Servicio por Expresiones Regulares (ReDoS) – 1 ocurrencia
+- **Descripción técnica:** Uso de expresiones regulares vulnerables a patrones que generan alta carga de CPU.
+- **Impacto potencial:** Bloqueo o lentitud del sistema ante entradas especialmente diseñadas.
+
+---
+
+## ✅ Conclusión del Informe
+
+El análisis revela una alta concentración de vulnerabilidades críticas, principalmente del tipo **Cross-site Scripting** y **SQL Injection**, que representan un riesgo significativo para la seguridad del sistema. Se recomienda priorizar la revisión de los componentes afectados por estas dos categorías.
+
+---*
 
 ## 2. Análisis de Imagenes con Docker Scode
 
