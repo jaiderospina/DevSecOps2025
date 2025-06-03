@@ -474,8 +474,10 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 <summary><b>Informes de Análisis Estático (SAST)</b></summary>
 
 ## 1. Análisis Estático con SNYK
-# 🛡️ Informe de Resultados del Análisis Estático
-**Proyecto:** GLPI (versión auditada 10.0.17)  
+
+## Informe de Resultados del Análisis Estático
+
+**Proyecto:** GLPI (versión auditada 10.0.18)  
 **Lenguaje:** PHP  
 **Herramienta:** Snyk  
 **Total de vulnerabilidades detectadas:** 630  
@@ -483,7 +485,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## 🔍Resumen de Resultados por Tipo de Vulnerabilidad
+### Resumen de Resultados por Tipo de Vulnerabilidad
 
 <div align="center">
 
@@ -503,7 +505,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## 📑Detalle Técnico por Tipo de Vulnerabilidad
+## Detalle Técnico por Tipo de Vulnerabilidad
 
 ### 1. Cross-site Scripting (XSS) – 381 ocurrencias
 - **Descripción técnica:** Inyección de scripts maliciosos en páginas vistas por otros usuarios, debido a la falta de escape en variables mostradas en el navegador.
@@ -559,7 +561,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## ✅Conclusión del Informe
+## Conclusión del Informe
 
 El análisis revela una alta concentración de vulnerabilidades críticas, principalmente del tipo **Cross-site Scripting** y **SQL Injection**, que representan un riesgo significativo para la seguridad del sistema. Se recomienda priorizar la revisión de los componentes afectados por estas dos categorías.
 
@@ -567,83 +569,54 @@ El análisis revela una alta concentración de vulnerabilidades críticas, princ
 
 ## 2. Análisis de Imagenes con Docker Scode
 
-- **GLPI-APP Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-app.md)
+## Informe de Vulnerabilidades
 
-- **GLPI-BOT Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-db.md)
+Este documento presenta un resumen del análisis de seguridad realizado sobre los tres activos clave del sistema GLPI desplegado mediante contenedores Docker: la aplicación principal, el microservicio del bot (Telegram) y la base de datos MariaDB.
 
-- **GLPI-DB Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-bot.md)
-
-### 2.1 Priorización de Vulnerabilidades
-
-Con base en los reportes generados por Docker Scout, se identificaron las siguientes vulnerabilidades en las imágenes utilizadas:
-
-<div align="center">
-
-| Imagen           | Críticas | Altas | Medias | Bajas |
-|------------------|----------|-------|--------|-------|
-| `glpi-db`        | 4        | 35    | 24     | 9     |
-| `glpi-app`       | 0        | 3     | 16     | 27    |
-| `glpi-bot`       | 0        | 1     | 1      | 29    |
-
-</div>
-
-Las vulnerabilidades fueron priorizadas según los siguientes criterios:
-
-  - **Impacto en la disponibilidad**:  
-    - `glpi-bot`: `CVE-2024-47874` permite un ataque DoS mediante consumo de memoria ilimitado en formularios, afectando directamente la disponibilidad del chatbot.
-
-  - **Impacto en la confidencialidad de datos**:  
-    - `glpi-app`: `CVE-2023-50782` en la librería `cryptography` puede permitir el descifrado de mensajes TLS, afectando la confidencialidad del sistema GLPI.
-
-  - **Exposición externa**:  
-    - Los contenedores `glpi-app` y `glpi-bot` exponen servicios HTTP/HTTPS, por lo que las vulnerabilidades con vector de ataque remoto (`AV:N`) son especialmente críticas.
-
-  - **Alta puntuación CVSS 4.0, CVSS 3.1**:  
-    - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
-
-### 2.2 Plan remediación
-
-  1. **`glpi-db`**: actualizar imagen base ≥ `1.23.8`.
-  2. **`glpi-app`**: actualizar dependencias `cryptography` y `pyjwt`.
-  3. **`glpi-bot`**: mitigar DoS actualizando `Starlette` a `>=0.40.0`.
+Se utilizo la herramienta **Docker Scout** para detectar vulnerabilidades (CVEs) en cada imagen, evaluadas posteriormente bajo el estándar **CVSS 4.0, CVSS 3.1**.
 
 ---
 
-## 2.3 Integración de Seguridad en el Pipeline DevSecOps
+## Resumen General
 
-### 2.3.1 Recomendado:
+| Imagen           | Críticas | Altas | Medias | Bajas | Total |
+|------------------|----------|-------|--------|-------|--------|
+| `glpi-db`        | 4        | 35    | 24     | 9     | 72     |
+| `glpi-app`       | 0        | 3     | 16     | 27    | 46     |
+| `glpi-bot`       | 0        | 1     | 1      | 29    | 31     |
 
-- Integrar  **Scout CLI** en el pipeline CI/CD para escanear las imágenes Docker en cada `build`.
-- Configurar el pipeline para **bloquear despliegues** con CVSS ≥ 7.0 no mitigadas.
-- Añadir escaneo SAST con herramientas como `SonarQube`, `Bandit` o `Semgrep`.
+---
 
-### 2.3.2 Estrategias de Remediación
+## Observaciones
 
-  - **Actualización de dependencias vulnerables**:
-    - `cryptography` ≥ `42.0.0`
-    - `pyjwt` ≥ `2.4.0`
-    - `starlette` ≥ `0.40.0`
-    - Imagen base ≥ `1.23.8` en `glpi-db`
+- **`glpi-db`**: Contiene múltiples vulnerabilidades críticas en el entorno Go, que pueden permitir ejecución remota de código o ataques de denegación de servicio (DoS).
+- **`glpi-app`**: Se detectaron vulnerabilidades en bibliotecas sensibles como `cryptography` y `pyjwt`, que afectan directamente la seguridad de las sesiones y el cifrado TLS.
+- **`glpi-bot`**: Presenta una vulnerabilidad de alto impacto (**CVE-2024-47874**) que podría permitir a un atacante remoto agotar recursos del sistema mediante formularios maliciosos.
 
-  - **Mejoras de seguridad en Docker**:
-    - Minimizar superficie de ataque utilizando imágenes ligeras como `alpine`.
-    - Eliminar herramientas y paquetes innecesarios del `Dockerfile`.
-    - Aplicar buenas prácticas de configuración en `Docker Compose` y redes.
+---
 
-  - **Segmentación y control de acceso**:
-    - Restringir el acceso al contenedor `glpi-db` solo a IPs internas.
-    - Usar variables de entorno seguras y cifradas para contraseñas.
-    
-## Conclusión
+## Informes Detallados
 
-La implementación de estas medidas permite adoptar un enfoque proactivo frente a las amenazas, alineado con prácticas modernas de DevSecOps. Se recomienda incorporar esta estrategia como parte integral del ciclo de vida del software, especialmente para sistemas críticos como GLPI.
+Para consultar el detalle técnico de cada imagen analizada, puedes revisar los siguientes archivos:
 
+- [Informe GLPI App](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-app.md)
+
+- [Informe GLPI Bot](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-db.md)
+
+- [Informe GLPI DB](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-bot.md)
+
+---
+
+## Conclusión del Informe
+
+Se recomienda priorizar las actualizaciones de paquetes en `glpi-db`, reforzar la autenticación y cifrado en `glpi-app`, y mitigar posibles vectores de DoS en `glpi-bot`, como parte de una estrategia DevSecOps integral.
 
 
 </details>
 <details>
 <summary><b>SBOM (Software Bill of Materials)</b></summary>
-# 💀 Inventario de Dependencias Externas - GLPI 10.0.17
+
+## Inventario de Dependencias Externas - GLPI 10.0.17
 
 | Nº  | Librería                         | Versión  | Vulnerabilidades Conocidas                                                                                         | Funcionalidad Principal                                                                 |
 |-----|----------------------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -657,6 +630,7 @@ La implementación de estas medidas permite adoptar un enfoque proactivo frente 
 | 8   | doctrine/dbal                  | 3.6.7    | [CVE-2021-43608](https://www.versioneye.com/PHP/doctrine/dbal/3.1.3): Inyección SQL por parámetros mal validados   | Capa de abstracción de bases de datos SQL                                               |
 | 9   | psr/log                         | 1.1.4    | No se encuentra vulnerabilidad a la fecha                                                                           | Estándar común para interfaces de logging en PHP                                        |
 | 10  | ralouphie/getallheaders        | 3.0.3    | No se encuentra vulnerabilidad a la fecha                                                                           | Función para obtener todos los encabezados HTTP en servidores donde no está disponible  |
+
 </details>
 
 ---
@@ -684,7 +658,7 @@ A continuación, se relaciona el informe sobre amenazas de ataques similares en 
 <summary><b>Plan de Remediación de Vulnerabilidades</b></summary>
 
 
-A continuación, se relacionan las vulnerabilidades más altas en el proyecto GLPI 10.8.18 (PHP) y sobre las cuáles se elabora el cronograma para la remediación:
+A continuación, se relacionan las vulnerabilidades más altas en el proyecto GLPI 10.0.18 (PHP) y sobre las cuáles se elabora el cronograma para la remediación:
 
 
 ## 1. Resumen de vulnerabilidades detectadas
@@ -738,6 +712,69 @@ Se categoriza la criticidad basada en el puntaje de prioridad:
 
 
 Con este plan se busca garantizar la mitigación oportuna de las vulnerabilidades más críticas, minimizando el riesgo para la integridad y seguridad del proyecto (Principalmente en código PHP de GLPI).
+
+## 5 Priorización de Vulnerabilidades Imagenes de Contenedores
+
+Con base en los reportes generados por Docker Scout, se identificaron las siguientes vulnerabilidades en las imágenes utilizadas:
+
+<div align="center">
+
+| Imagen           | Críticas | Altas | Medias | Bajas |
+|------------------|----------|-------|--------|-------|
+| `glpi-db`        | 4        | 35    | 24     | 9     |
+| `glpi-app`       | 0        | 3     | 16     | 27    |
+| `glpi-bot`       | 0        | 1     | 1      | 29    |
+
+</div>
+
+Las vulnerabilidades fueron priorizadas según los siguientes criterios:
+
+  - **Impacto en la disponibilidad**:  
+    - `glpi-bot`: `CVE-2024-47874` permite un ataque DoS mediante consumo de memoria ilimitado en formularios, afectando directamente la disponibilidad del chatbot.
+
+  - **Impacto en la confidencialidad de datos**:  
+    - `glpi-app`: `CVE-2023-50782` en la librería `cryptography` puede permitir el descifrado de mensajes TLS, afectando la confidencialidad del sistema GLPI.
+
+  - **Exposición externa**:  
+    - Los contenedores `glpi-app` y `glpi-bot` exponen servicios HTTP/HTTPS, por lo que las vulnerabilidades con vector de ataque remoto (`AV:N`) son especialmente críticas.
+
+  - **Alta puntuación CVSS 4.0, CVSS 3.1**:  
+    - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
+
+### Plan remediación
+
+  1. **`glpi-db`**: actualizar imagen base ≥ `1.23.8`.
+  2. **`glpi-app`**: actualizar dependencias `cryptography` y `pyjwt`.
+  3. **`glpi-bot`**: mitigar DoS actualizando `Starlette` a `>=0.40.0`.
+
+---
+
+##  5.1 Integración de Seguridad en el Pipeline DevSecOps
+
+### Recomendado:
+
+- Integrar  **Scout CLI** en el pipeline CI/CD para escanear las imágenes Docker en cada `build`.
+- Configurar el pipeline para **bloquear despliegues** con CVSS ≥ 7.0 no mitigadas.
+- Añadir escaneo SAST con herramientas como `SonarQube`, `Bandit` o `Semgrep`.
+
+### Estrategias de Remediación
+
+  - **Actualización de dependencias vulnerables**:
+    - `cryptography` ≥ `42.0.0`
+    - `pyjwt` ≥ `2.4.0`
+    - `starlette` ≥ `0.40.0`
+    - Imagen base ≥ `1.23.8` en `glpi-db`
+
+  - **Mejoras de seguridad en Docker**:
+    - Minimizar superficie de ataque utilizando imágenes ligeras como `alpine`.
+    - Eliminar herramientas y paquetes innecesarios del `Dockerfile`.
+    - Aplicar buenas prácticas de configuración en `Docker Compose` y redes.
+
+  - **Segmentación y control de acceso**:
+    - Restringir el acceso al contenedor `glpi-db` solo a IPs internas.
+    - Usar variables de entorno seguras y cifradas para contraseñas.
+    
+La implementación de estas medidas permite adoptar un enfoque proactivo frente a las amenazas, alineado con prácticas modernas de DevSecOps. Se recomienda incorporar esta estrategia como parte integral del ciclo de vida del software, especialmente para sistemas críticos como GLPI.
 
 
 </details>
