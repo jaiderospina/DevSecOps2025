@@ -473,9 +473,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 <details>
 <summary><b>Informes de Análisis Estático (SAST)</b></summary>
 
-## 1. Informe de Resultados del Análisis Estático con SNYK
-
-##Informe de Resultados del Análisis Estático
+## 1. Análisis Estático con SNYK
 
 **Proyecto:** GLPI (versión auditada 10.0.17)  
 **Lenguaje:** PHP  
@@ -486,6 +484,8 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 ---
 
 ## Resumen de Resultados por Tipo de Vulnerabilidad
+
+<div align="center">
 
 | Tipo de Vulnerabilidad                                   | Total Encontrado |
 |----------------------------------------------------------|------------------|
@@ -498,6 +498,8 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 | Inyección de Comandos (Command Injection)                | 2                |
 | Deserialización Insegura                                 | 2                |
 | Denegación de Servicio por Exp. Reg. (ReDoS)             | 1                |
+
+</div>
 
 ---
 
