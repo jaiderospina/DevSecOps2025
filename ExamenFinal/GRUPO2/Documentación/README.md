@@ -643,10 +643,20 @@ La implementación de estas medidas permite adoptar un enfoque proactivo frente 
 </details>
 <details>
 <summary><b>SBOM (Software Bill of Materials)</b></summary>
+# 💀 Inventario de Dependencias Externas - GLPI 10.0.18
 
-**COLOCAR CONTENIDO AQUÍ**
-### Inventario de librerias, dependencia esternas
-### Vulnerabilidades conocidas (Usar documentacion de GLPI)
+| Nº  | Librería                         | Versión  | Vulnerabilidades Conocidas                                                                                         | Funcionalidad Principal                                                                 |
+|-----|----------------------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 1   | firebase/php-jwt                 | v6.4.0   | [CVE-2021-46743](https://nvd.nist.gov/vuln/detail/CVE-2021-46743): Validación incorrecta de tokens manipulados     | Codificación y decodificación de tokens JWT para autenticación                          |
+| 2   | guzzlehttp/guzzle               | 7.7.0    | [CVE-2022-31091](https://nvd.nist.gov/vuln/detail/CVE-2022-31091): Reenvío indebido de headers en redirecciones    | Cliente HTTP para enviar solicitudes y consumir APIs                                    |
+| 3   | monolog/monolog                 | 2.9.2    | No se encuentra vulnerabilidad a la fecha                                                                           | Manejo avanzado de logs: archivos, streams, bases de datos, etc.                        |
+| 4   | symfony/console                 | v6.2.12  | No se encuentra vulnerabilidad a la fecha                                                                           | Creación de comandos CLI para interacción por terminal                                  |
+| 5   | symfony/http-foundation        | v6.2.12  | [CVE-2024-50345](https://vulert.com/vuln-db/CVE-2024-50345), [CVE-2022-24894](https://www.cvedetails.com/cve/CVE-2022-24894/) | Manejo de solicitudes y respuestas HTTP                                                 |
+| 6   | symfony/event-dispatcher       | v6.2.12  | No se encuentra vulnerabilidad a la fecha                                                                           | Sistema de eventos: permite suscripción y emisión de eventos                            |
+| 7   | symfony/dependency-injection   | v6.2.12  | No se encuentra vulnerabilidad a la fecha                                                                           | Contenedor de servicios con inyección de dependencias                                   |
+| 8   | doctrine/dbal                  | 3.6.7    | [CVE-2021-43608](https://www.versioneye.com/PHP/doctrine/dbal/3.1.3): Inyección SQL por parámetros mal validados   | Capa de abstracción de bases de datos SQL                                               |
+| 9   | psr/log                         | 1.1.4    | No se encuentra vulnerabilidad a la fecha                                                                           | Estándar común para interfaces de logging en PHP                                        |
+| 10  | ralouphie/getallheaders        | 3.0.3    | No se encuentra vulnerabilidad a la fecha                                                                           | Función para obtener todos los encabezados HTTP en servidores donde no está disponible  |
 </details>
 
 ---
