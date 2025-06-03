@@ -653,14 +653,12 @@ A continuación, se relaciona el informe sobre amenazas de ataques similares en 
 
 </details>
 <details>
-<summary><b>Informe de OWASP ZAP</b></summary>
-
-# Evaluación DAST en entorno *Staging*
+<summary><b>Pruebas de seguridad en entornos de staging</b></summary>
 
 **Entorno a evaluar:** *Staging*  
 **Objetivo:** Evaluar la exposición a vulnerabilidades en tiempo de ejecución del sistema completo desplegado en GCP.
 
-## Tecnologías que s deben involucrar:
+## Tecnologías que se deben involucrar:
 
 - **GLPI** (sistema de gestión de tickets)
 - **MariaDB** (gestión de base de datos)
