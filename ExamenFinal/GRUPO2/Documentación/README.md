@@ -771,13 +771,43 @@ Esta fase permite aprender de los incidentes, evaluaciones y nuevas amenazas, al
 <details>
 <summary><b>Retrospectivas de Seguridad</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+**Objetivo:**  
+Analizar eventos de seguridad y vulnerabilidades identificadas durante el ciclo de vida del sistema, con el fin de implementar mejoras continuas en la protección de los activos del proyecto.
+
+**Lecciones Aprendidas:**
+
+| Evento | Descripción | Causa Raíz | Medidas Correctivas | Estado |
+|--------|-------------|------------|----------------------|--------|
+| Intento de acceso no autorizado al microservicio del bot | Se detectaron múltiples solicitudes no autenticadas hacia la API del bot. | Endpoint expuesto sin autenticación. | Implementación de validación JWT y lista blanca de IPs. | Aplicado |
+| Vulnerabilidades en imágenes de Docker (Snyk) | Snyk detectó dependencias con vulnerabilidades críticas (OpenSSL, libc). | Uso de imágenes base no actualizadas. | Cambio a imágenes oficiales y escaneo en cada build. | Aplicado |
+| Exposición de datos sensibles | Snyk alertó sobre credenciales y datos personales en archivos `.env`. | Manejo inseguro de secretos. | Migración a GCP Secret Manager y auditoría de uso de datos personales. | Aplicado |
+
+**Herramientas Usadas:**
+- **Snyk**: Escaneo de vulnerabilidades en contenedores y dependencias.
+- **GitLab CI/CD**: Automatización del análisis de seguridad en el pipeline.
+- **Google Cloud Operations**: Monitoreo y logging de eventos de seguridad.
+
 
 </details>
 <details>
 <summary><b>Actualización de Políticas</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+**Objetivo:**  
+Asegurar que las políticas del proyecto se mantengan actualizadas con respecto a normativas locales, mejores prácticas y aprendizajes del proceso.
+
+| Documento | Versión Anterior | Cambio Realizado | Fecha | Responsable |
+|-----------|------------------|------------------|-------|-------------|
+| Política de Tratamiento de Datos Personales | v1.0 | Incorporación de principios y deberes establecidos por la **Ley 1581 de 2012**. | 2025-05-18 | Oficial de Protección de Datos |
+| Política de Gestión de Secretos | v1.2 | Integración con GCP Secret Manager y rotación periódica. | 2025-05-15 | Equipo DevSecOps |
+| Protocolo de Respuesta a Incidentes | v0.9 | Inclusión de ruta de notificación para incidentes que involucren datos personales. | 2025-05-25 | CISO |
+| Política de Control de Acceso | v1.0 | Aplicación de autenticación basada en roles y mínimos privilegios. | 2025-05-20 | Seguridad Aplicada |
+
+**Normativas y Buenas Prácticas Consideradas:**
+- **Ley 1581 de 2012** – Protección de Datos Personales (Colombia).
+- **Reglamento GDPR (UE)** – Aplicado en principios comunes de protección de datos.
+- **NIST Cybersecurity Framework** – Control y respuesta ante incidentes.
+- **CIS Benchmarks** – Seguridad para Docker y Google Cloud Platform.
+- **OWASP Top 10 & Docker Security Cheat Sheet** – Mitigación de riesgos comunes.
 
 </details>
 
