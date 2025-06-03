@@ -495,15 +495,17 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ## Análisis de Imagenes con Docker Scode
 
-- **GLPI-APP Informe:** [Clic aquí]()
+- **GLPI-APP Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-app.md)
 
-- **GLPI-BOT Informe:** [Clic aquí]()
+- **GLPI-BOT Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-db.md)
 
-- **GLPI-DB Informe:** [Clic aquí]()
+- **GLPI-DB Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-bot.md)
 
 ### Priorización de Vulnerabilidades
 
 Con base en los reportes generados por Docker Scout, se identificaron las siguientes vulnerabilidades en las imágenes utilizadas:
+
+<div align="center">
 
 | Imagen           | Críticas | Altas | Medias | Bajas |
 |------------------|----------|-------|--------|-------|
@@ -511,21 +513,23 @@ Con base en los reportes generados por Docker Scout, se identificaron las siguie
 | `glpi-app`       | 0        | 3     | 16     | 27    |
 | `glpi-bot`       | 0        | 1     | 1      | 29    |
 
+</div>
+
 ### Prioridad
 
 Las vulnerabilidades fueron priorizadas según los siguientes criterios:
 
   - **Impacto en la disponibilidad**:  
-  - `glpi-bot`: `CVE-2024-47874` permite un ataque DoS mediante consumo de memoria ilimitado en formularios, afectando directamente la disponibilidad del chatbot.
+    - `glpi-bot`: `CVE-2024-47874` permite un ataque DoS mediante consumo de memoria ilimitado en formularios, afectando directamente la disponibilidad del chatbot.
 
   - **Impacto en la confidencialidad de datos**:  
-  - `glpi-app`: `CVE-2023-50782` en la librería `cryptography` puede permitir el descifrado de mensajes TLS, afectando la confidencialidad del sistema GLPI.
+    - `glpi-app`: `CVE-2023-50782` en la librería `cryptography` puede permitir el descifrado de mensajes TLS, afectando la confidencialidad del sistema GLPI.
 
   - **Exposición externa**:  
-  - Los contenedores `glpi-app` y `glpi-bot` exponen servicios HTTP/HTTPS, por lo que las vulnerabilidades con vector de ataque remoto (`AV:N`) son especialmente críticas.
+    - Los contenedores `glpi-app` y `glpi-bot` exponen servicios HTTP/HTTPS, por lo que las vulnerabilidades con vector de ataque remoto (`AV:N`) son especialmente críticas.
 
   - **Alta puntuación CVSS 4.0, CVSS 3.1**:  
-  - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
+    - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
 
 ### Plan remediación
 
@@ -546,7 +550,7 @@ Las vulnerabilidades fueron priorizadas según los siguientes criterios:
 ### Estrategias de Remediación
 
   - **Actualización de dependencias vulnerables**:
-   - `cryptography` ≥ `42.0.0`
+    - `cryptography` ≥ `42.0.0`
     - `pyjwt` ≥ `2.4.0`
     - `starlette` ≥ `0.40.0`
     - Imagen base ≥ `1.23.8` en `glpi-db`
