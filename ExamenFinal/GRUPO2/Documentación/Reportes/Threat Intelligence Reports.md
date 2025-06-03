@@ -40,3 +40,5 @@ ________________________________________
 | Exposición          | Restringir API solo a IPs permitidas / redes privadas | Reducir superficie expuesta en GCP                      |
 | Seguridad de código | Análisis de código (SAST)                      | Detectar vulnerabilidades en endpoints y sanitización      |
 | Monitoreo           | Logs + alertas por uso anómalo de endpoints   | Detectar posibles ataques de fuerza bruta o abuso de API   |
+
+<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub.com%2Fjaiderospina%2FDevSecOps2025%2Fblob%2Fmain%2FExamenFinal%2FGRUPO2%2FDocumentaci%25C3%25B3n%2FREADME.md%23-3-fase-de-integraci%25C3%25B3n-de-seguridad&style=for-the-badge&label=Regresar&labelColor=Fase%203&color=blue">
