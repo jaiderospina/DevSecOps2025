@@ -489,11 +489,11 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 <details>
 <summary><b>Informes de Análisis Estático (SAST)</b></summary>
 
-## Análisis con SNYK
+## 1. Análisis con SNYK
 
 **COLOCAR CONTENIDO AQUÍ**
 
-## Análisis de Imagenes con Docker Scode
+## 2. Análisis de Imagenes con Docker Scode
 
 - **GLPI-APP Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-app.md)
 
@@ -501,7 +501,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 - **GLPI-DB Informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/glpi-bot.md)
 
-### Priorización de Vulnerabilidades
+### 2.1 Priorización de Vulnerabilidades
 
 Con base en los reportes generados por Docker Scout, se identificaron las siguientes vulnerabilidades en las imágenes utilizadas:
 
@@ -514,8 +514,6 @@ Con base en los reportes generados por Docker Scout, se identificaron las siguie
 | `glpi-bot`       | 0        | 1     | 1      | 29    |
 
 </div>
-
-### Prioridad
 
 Las vulnerabilidades fueron priorizadas según los siguientes criterios:
 
@@ -531,7 +529,7 @@ Las vulnerabilidades fueron priorizadas según los siguientes criterios:
   - **Alta puntuación CVSS 4.0, CVSS 3.1**:  
     - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
 
-### Plan remediación
+### 2.2 Plan remediación
 
   1. **`glpi-db`**: actualizar imagen base ≥ `1.23.8`.
   2. **`glpi-app`**: actualizar dependencias `cryptography` y `pyjwt`.
@@ -539,15 +537,15 @@ Las vulnerabilidades fueron priorizadas según los siguientes criterios:
 
 ---
 
-## Integración de Seguridad en el Pipeline DevSecOps
+## 2.3 Integración de Seguridad en el Pipeline DevSecOps
 
-### Recomendado:
+### 2.3.1 Recomendado:
 
 - Integrar  **Scout CLI** en el pipeline CI/CD para escanear las imágenes Docker en cada `build`.
 - Configurar el pipeline para **bloquear despliegues** con CVSS ≥ 7.0 no mitigadas.
 - Añadir escaneo SAST con herramientas como `SonarQube`, `Bandit` o `Semgrep`.
 
-### Estrategias de Remediación
+### 2.3.2 Estrategias de Remediación
 
   - **Actualización de dependencias vulnerables**:
     - `cryptography` ≥ `42.0.0`
