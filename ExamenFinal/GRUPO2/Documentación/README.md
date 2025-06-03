@@ -579,11 +579,15 @@ Se utilizo la herramienta **Docker Scout** para detectar vulnerabilidades (CVEs)
 
 ## Resumen General
 
+<div align="center">
+
 | Imagen           | Críticas | Altas | Medias | Bajas | Total |
 |------------------|----------|-------|--------|-------|--------|
 | `glpi-db`        | 4        | 35    | 24     | 9     | 72     |
 | `glpi-app`       | 0        | 3     | 16     | 27    | 46     |
 | `glpi-bot`       | 0        | 1     | 1      | 29    | 31     |
+
+</div>
 
 ---
 
@@ -616,7 +620,7 @@ Se recomienda priorizar las actualizaciones de paquetes en `glpi-db`, reforzar l
 <details>
 <summary><b>SBOM (Software Bill of Materials)</b></summary>
 
-## Inventario de Dependencias Externas - GLPI 10.0.17
+## Inventario de Dependencias Externas - GLPI 10.0.18
 
 | Nº  | Librería                         | Versión  | Vulnerabilidades Conocidas                                                                                         | Funcionalidad Principal                                                                 |
 |-----|----------------------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
