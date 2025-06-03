@@ -43,5 +43,5 @@ ________________________________________
 
 
 <a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#-3-fase-de-integraci%C3%B3n-de-seguridad" target="_blank">
-  <img src="https://img.shields.io/badge/Regresar-Fase-3-blue" alt="Estado: Fase 3" />
+  <img src="https://img.shields.io/badge/Regresar-Fase%203-blue" alt="Regresar: Fase 3" />
 </a>
