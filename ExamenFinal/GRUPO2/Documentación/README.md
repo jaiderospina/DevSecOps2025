@@ -473,9 +473,9 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 <details>
 <summary><b>Informes de Análisis Estático (SAST)</b></summary>
 
-## 1. Análisis con SNYK
+## 1. Informe de Resultados del Análisis Estático con SNYK
 
-# 🛡️ Informe de Resultados del Análisis Estático
+##Informe de Resultados del Análisis Estático
 
 **Proyecto:** GLPI (versión auditada 10.0.17)  
 **Lenguaje:** PHP  
@@ -485,7 +485,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## 🔍 Resumen de Resultados por Tipo de Vulnerabilidad
+## Resumen de Resultados por Tipo de Vulnerabilidad
 
 | Tipo de Vulnerabilidad                                   | Total Encontrado |
 |----------------------------------------------------------|------------------|
@@ -501,7 +501,7 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## 📑 Detalle Técnico por Tipo de Vulnerabilidad
+## Detalle Técnico por Tipo de Vulnerabilidad
 
 ### 1. Cross-site Scripting (XSS) – 381 ocurrencias
 - **Descripción técnica:** Inyección de scripts maliciosos en páginas vistas por otros usuarios, debido a la falta de escape en variables mostradas en el navegador.
@@ -557,11 +557,11 @@ Se realizó una revisión exhaustiva del código fuente del proyecto, incorporan
 
 ---
 
-## ✅ Conclusión del Informe
+## Conclusión del Informe
 
 El análisis revela una alta concentración de vulnerabilidades críticas, principalmente del tipo **Cross-site Scripting** y **SQL Injection**, que representan un riesgo significativo para la seguridad del sistema. Se recomienda priorizar la revisión de los componentes afectados por estas dos categorías.
 
----*
+---
 
 ## 2. Análisis de Imagenes con Docker Scode
 
