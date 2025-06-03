@@ -588,12 +588,14 @@ Con este plan se busca garantizar la mitigación oportuna de las vulnerabilidade
 
 ## 🚀 4. Fase de Despliegue (CI/CD)
 
+---
+
 Esta fase automatiza la entrega continua de software con seguridad integrada en el pipeline. Se configuran escaneos de imágenes, análisis de IaC, validaciones de secretos y controles de firma de código. La infraestructura como código asegura entornos reproducibles y seguros, alineados con políticas organizacionales.
 
 <details>
 <summary><b>Configuración de Pipeline</b></summary>
 
-existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido en el directorio .github/workflows/ci-cd.yml.
+Existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido en el directorio .github/workflows/ci-cd.yml.
 
 - Se activa al hacer push en la rama master y ejecuta los siguientes JOB
 
@@ -616,11 +618,15 @@ existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido 
       - Se conecta por SSH a la instancia especificada
       - Dentro de la VM, detiene los contenedores actuales, actualiza las imágenes y levanta los servicios con Docker Compose
 
+---
+
 </details>
 <details>
 <summary><b>Infraestructura como Código (IaC)</b></summary>
 
-  el proyecto usa Docker Compose como “Infraestructura” local
+---
+
+  El proyecto usa Docker Compose como “Infraestructura” local
   La verdadera “infraestructura” que define el repositorio es el propio docker-compose.yml (en la raíz), que especifica:
 
    - glpi-db (MariaDB)
@@ -629,10 +635,14 @@ existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido 
   
   Ese docker-compose.yml funciona como un equivalente “IaC” a nivel de orquestación de contenedores. Esta configuración (versionada en Git) asegura entornos reproducibles: quien clone el repo y ejecute docker-compose up -d obtiene el mismo resultado.
 
+---
+
 </details>
 <details>
 <summary><b>Registros de Imágenes de Contenedores</b></summary>
   
+---
+
   En glpiDevSecOps se sigue este patrón:
 
   **Destino: Google Container Registry (GCR):**
@@ -663,7 +673,9 @@ existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido 
   **Trazabilidad en versiones**
 
   Al usar ${{ github.sha }}, cada push de imagen corresponde exactamente a un commit específico.
-  En producción, cuando el pipeline hace “docker pull” y levanta el contenedor,
+  En producción, cuando el pipeline hace “docker pull” y levanta el contenedor.
+
+---
 
 </details>
 
