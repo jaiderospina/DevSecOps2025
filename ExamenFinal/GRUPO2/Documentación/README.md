@@ -352,6 +352,13 @@ Esta fase se enfoca en la construcción segura del software. Incluye la implemen
 <details>
 <summary><b>Historias de Usuario</b></summary>
 
+| **Inicio de sesión seguro en GLPI** |
+|---------------------|
+| **Como** Usuario del sistema GLPI.<br>**Quiero** Iniciar sesión mediante autenticación de dos factores (MFA)<br>**Para** Prevenir accesos no autorizados aunque se filtre mi contraseña |
+| **Criterios de Aceptación**|  
+|- El sistema GLPI debe ofrecer MFA (correo, app de autenticación o SMS).<br>- Contraseñas con complejidad mínima (mayúsculas, símbolos, longitud >12).<br>- Bloqueo de sesión tras 5 intentos fallidos.|
+
+
 ## 1. Inicio de sesión seguro en GLPI
 
 **Como** usuario del sistema GLPI,
