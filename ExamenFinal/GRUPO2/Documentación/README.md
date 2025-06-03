@@ -352,135 +352,111 @@ Esta fase se enfoca en la construcción segura del software. Incluye la implemen
 <details>
 <summary><b>Historias de Usuario</b></summary>
 
+<div align="center">
+
 | **Inicio de sesión seguro en GLPI** |
 |---------------------|
 | **Como** Usuario del sistema GLPI.<br>**Quiero** Iniciar sesión mediante autenticación de dos factores (MFA)<br>**Para** Prevenir accesos no autorizados aunque se filtre mi contraseña |
 | **Criterios de Aceptación**|  
 |- El sistema GLPI debe ofrecer MFA (correo, app de autenticación o SMS).<br>- Contraseñas con complejidad mínima (mayúsculas, símbolos, longitud >12).<br>- Bloqueo de sesión tras 5 intentos fallidos.|
 
-
-## 1. Inicio de sesión seguro en GLPI
-
-**Como** usuario del sistema GLPI,
-**quiero** iniciar sesión mediante autenticación de dos factores (MFA),
-**para** prevenir accesos no autorizados aunque se filtre mi contraseña.
-
-**Criterios de aceptación:**
-
-* El sistema GLPI debe ofrecer MFA (correo, app de autenticación o SMS).
-* Contraseñas con complejidad mínima (mayúsculas, símbolos, longitud >12).
-* Bloqueo de sesión tras 5 intentos fallidos.
+</div>
 
 ---
 
-## 2. Envío de tickets por chatbot con entrada segura
+<div align="center">
 
-**Como** usuario que interactúa desde Telegram,
-**quiero** enviar solicitudes a través del chatbot,
-**para** crear tickets en GLPI sin comprometer el sistema.
+| **Envío de tickets por chatbot con entrada segura** |
+|---------------------|
+| **Como** usuario que interactúa desde Telegram,<br>**Quiero** enviar solicitudes a través del chatbot,<br>**Para** crear tickets en GLPI sin comprometer el sistema. |
+| **Criterios de Aceptación**|  
+|- El bot debe sanitizar todos los mensajes antes de enviarlos a GLPI.<br>- Validación de formato y longitud de entrada.<br>- Logs de entradas rechazadas por motivos de seguridad.|
 
-**Criterios de aceptación:**
-
-* El bot debe sanitizar todos los mensajes antes de enviarlos a GLPI.
-* Validación de formato y longitud de entrada.
-* Logs de entradas rechazadas por motivos de seguridad.
+</div>
 
 ---
 
-## 3. Autenticación del chatbot con GLPI
+<div align="center">
 
-**Como** desarrollador,
-**quiero** que el microservicio del bot se autentique mediante una API Key única,
-**para** evitar accesos no autorizados al sistema GLPI.
+| **Autenticación del chatbot con GLPI** |
+|---------------------|
+| **Como** desarrollador,<br>**Quiero** que el microservicio del bot se autentique mediante una API Key única,<br>**Para** evitar accesos no autorizados al sistema GLPI. |
+| **Criterios de Aceptación**|  
+|- La API Key debe guardarse en variables de entorno, no en el código fuente.<br>- Validación del token en cada solicitud del bot a GLPI.<br>- Rotación periódica de claves.|
 
-**Criterios de aceptación:**
-
-* La API Key debe guardarse en variables de entorno, no en el código fuente.
-* Validación del token en cada solicitud del bot a GLPI.
-* Rotación periódica de claves.
+</div>
 
 ---
 
-## 4. Seguridad en la conexión a la base de datos
+<div align="center">
 
-**Como** administrador de infraestructura,
-**quiero** que GLPI se conecte de forma cifrada a la base de datos MariaDB,
-**para** proteger los datos en tránsito en GCP.
+| **Seguridad en la conexión a la base de datos** |
+|---------------------|
+| **Como** administrador de infraestructura,<br>**Quiero** que GLPI se conecte de forma cifrada a la base de datos MariaDB,<br>**Para** proteger los datos en tránsito en GCP. |
+| **Criterios de Aceptación**|  
+|- Conexión TLS habilitada entre GLPI y MariaDB.<br>- Usuario de base de datos con permisos mínimos.<br>- Contraseñas almacenadas cifradas en secretos de GCP o archivos `.env`.|
 
-**Criterios de aceptación:**
-
-* Conexión TLS habilitada entre GLPI y MariaDB.
-* Usuario de base de datos con permisos mínimos.
-* Contraseñas almacenadas cifradas en secretos de GCP o archivos `.env`.
+</div>
 
 ---
 
-## 5. Despliegue seguro de microservicios
+<div align="center">
 
-**Como** DevOps,
-**quiero** desplegar el chatbot como contenedor con imágenes verificadas,
-**para** garantizar que no contienen software malicioso.
+| **Despliegue seguro de microservicios** |
+|---------------------|
+| **Como** DevOps,<br>**Quiero** desplegar el chatbot como contenedor con imágenes verificadas,<br>**Para** garantizar que no contienen software malicioso. |
+| **Criterios de Aceptación**|  
+|- Imagen escaneada con herramientas como Trivy o Syft.<br>- Uso de imágenes oficiales o minimalistas (ej: `python:slim`, `node:alpine`).|
 
-**Criterios de aceptación:**
-
-* Imagen escaneada con herramientas como Trivy o Syft.
-* Uso de imágenes oficiales o minimalistas (ej: `python:slim`, `node:alpine`).
-* Registro de imagen firmado digitalmente (opcional: Sigstore/Docker Content Trust).
+</div>
 
 ---
 
-## 6. Monitoreo de actividades sospechosas
+<div align="center">
 
-**Como** analista de seguridad,
-**quiero** monitorear interacciones anómalas entre el bot y GLPI,
-**para** detectar posibles ataques de fuerza bruta o abuso del sistema.
+| **Monitoreo de actividades sospechosas** |
+|---------------------|
+| **Como** DevOps,<br>**quiero** monitorear interacciones anómalas entre el bot y GLPI,<br>**para** detectar posibles ataques de fuerza bruta o abuso del sistema. |
+| **Criterios de Aceptación**|  
+|- Alertas ante entradas no válidas repetidas.<br>- Alertas ante entradas no válidas repetidas.<br>- Revisión manual de logs mediante Cloud Logging de GCP.|
 
-**Criterios de aceptación:**
-
-* Registro de eventos inusuales (p. ej. muchos tickets en poco tiempo).
-* Alertas ante entradas no válidas repetidas.
-* Revisión manual de logs mediante Cloud Logging de GCP.
+</div>
 
 ---
 
-## 7. Control de acceso al microservicio
+<div align="center">
 
-**Como** administrador de red,
-**quiero** que el chatbot solo se comunique con GLPI a través de una red interna en GCP,
-**para** reducir la superficie de ataque.
+| **Control de acceso al microservicio** |
+|---------------------|
+| **Como** administrador de red,<br>**quiero** que el chatbot solo se comunique con GLPI a través de una red interna en GCP,<br>**para** reducir la superficie de ataque. |
+| **Criterios de Aceptación**|  
+|- El bot debe desplegarse en la misma VPC que GLPI.<br>- Puertos de acceso al backend cerrados a Internet.<br>- Firewall y reglas IAM controladas por etiqueta o servicio.|
 
-**Criterios de aceptación:**
-
-* El bot debe desplegarse en la misma VPC que GLPI.
-* Puertos de acceso al backend cerrados a Internet.
-* Firewall y reglas IAM controladas por etiqueta o servicio.
+</div>
 
 ---
 
-## 8. Cumplimiento de privacidad y confidencialidad
+<div align="center">
 
-**Como** oficial de cumplimiento,
-**quiero** asegurarme de que los datos personales manejados por el bot (nombres, emails, mensajes) estén protegidos,
-**para** cumplir con regulaciones como la Ley de Protección de Datos Personales.
+| **Cumplimiento de privacidad y confidencialidad** |
+|---------------------|
+| **Como** oficial de cumplimiento,<br>**quiero** asegurarme de que los datos personales manejados por el bot (nombres, emails, mensajes) estén protegidos,<br>**para** cumplir con regulaciones como la Ley de Protección de Datos Personales. |
+| **Criterios de Aceptación**|  
+|- Ningún dato personal se guarda en texto plano fuera de la base de datos.<br>- Cifrado en tránsito y en reposo.<br>- Accesos auditables y trazables en GCP.|
 
-**Criterios de aceptación:**
-
-* Ningún dato personal se guarda en texto plano fuera de la base de datos.
-* Cifrado en tránsito y en reposo.
-* Accesos auditables y trazables en GCP.
+</div>
 
 ---
 
-## 9. Validación del origen de mensajes del bot
+<div align="center">
 
-**Como** ingeniero de seguridad,
-**quiero** validar que los mensajes recibidos por el bot provienen de WhatsApp/Teams autenticados,
-**para** evitar suplantaciones o ataques tipo spoofing.
+| **Validación del origen de mensajes del bot** |
+|---------------------|
+| **Como** ingeniero de seguridad,<br>**quiero** validar que los mensajes recibidos por el bot provienen de autenticados,<br>**para** evitar suplantaciones o ataques tipo spoofing. |
+| **Criterios de Aceptación**|  
+|- Validación del `token de verificación` según el proveedor.<br>- Rechazo de mensajes sin cabeceras válidas.
 
-**Criterios de aceptación:**
-
-* Validación del `webhook signature` o `token de verificación` según el proveedor.
-* Rechazo de mensajes sin cabeceras válidas.
+</div>
 
 ---
 
