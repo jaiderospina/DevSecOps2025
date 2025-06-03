@@ -328,7 +328,17 @@ Periodo de aplicación: **3 semanas por riesgo**
 <details>
 <summary><b>Arquitectura de Seguridad</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+**Arquitectura de alto nivel**
+
+  <![Arquitectura de Alto Nivel](/Documentación/images/Alto_Nivel.png)/>
+
+  Este diagrama muestra la arquitectura de alto nivel para desplegar GLPI en Google Cloud: sobre una máquina virtual Linux/Ubuntu (dentro de Google Cloud) corre Docker, que levanta tres contenedores principales: el de GLPI (la aplicación web), el de MySQL (la base de datos) y el del bot (un servicio que consume la API REST de GLPI). El usuario accede desde Internet, atraviesa un firewall y se conecta al contenedor de GLPI; este a su vez lee y escribe datos en la base de datos MySQL y ofrece servicios REST que el bot utiliza para crear y gestionar tickets automáticamente.
+
+**Diagrama de Despliegue**
+
+  <![Diagrama de Despliegue ](/Documentación/images/Despliegue.png)/>
+
+  
 
 </details>
 
@@ -581,19 +591,77 @@ Esta fase automatiza la entrega continua de software con seguridad integrada en 
 <details>
 <summary><b>Configuración de Pipeline</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+existe un flujo de CI/CD basado en GitHub Actions. Este pipeline está definido en el directorio .github/workflows/ci-cd.yml.
+
+- Se activa al hacer push en la rama master y ejecuta los siguientes JOB
+
+    - **build-and-push:**
+
+      - Clona el repositorio
+      - Define una variable IMAGE_DATE con la fecha actual
+      - Inicia sesión en Docker Hub
+      - Construye y sube las imágenes Docker de:
+
+        - glpi-app
+        - glpi-db
+        - glpi-bot
+
+      Cada imagen recibe dos etiquetas: :YYYYMMDD y :latest
+
+    - **deploy (depende de build-and-push):**
+      - Autentica en GCP con credenciales de servicio
+      - Instala el SDK de gcloud
+      - Se conecta por SSH a la instancia especificada
+      - Dentro de la VM, detiene los contenedores actuales, actualiza las imágenes y levanta los servicios con Docker Compose
 
 </details>
 <details>
 <summary><b>Infraestructura como Código (IaC)</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+  el proyecto usa Docker Compose como “Infraestructura” local
+  La verdadera “infraestructura” que define el repositorio es el propio docker-compose.yml (en la raíz), que especifica:
+
+   - glpi-db (MariaDB)
+   - glpi-app (contenedor PHP-FPM + Nginx)
+   - glpi-bot (contenedor Python + Ngrok)
+  
+  Ese docker-compose.yml funciona como un equivalente “IaC” a nivel de orquestación de contenedores. Esta configuración (versionada en Git) asegura entornos reproducibles: quien clone el repo y ejecute docker-compose up -d obtiene el mismo resultado.
 
 </details>
 <details>
 <summary><b>Registros de Imágenes de Contenedores</b></summary>
+  
+  En glpiDevSecOps se sigue este patrón:
 
-**COLOCAR CONTENIDO AQUÍ**
+  **Destino: Google Container Registry (GCR):**
+  
+  - Cada vez que GitHub Actions construye una imagen (glpi-app o glpi-bot), la etiqueta como:
+
+```bash  
+  gcr.io/<GCP_PROJECT_ID>/glpi-app:<GIT_SHA>
+  gcr.io/<GCP_PROJECT_ID>/glpi-bot:<GIT_SHA>
+ ```
+
+  - Esa misma ruta aparece en los pasos de “push”:
+
+ ```bash  
+  docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/glpi-app:${{ github.sha }}
+  docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/glpi-bot:${{ github.sha }}
+ ```
+
+  ***redenciales para autenticarse**
+
+  - En los Secrets de GitHub se guarda la llave de servicio de GCP (GCP_SA_KEY) y se hace un login tipo:
+
+```bash  
+    echo "${{ secrets.GCP_SA_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
+```
+  Así, el runner puede realizar el docker push sin problemas de permisos.
+
+  **Trazabilidad en versiones**
+
+  Al usar ${{ github.sha }}, cada push de imagen corresponde exactamente a un commit específico.
+  En producción, cuando el pipeline hace “docker pull” y levanta el contenedor,
 
 </details>
 
