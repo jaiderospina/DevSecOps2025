@@ -633,6 +633,11 @@ Las vulnerabilidades fueron priorizadas según los siguientes criterios:
   - **Segmentación y control de acceso**:
     - Restringir el acceso al contenedor `glpi-db` solo a IPs internas.
     - Usar variables de entorno seguras y cifradas para contraseñas.
+    
+## Conclusión
+
+La implementación de estas medidas permite adoptar un enfoque proactivo frente a las amenazas, alineado con prácticas modernas de DevSecOps. Se recomienda incorporar esta estrategia como parte integral del ciclo de vida del software, especialmente para sistemas críticos como GLPI.
+
 
 
 </details>
