@@ -331,13 +331,14 @@ Periodo de aplicación: **3 semanas por riesgo**
 
 **Arquitectura de alto nivel**
 
-  <div>![Arquitectura de Alto Nivel](./images/Alto_Nivel.png)</div>
+  ![Arquitectura de Alto Nivel](./images/Alto_Nivel.png)
 
   Este diagrama muestra la arquitectura de alto nivel para desplegar GLPI en Google Cloud: sobre una máquina virtual Linux/Ubuntu (dentro de Google Cloud) corre Docker, que levanta tres contenedores principales: el de GLPI (la aplicación web), el de MySQL (la base de datos) y el del bot (un servicio que consume la API REST de GLPI). El usuario accede desde Internet, atraviesa un firewall y se conecta al contenedor de GLPI; este a su vez lee y escribe datos en la base de datos MySQL y ofrece servicios REST que el bot utiliza para crear y gestionar tickets automáticamente.
 
 **Diagrama de Despliegue**
 
-  <div>![Diagrama de Despliegue ](./images/Despliegue.png)</div>
+  ![Diagrama de Despliegue ](./images/Despliegue.png)
+  
 
   
 
