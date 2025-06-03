@@ -328,15 +328,16 @@ Periodo de aplicación: **3 semanas por riesgo**
 <details>
 <summary><b>Arquitectura de Seguridad</b></summary>
 
+
 **Arquitectura de alto nivel**
 
-  <![Arquitectura de Alto Nivel](./images/Alto_Nivel.png)/>
+  <div>![Arquitectura de Alto Nivel](./images/Alto_Nivel.png)</div>
 
   Este diagrama muestra la arquitectura de alto nivel para desplegar GLPI en Google Cloud: sobre una máquina virtual Linux/Ubuntu (dentro de Google Cloud) corre Docker, que levanta tres contenedores principales: el de GLPI (la aplicación web), el de MySQL (la base de datos) y el del bot (un servicio que consume la API REST de GLPI). El usuario accede desde Internet, atraviesa un firewall y se conecta al contenedor de GLPI; este a su vez lee y escribe datos en la base de datos MySQL y ofrece servicios REST que el bot utiliza para crear y gestionar tickets automáticamente.
 
 **Diagrama de Despliegue**
 
-  <![Diagrama de Despliegue ](./images/Despliegue.png)/>
+  <div>![Diagrama de Despliegue ](./images/Despliegue.png)</div>
 
   
 
@@ -512,7 +513,7 @@ Durante esta fase se validan dinámicamente los componentes del sistema en un en
 
 A continuación, se relaciona el informe sobre amenazas de ataques similares en la industria. En particular, la vulnerabilidad de **Broken Authentication**, documentada en el informe [OWASP API Top 10 – API2:2023](https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/), donde ejemplifica cómo configuraciones inadecuadas pueden permitir accesos no autorizados y explotación de bots conectados vía API REST.
 
-**Link de consulta del informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Threat%20Intelligence%20Reports.md)
+**Link de consulta del informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/Threat%20Intelligence%20Reports.md)
 
 </details>
 <details>
