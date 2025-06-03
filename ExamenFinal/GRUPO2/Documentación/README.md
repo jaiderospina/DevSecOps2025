@@ -771,7 +771,7 @@ Esta fase permite aprender de los incidentes, evaluaciones y nuevas amenazas, al
 <details>
 <summary><b>Retrospectivas de Seguridad</b></summary>
 
-**Objetivo:**  
+
 Analizar eventos de seguridad y vulnerabilidades identificadas durante el ciclo de vida del sistema, con el fin de implementar mejoras continuas en la protección de los activos del proyecto.
 
 **Lecciones Aprendidas:**
@@ -792,7 +792,7 @@ Analizar eventos de seguridad y vulnerabilidades identificadas durante el ciclo 
 <details>
 <summary><b>Actualización de Políticas</b></summary>
 
-**Objetivo:**  
+
 Asegurar que las políticas del proyecto se mantengan actualizadas con respecto a normativas locales, mejores prácticas y aprendizajes del proceso.
 
 | Documento | Versión Anterior | Cambio Realizado | Fecha | Responsable |
