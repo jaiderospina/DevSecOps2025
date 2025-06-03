@@ -643,7 +643,7 @@ La implementación de estas medidas permite adoptar un enfoque proactivo frente 
 </details>
 <details>
 <summary><b>SBOM (Software Bill of Materials)</b></summary>
-# 💀 Inventario de Dependencias Externas - GLPI 10.0.18
+# 💀 Inventario de Dependencias Externas - GLPI 10.0.17
 
 | Nº  | Librería                         | Versión  | Vulnerabilidades Conocidas                                                                                         | Funcionalidad Principal                                                                 |
 |-----|----------------------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
