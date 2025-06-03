@@ -655,7 +655,31 @@ A continuación, se relaciona el informe sobre amenazas de ataques similares en 
 <details>
 <summary><b>Informe de OWASP ZAP</b></summary>
 
-**COLOCAR CONTENIDO AQUÍ**
+# Evaluación DAST en entorno *Staging*
+
+**Entorno a evaluar:** *Staging*  
+**Objetivo:** Evaluar la exposición a vulnerabilidades en tiempo de ejecución del sistema completo desplegado en GCP.
+
+## Tecnologías que s deben involucrar:
+
+- **GLPI** (sistema de gestión de tickets)
+- **MariaDB** (gestión de base de datos)
+- **Microservicio Bot** (API REST)
+- **Infraestructura:** Docker (con `docker-compose` y `Dockerfile`), Google Cloud Platform (GCP)
+
+
+## Posibles hallazgos
+
+| Tipo de vulnerabilidad       | Severidad | Componente afectado     |
+|-----------------------------|-----------|--------------------------|
+| Cross-Site Scripting (XSS)  | Media     | GLPI interfaz web        |
+
+
+## Acciones a realizar / Próximos pasos
+
+- [ ] Integrar **DAST** como paso automatizado en el pipeline de **CI/CD**.
+- [ ] Validar **GLPI** con plugins actualizados y realizar auditoría del código fuente.
+
 
 </details>
 <details>
