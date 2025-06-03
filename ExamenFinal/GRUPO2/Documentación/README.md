@@ -483,15 +483,83 @@ Esta fase se enfoca en la construcción segura del software. Incluye la implemen
 
 Se realizó una revisión exhaustiva del código fuente del proyecto, incorporando anotaciones de seguridad directamente en los archivos Dockerfile, archivos .env y el flujo de CI/CD. Estas anotaciones explican decisiones críticas relacionadas con la protección de credenciales, la reducción de la superficie de ataque, el uso seguro de variables de entorno y buenas prácticas en la construcción de contenedores. El objetivo es fortalecer la postura de seguridad desde la fase de construcción y despliegue.
 
-**Link de consulta del informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/Threat%20Intelligence%20Reports.md)
+**Link de consulta del informe:** [Clic aquí](https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/Reportes/Anotaciones%20de%20Seguridad.md)
 
 </details>
 <details>
 <summary><b>Informes de Análisis Estático (SAST)</b></summary>
 
+## Análisis con SNYK
+
 **COLOCAR CONTENIDO AQUÍ**
-#### SNYK
-#### Docker Scode
+
+## Análisis de Imagenes con Docker Scode
+
+- **GLPI-APP Informe:** [Clic aquí]()
+
+- **GLPI-BOT Informe:** [Clic aquí]()
+
+- **GLPI-DB Informe:** [Clic aquí]()
+
+### Priorización de Vulnerabilidades
+
+Con base en los reportes generados por Docker Scout, se identificaron las siguientes vulnerabilidades en las imágenes utilizadas:
+
+| Imagen           | Críticas | Altas | Medias | Bajas |
+|------------------|----------|-------|--------|-------|
+| `glpi-db`        | 4        | 35    | 24     | 9     |
+| `glpi-app`       | 0        | 3     | 16     | 27    |
+| `glpi-bot`       | 0        | 1     | 1      | 29    |
+
+### Prioridad
+
+Las vulnerabilidades fueron priorizadas según los siguientes criterios:
+
+  - **Impacto en la disponibilidad**:  
+  - `glpi-bot`: `CVE-2024-47874` permite un ataque DoS mediante consumo de memoria ilimitado en formularios, afectando directamente la disponibilidad del chatbot.
+
+  - **Impacto en la confidencialidad de datos**:  
+  - `glpi-app`: `CVE-2023-50782` en la librería `cryptography` puede permitir el descifrado de mensajes TLS, afectando la confidencialidad del sistema GLPI.
+
+  - **Exposición externa**:  
+  - Los contenedores `glpi-app` y `glpi-bot` exponen servicios HTTP/HTTPS, por lo que las vulnerabilidades con vector de ataque remoto (`AV:N`) son especialmente críticas.
+
+  - **Alta puntuación CVSS 4.0, CVSS 3.1**:  
+  - Se identificaron múltiples vulnerabilidades con puntuaciones CVSS ≥ 8.7 en `glpi-db` y `glpi-bot`.
+
+### Plan remediación
+
+  1. **`glpi-db`**: actualizar imagen base ≥ `1.23.8`.
+  2. **`glpi-app`**: actualizar dependencias `cryptography` y `pyjwt`.
+  3. **`glpi-bot`**: mitigar DoS actualizando `Starlette` a `>=0.40.0`.
+
+---
+
+## Integración de Seguridad en el Pipeline DevSecOps
+
+### Recomendado:
+
+- Integrar  **Scout CLI** en el pipeline CI/CD para escanear las imágenes Docker en cada `build`.
+- Configurar el pipeline para **bloquear despliegues** con CVSS ≥ 7.0 no mitigadas.
+- Añadir escaneo SAST con herramientas como `SonarQube`, `Bandit` o `Semgrep`.
+
+### Estrategias de Remediación
+
+  - **Actualización de dependencias vulnerables**:
+   - `cryptography` ≥ `42.0.0`
+    - `pyjwt` ≥ `2.4.0`
+    - `starlette` ≥ `0.40.0`
+    - Imagen base ≥ `1.23.8` en `glpi-db`
+
+  - **Mejoras de seguridad en Docker**:
+    - Minimizar superficie de ataque utilizando imágenes ligeras como `alpine`.
+    - Eliminar herramientas y paquetes innecesarios del `Dockerfile`.
+    - Aplicar buenas prácticas de configuración en `Docker Compose` y redes.
+
+  - **Segmentación y control de acceso**:
+    - Restringir el acceso al contenedor `glpi-db` solo a IPs internas.
+    - Usar variables de entorno seguras y cifradas para contraseñas.
+
 
 </details>
 <details>

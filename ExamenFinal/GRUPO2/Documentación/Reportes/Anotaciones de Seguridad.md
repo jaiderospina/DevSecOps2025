@@ -1,4 +1,4 @@
-<a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#-3-fase-de-integraci%C3%B3n-de-seguridad" target="_blank">
+<a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#%EF%B8%8F-2-fase-de-desarrollo" target="_blank">
   <img src="https://img.shields.io/badge/Regresar-Fase%202-blue" alt="Regresar: Fase 2" />
 </a>
 
@@ -284,6 +284,6 @@ jobs:
 
 ```
 
-<a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#-3-fase-de-integraci%C3%B3n-de-seguridad" target="_blank">
+<a href="https://github.com/jaiderospina/DevSecOps2025/blob/main/ExamenFinal/GRUPO2/Documentaci%C3%B3n/README.md#%EF%B8%8F-2-fase-de-desarrollo" target="_blank">
   <img src="https://img.shields.io/badge/Regresar-Fase%202-blue" alt="Regresar: Fase 2" />
 </a>
