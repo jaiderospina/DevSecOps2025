@@ -32,9 +32,10 @@ La fase de planificación y diseño establece las bases del proyecto, definiendo
 
   ### Objetivos Especificos
 
-    1. Implementar un entorno contenerizado con Docker y Docker Compose pra la aplicaión.
+    1. 1. Implementar un entorno contenerizado con Docker y Docker Compose para la orquestación completa de servicios en una instancia de **Google Cloud Platform (GCP)**.
     2. Permitir que los usuarios consulten casos mediante el chatbot y reciban asistencia automática a través de la conexión con GLPI.
     3. Asegurar el entorno con mecanismos de control de acceso robustos, desde el diseño del sistema.
+    4. Asegurar el entorno con buenas prácticas **DevSecOps**, incluyendo análisis de vulnerabilidades, escaneo de imágenes y uso de variables seguras.
 
 ## 2. Roles del Proyecto
 
