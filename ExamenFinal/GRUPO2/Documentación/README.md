@@ -368,7 +368,7 @@ Esta fase se enfoca en la construcción segura del software. Incluye la implemen
 
 | **Envío de tickets por chatbot con entrada segura** |
 |---------------------|
-| **Como** usuario que interactúa desde Telegram,<br>**Quiero** enviar solicitudes a través del chatbot,<br>**Para** crear tickets en GLPI sin comprometer el sistema. |
+| **Como** usuario que interactúa con api del BOT,<br>**Quiero** enviar solicitudes a través del chatbot,<br>**Para** crear tickets en GLPI sin comprometer el sistema. |
 | **Criterios de Aceptación**|  
 |- El bot debe sanitizar todos los mensajes antes de enviarlos a GLPI.<br>- Validación de formato y longitud de entrada.<br>- Logs de entradas rechazadas por motivos de seguridad.|
 
