@@ -28,11 +28,10 @@ La fase de planificación y diseño establece las bases del proyecto, definiendo
 ## 1. Objetivos
   ### Objetivo General
 
-    Desplegar una plataforma de gestión de soporte basada en GLPI (v10.0.18) en una instancia de GCP, conectada a una base de datos MariaDB y a un microservicio de bot de Telegram que permita consultar tickets.
+  Desplegar una plataforma de gestión de soporte basada en GLPI (v10.0.18) en una instancia de GCP, conectada a una base de datos MariaDB y a un microservicio de bot de Telegram que permita consultar tickets.
 
   ### Objetivos Especificos
-
-    1. 1. Implementar un entorno contenerizado con Docker y Docker Compose para la orquestación completa de servicios en una instancia de **Google Cloud Platform (GCP)**.
+    1. Implementar un entorno contenerizado con Docker y Docker Compose para la orquestación completa de servicios en una instancia de **Google Cloud Platform (GCP)**.
     2. Permitir que los usuarios consulten casos mediante el chatbot y reciban asistencia automática a través de la conexión con GLPI.
     3. Asegurar el entorno con mecanismos de control de acceso robustos, desde el diseño del sistema.
     4. Asegurar el entorno con buenas prácticas **DevSecOps**, incluyendo análisis de vulnerabilidades, escaneo de imágenes y uso de variables seguras.
