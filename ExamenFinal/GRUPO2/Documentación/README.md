@@ -49,7 +49,7 @@ La fase de planificación y diseño establece las bases del proyecto, definiendo
 
   - Despliegue mediante Docker Compose.
   - Instalación automática desde el repositorio oficial de GLPI.
-  - Integración con bot de Telegram como interfaz de consulta.
+  - Integración con bot  como interfaz de consulta.
   - Proceso automatizado mediante CI/CD en GitHub Actions.
   - Seguridad y buenas prácticas DevSecOps incluidas.
   - Seguridad básica (tokens, firewalls, control de acceso).
@@ -57,12 +57,11 @@ La fase de planificación y diseño establece las bases del proyecto, definiendo
 ### 3.2 No incluye:
 
   - Escalado automático a múltiples instancias.
-  - Integración con plataformas diferentes a Telegram.
   - Soporte para múltiples idiomas del bot (fase futura).
 
 ### 3.3 Métricas de Éxito
 
-  - 100% de los casos creados por Telegram se reflejan correctamente en GLPI.
+  - 100% de los casos creados por API se reflejan correctamente en GLPI.
   - Tiempo promedio de respuesta del bot < 2 segundos.
   - Tasa de error del chatbot < 5% en generación de tickets.
   - Implementación sin vulnerabilidades críticas detectadas (según escaneo de seguridad).
